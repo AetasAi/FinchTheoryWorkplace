@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en-GB">
 <head>
   <meta charset="utf-8">
@@ -33,6 +33,40 @@
   <link rel="stylesheet" href="/styles.css">
 
   
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://workplace.finchtheory.com/#organization",
+        "name": "Finch Theory",
+        "url": "https://workplace.finchtheory.com",
+        "logo": { "@type": "ImageObject", "url": "https://workplace.finchtheory.com/icons/favicon.svg" },
+        "description": "A consultancy-led financial wellbeing programme for SMEs, LLPs and professional practices.",
+        "areaServed": "GB"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://workplace.finchtheory.com/limited-companies.html#webpage",
+        "url": "https://workplace.finchtheory.com/limited-companies.html",
+        "name": "Limited Companies - Finch Theory",
+        "description": "Financial wellbeing for SMEs and mid-sized businesses. A consultancy-led programme built for organisations where every person matters.",
+        "isPartOf": { "@id": "https://workplace.finchtheory.com/#website" },
+        "breadcrumb": { "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://workplace.finchtheory.com/" }, { "@type": "ListItem", "position": 2, "name": "Limited Companies", "item": "https://workplace.finchtheory.com/limited-companies.html" }] }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://workplace.finchtheory.com/limited-companies.html#service",
+        "name": "Financial Wellbeing for Limited Companies",
+        "description": "Tailored financial wellbeing programme for SMEs covering pension optimisation, benefits review, and financial education.",
+        "provider": { "@id": "https://workplace.finchtheory.com/#organization" },
+        "areaServed": "GB",
+        "serviceType": "Employee Financial Wellbeing Programme"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -433,5 +467,6 @@
 
 </body>
 </html>
+
 
 

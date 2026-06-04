@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en-GB">
 <head>
   <meta charset="utf-8">
@@ -33,7 +33,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -42,9 +41,35 @@
         "@type": "Organization",
         "@id": "https://workplace.finchtheory.com/#organization",
         "name": "Finch Theory",
-        "url": "https://finchtheory.com",
-        "description": "A business performance solution for SMEs, LLPs, and professional practices. Identifies and fixes the hidden cost of financial pressure in the workforce.",
-        "slogan": "The Business Performance Solution for SMEs."
+        "url": "https://workplace.finchtheory.com",
+        "logo": { "@type": "ImageObject", "url": "https://workplace.finchtheory.com/icons/favicon.svg" },
+        "description": "A consultancy-led financial wellbeing programme for SMEs, LLPs and professional practices.",
+        "areaServed": "GB"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://workplace.finchtheory.com/#website",
+        "url": "https://workplace.finchtheory.com",
+        "name": "Finch Theory Workplace",
+        "publisher": { "@id": "https://workplace.finchtheory.com/#organization" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://workplace.finchtheory.com/#webpage",
+        "url": "https://workplace.finchtheory.com/",
+        "name": "Finch Theory - The Business Performance Solution for SMEs",
+        "description": "Financial pressure is quietly costing your business. Finch Theory identifies exactly where, and fixes it.",
+        "isPartOf": { "@id": "https://workplace.finchtheory.com/#website" },
+        "breadcrumb": { "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://workplace.finchtheory.com/" }] }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://workplace.finchtheory.com/#service",
+        "name": "Workplace Financial Wellbeing Programme",
+        "description": "A consultancy-led employee financial wellbeing programme covering benefits review, financial education, and incentive design for SMEs.",
+        "provider": { "@id": "https://workplace.finchtheory.com/#organization" },
+        "areaServed": "GB",
+        "serviceType": "Employee Financial Wellbeing Programme"
       }
     ]
   }
@@ -459,5 +484,6 @@
 </script>
 </body>
 </html>
+
 
 

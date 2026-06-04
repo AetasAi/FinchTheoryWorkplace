@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en-GB">
 <head>
   <meta charset="utf-8">
@@ -33,6 +33,40 @@
   <link rel="stylesheet" href="/styles.css">
 
   
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://workplace.finchtheory.com/#organization",
+        "name": "Finch Theory",
+        "url": "https://workplace.finchtheory.com",
+        "logo": { "@type": "ImageObject", "url": "https://workplace.finchtheory.com/icons/favicon.svg" },
+        "description": "A consultancy-led financial wellbeing programme for SMEs, LLPs and professional practices.",
+        "areaServed": "GB"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://workplace.finchtheory.com/llps.html#webpage",
+        "url": "https://workplace.finchtheory.com/llps.html",
+        "name": "LLPs and Professional Practices - Finch Theory",
+        "description": "Financial wellbeing for law firms, accountancy practices, and professional services partnerships.",
+        "isPartOf": { "@id": "https://workplace.finchtheory.com/#website" },
+        "breadcrumb": { "@type": "BreadcrumbList", "itemListElement": [{ "@type": "ListItem", "position": 1, "name": "Home", "item": "https://workplace.finchtheory.com/" }, { "@type": "ListItem", "position": 2, "name": "LLPs", "item": "https://workplace.finchtheory.com/llps.html" }] }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://workplace.finchtheory.com/llps.html#service",
+        "name": "Financial Wellbeing for LLPs and Professional Practices",
+        "description": "Specialist programme for LLPs and law firms addressing the distinct needs of partners and support staff.",
+        "provider": { "@id": "https://workplace.finchtheory.com/#organization" },
+        "areaServed": "GB",
+        "serviceType": "Employee Financial Wellbeing Programme"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -399,5 +433,6 @@
 
 </body>
 </html>
+
 
 
