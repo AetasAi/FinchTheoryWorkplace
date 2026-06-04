@@ -17,7 +17,7 @@
 (function () {
   'use strict';
 
-  var COOKIEBOT_ID = '8950e961-dd22-4ba3-bce7-b59e1fe40193';
+  var COOKIEBOT_ID = 'bb3cdcfb-e1e2-464e-bdcb-e04be3024ca8';
   var GA4_ID = 'G-NPMN6Y5G8K';
   var CLARITY_ID = 'wtnjld3lda';
 
@@ -73,6 +73,7 @@
   // Fires when the user clicks Accept on the banner
   window.addEventListener('CookiebotOnAccept', maybeLoadTrackers);
 })();
+
 
 
 
