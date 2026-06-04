@@ -318,21 +318,21 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
   display: grid;
   grid-template-columns: 1.15fr 1fr;
   min-height: auto;
-  align-items: start;
+  align-items: stretch;
 }
 .hero-left {
   background: var(--ft-black);
   padding: clamp(3.5rem, 8vw, 6rem) clamp(2rem, 5vw, 4.5rem);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .hero-right {
   background: var(--warm-grey);
   padding: clamp(3.5rem, 8vw, 6rem) clamp(2rem, 5vw, 4rem);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   border-left: 1px solid var(--mid-grey);
 }
 .hero-eyebrow {
