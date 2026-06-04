@@ -142,14 +142,14 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--mid-grey);
-  min-height: 100px;
+  min-height: 72px;
 }
 .nav-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-block: 0;
-  min-height: 100px;
+  min-height: 72px;
 }
 .brand {
   display: flex;
@@ -160,8 +160,8 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
   flex-shrink: 0;
 }
 .brand-mark {
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   display: grid;
   place-items: center;
   flex-shrink: 0;
@@ -317,7 +317,7 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
   overflow: hidden;
   display: grid;
   grid-template-columns: 1.15fr 1fr;
-  align-items: stretch;
+  align-items: start;
 }
 .hero-left {
   background: var(--ft-black);
@@ -1324,10 +1324,10 @@ label.q-option span {
    FINAL OVERRIDES — Logo 96px, sliders on track, field spacing
    ============================================================ */
 
-/* Logo — 96px */
-.brand-mark { width: 48px !important; height: 48px !important; }
-.site-header { min-height: 88px !important; }
-.nav-inner   { min-height: 88px !important; }
+/* Logo */
+.brand-mark { width: 44px !important; height: 44px !important; }
+.site-header { min-height: 72px !important; }
+.nav-inner   { min-height: 72px !important; }
 
 /* Sliders — thumb centred ON the track line */
 input[type=range] {
@@ -1368,15 +1368,15 @@ input[type=range]::-webkit-slider-runnable-track {
 
 /* Header height on mobile */
 @media (max-width: 1024px) {
-  .site-header { min-height: 72px !important; }
-  .nav-inner   { min-height: 72px !important; }
-  .brand-mark  { width: 44px !important; height: 44px !important; }
+  .site-header { min-height: 64px !important; }
+  .nav-inner   { min-height: 64px !important; }
+  .brand-mark  { width: 38px !important; height: 38px !important; }
 }
 
 @media (max-width: 480px) {
-  .site-header { min-height: 60px !important; }
-  .nav-inner   { min-height: 60px !important; }
-  .brand-mark  { width: 40px !important; height: 40px !important; }
+  .site-header { min-height: 56px !important; }
+  .nav-inner   { min-height: 56px !important; }
+  .brand-mark  { width: 34px !important; height: 34px !important; }
 }
 
 /* Hero improvements on mobile */
@@ -1422,13 +1422,5 @@ input[type=range]::-webkit-slider-runnable-track {
   .nav-links a { -webkit-tap-highlight-color: transparent; }
 }
 
-/* Hero two-column height fix */
-.hero {
-  align-items: stretch !important;
-}
-.hero-left, .hero-right {
-  align-self: stretch !important;
-}
-.hero-aside-spacer {
-  flex: 1;
-}
+
+
