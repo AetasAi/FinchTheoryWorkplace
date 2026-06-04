@@ -73,3 +73,4 @@
   // Fires when the user clicks Accept on the banner
   window.addEventListener('CookiebotOnAccept', maybeLoadTrackers);
 })();
+
