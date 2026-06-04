@@ -317,8 +317,7 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
   overflow: hidden;
   display: grid;
   grid-template-columns: 1.15fr 1fr;
-  min-height: auto;
-  align-items: stretch;
+  align-items: start;
 }
 .hero-left {
   background: var(--ft-black);
@@ -334,6 +333,11 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
   flex-direction: column;
   justify-content: flex-start;
   border-left: 1px solid var(--mid-grey);
+  min-height: 100%;
+}
+/* Wrap hero in a container that clips to the taller column */
+.hero::after {
+  content: none;
 }
 .hero-eyebrow {
   display: flex;
@@ -1259,7 +1263,8 @@ label.q-option span {
 /* ============================================================
    SECTION-DARK — ensure all child text colours correct
    ============================================================ */
-.section-dark { background: var(--ft-black) !important; }
+.section-dark {
+  border-top: none; background: var(--ft-black) !important; }
 .section-dark h1,
 .section-dark h2,
 .section-dark h3,
