@@ -1329,7 +1329,7 @@ label.q-option span {
    ============================================================ */
 
 /* Logo */
-.brand-mark { width: 44px !important; height: 44px !important; }
+.brand-mark { width: 64px !important; height: 64px !important; }
 .site-header { min-height: 72px !important; }
 .nav-inner   { min-height: 72px !important; }
 
@@ -1374,13 +1374,13 @@ input[type=range]::-webkit-slider-runnable-track {
 @media (max-width: 1024px) {
   .site-header { min-height: 64px !important; }
   .nav-inner   { min-height: 64px !important; }
-  .brand-mark  { width: 38px !important; height: 38px !important; }
+  .brand-mark  { width: 52px !important; height: 52px !important; }
 }
 
 @media (max-width: 480px) {
   .site-header { min-height: 56px !important; }
   .nav-inner   { min-height: 56px !important; }
-  .brand-mark  { width: 34px !important; height: 34px !important; }
+  .brand-mark  { width: 44px !important; height: 44px !important; }
 }
 
 /* Hero improvements on mobile */
