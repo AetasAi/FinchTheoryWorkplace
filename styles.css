@@ -142,23 +142,26 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--mid-grey);
+  min-height: 80px;
 }
 .nav-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-block: 1rem;
+  padding-block: 0;
+  min-height: 80px;
 }
 .brand {
   display: flex;
   align-items: center;
-  gap: 0.85rem;
+  gap: 1.25rem;
   text-decoration: none;
   color: var(--ft-black);
+  flex-shrink: 0;
 }
 .brand-mark {
-  width: 40px;
-  height: 40px;
+  width: 64px;
+  height: 64px;
   display: grid;
   place-items: center;
   flex-shrink: 0;
@@ -176,20 +179,22 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
 }
 .brand-text .brand-name {
   font-family: var(--font-sans);
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   font-weight: 600;
-  letter-spacing: 0.26em;
+  letter-spacing: 0.28em;
   text-transform: uppercase;
   color: var(--ft-black);
+  white-space: nowrap;
 }
 .brand-text .brand-sub {
   font-family: var(--font-sans);
-  font-size: 0.62rem;
+  font-size: 0.6rem;
   font-weight: 400;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--text-secondary);
-  margin-top: 4px;
+  margin-top: 5px;
+  white-space: nowrap;
 }
 
 .nav-links {
@@ -963,22 +968,7 @@ input[type=range]::-webkit-slider-runnable-track {
   color: var(--ft-black);
 }
 
-/* ============================================================
-   LOGO / NAV BRAND — larger, more presence
-   ============================================================ */
-.brand-mark {
-  width: 56px !important;
-  height: 56px !important;
-}
-.brand {
-  gap: 1rem !important;
-}
-.brand-text .brand-name {
-  font-size: 0.78rem !important;
-  letter-spacing: 0.28em !important;
-}
-.site-header { height: 76px; }
-.nav-inner { padding-block: 0 !important; height: 76px; align-items: center; }
+
 
 /* ============================================================
    CALCULATOR — calc-form, calc-field, calc-result-card
@@ -1235,20 +1225,7 @@ label.q-option span {
 [style*="border-radius: 8px"] { border-radius: 0 !important; }
 [style*="border-radius:8px"]  { border-radius: 0 !important; }
 
-/* ============================================================
-   NAV BRAND — prevent wrapping, tighten lockup
-   ============================================================ */
-.brand-text .brand-sub {
-  white-space: nowrap !important;
-  font-size: 0.58rem !important;
-  letter-spacing: 0.12em !important;
-}
-.brand-text .brand-name {
-  white-space: nowrap !important;
-}
-.brand {
-  flex-shrink: 0 !important;
-}
+
 
 /* ============================================================
    DIAGNOSTIC — 2-col option grid, no orphans
