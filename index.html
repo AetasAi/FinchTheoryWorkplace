@@ -82,8 +82,38 @@
     ]
   }
   </script>
+<style>
+.ft-banner {
+  background: var(--ft-black, #0e0e0e);
+  border-bottom: 1px solid rgba(165,141,92,0.3);
+  text-align: center;
+  padding: 0.5rem var(--gutter, 1.25rem);
+}
+.ft-banner p {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.55);
+}
+.ft-banner a {
+  color: var(--ft-gold, #a58d5c);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 200ms;
+}
+.ft-banner a:hover { color: #c4aa7a; }
+@media (max-width: 480px) {
+  .ft-banner p { font-size: 0.68rem; }
+}
+</style>
 </head>
 <body>
+
+<div class="ft-banner" role="banner">
+  <p>Part of <a href="https://finchtheory.com" target="_blank" rel="noopener">Finch Theory</a> — unlocking the commercial value already inside your business. <a href="https://finchtheory.com" target="_blank" rel="noopener">Discover more&nbsp;→</a></p>
+</div>
 
 <header class="site-header">
   <div class="container nav-inner">
