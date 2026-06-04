@@ -9,7 +9,7 @@
 
    IDs:
      Cookiebot: f87c63d7-fd2d-4dfd-8854-081181829426  (shared with Wealth)
-     GA4:       G-HNH05BKNFX                          (ITW-specific)
+     GA4:       G-NPMN6Y5G8K                          (ITW-specific)
      Clarity:   wtnjld3lda                            (ITW-specific)
 
    To change any ID later, edit the three constants below.
@@ -18,7 +18,7 @@
   'use strict';
 
   var COOKIEBOT_ID = '8950e961-dd22-4ba3-bce7-b59e1fe40193';
-  var GA4_ID = 'G-HNH05BKNFX';
+  var GA4_ID = 'G-NPMN6Y5G8K';
   var CLARITY_ID = 'wtnjld3lda';
 
   // --- Step 1: inject Cookiebot consent banner script -----------------
@@ -73,5 +73,6 @@
   // Fires when the user clicks Accept on the banner
   window.addEventListener('CookiebotOnAccept', maybeLoadTrackers);
 })();
+
 
 
