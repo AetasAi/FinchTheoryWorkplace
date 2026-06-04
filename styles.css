@@ -318,6 +318,7 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
   display: grid;
   grid-template-columns: 1.15fr 1fr;
   align-items: stretch;
+  min-height: 600px;
 }
 .hero-left {
   background: var(--ft-black);
@@ -325,7 +326,6 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-self: stretch;
 }
 .hero-right {
   background: var(--warm-grey);
@@ -333,7 +333,7 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
   display: flex;
   flex-direction: column;
   border-left: 1px solid var(--mid-grey);
-  align-self: stretch;
+  height: 100%;
 }
 /* Service rows in hero right panel */
 .hero-services {
