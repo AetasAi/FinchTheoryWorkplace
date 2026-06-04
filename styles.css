@@ -1390,3 +1390,14 @@ input[type=range]::-webkit-slider-runnable-track {
 @media (max-width: 1024px) {
   .nav-links a { -webkit-tap-highlight-color: transparent; }
 }
+
+/* Hero two-column height fix */
+.hero {
+  align-items: stretch !important;
+}
+.hero-left, .hero-right {
+  align-self: stretch !important;
+}
+.hero-aside-spacer {
+  flex: 1;
+}
