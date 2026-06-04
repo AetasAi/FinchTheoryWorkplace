@@ -333,7 +333,14 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
   display: flex;
   flex-direction: column;
   border-left: 1px solid var(--mid-grey);
-  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: calc(100% / 2.15);
+}
+.hero {
+  position: relative !important;
 }
 /* Service rows in hero right panel */
 .hero-services {
