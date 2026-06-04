@@ -317,7 +317,7 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
   overflow: hidden;
   display: grid;
   grid-template-columns: 1.15fr 1fr;
-  align-items: start;
+  align-items: stretch;
 }
 .hero-left {
   background: var(--ft-black);
@@ -325,25 +325,29 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-self: stretch;
 }
 .hero-right {
   background: var(--warm-grey);
   padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
   border-left: 1px solid var(--mid-grey);
+  align-self: stretch;
 }
 /* Service rows in hero right panel */
-.hero-services { justify-content: stretch; }
+.hero-services {
+  display: flex;
+  flex-direction: column;
+}
 .hero-service-row {
   display: grid;
   grid-template-columns: 2.5rem 1fr;
   gap: 1rem;
-  padding: clamp(1.5rem, 3vw, 2.25rem) clamp(1.5rem, 4vw, 2.5rem);
+  padding: clamp(1.25rem, 2.5vw, 2rem) clamp(1.5rem, 4vw, 2.5rem);
   border-bottom: 1px solid var(--mid-grey);
   flex: 1;
-  align-items: start;
+  align-items: center;
 }
 .hero-service-row:last-child { border-bottom: none; }
 .hero-service-num {
