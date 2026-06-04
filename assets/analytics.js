@@ -1,5 +1,5 @@
-/* =====================================================================
-   Aetas in the Workplace — Analytics & Cookie Consent
+﻿/* =====================================================================
+   Aetas in the Workplace â€” Analytics & Cookie Consent
    --------------------------------------------------------------------
    Loads Cookiebot first (shows consent banner). Only loads GA4 and
    Microsoft Clarity AFTER the visitor accepts the "statistics" category.
@@ -73,4 +73,5 @@
   // Fires when the user clicks Accept on the banner
   window.addEventListener('CookiebotOnAccept', maybeLoadTrackers);
 })();
+
 
