@@ -149,7 +149,7 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
   align-items: center;
   justify-content: space-between;
   padding-block: 0;
-  min-height: 72px;
+  min-height: 80px;
   gap: 2rem;
 }
 .brand {
@@ -315,39 +315,36 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
 
 /* ---------- 7. Hero ---------- */
 .hero {
-  position: relative;
-  overflow: hidden;
   display: grid;
   grid-template-columns: 1.15fr 1fr;
-  align-items: stretch;
+  min-height: 580px;
 }
 .hero-left {
   background: var(--ft-black);
-  padding: clamp(3.5rem, 8vw, 6rem) clamp(2rem, 5vw, 4.5rem);
+  padding: clamp(4rem, 8vw, 6rem) clamp(2.5rem, 5vw, 4.5rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .hero-right {
   background: var(--warm-grey);
-  padding: 0;
+  border-left: 1px solid var(--mid-grey);
   display: flex;
   flex-direction: column;
-  border-left: 1px solid var(--mid-grey);
 }
-/* Service rows in hero right panel */
 .hero-services {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 .hero-service-row {
   display: grid;
-  grid-template-columns: 2.5rem 1fr;
+  grid-template-columns: 3rem 1fr;
   gap: 1rem;
-  padding: clamp(1.25rem, 2.5vw, 2rem) clamp(1.5rem, 4vw, 2.5rem);
+  padding: 2.25rem 2.5rem;
   border-bottom: 1px solid var(--mid-grey);
   flex: 1;
-  align-items: center;
+  align-items: start;
 }
 .hero-service-row:last-child { border-bottom: none; }
 .hero-service-num {
@@ -356,24 +353,30 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
   font-weight: 700;
   letter-spacing: 0.1em;
   color: var(--ft-gold);
-  padding-top: 0.2rem;
+  padding-top: 0.25rem;
 }
 .hero-service-row h4 {
   font-family: var(--font-sans);
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--ft-black);
   margin-bottom: 0.5rem;
 }
 .hero-service-row p {
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   color: var(--ink-soft);
   line-height: 1.6;
   margin: 0;
 }
 .hero-service-cta { background: var(--warm-grey); }
+@media (max-width: 880px) {
+  .hero { grid-template-columns: 1fr; min-height: auto; }
+  .hero-left { padding: 3.5rem 1.75rem; }
+  .hero-right { display: none; }
+}
+
 .hero-eyebrow {
   display: flex;
   align-items: center;
@@ -1325,7 +1328,7 @@ label.q-option span {
 .calc-result-card p { color: rgba(255,255,255,0.55) !important; }
 
 /* ============================================================
-   FINAL OVERRIDES — Logo 96px, sliders on track, field spacing
+   FINAL OVERRIDES
    ============================================================ */
 
 /* Logo */
@@ -1333,7 +1336,7 @@ label.q-option span {
 .site-header { min-height: 80px !important; }
 .nav-inner   { min-height: 80px !important; }
 
-/* Sliders — thumb centred ON the track line */
+/* Sliderss — thumb centred ON the track line */
 input[type=range] {
   height: 2px !important;
   margin-block: 1.25rem !important;
@@ -1372,13 +1375,13 @@ input[type=range]::-webkit-slider-runnable-track {
 
 /* Header height on mobile */
 @media (max-width: 1024px) {
-  .site-header { min-height: 64px !important; }
+  .site-header { min-height: 80px; }
   .nav-inner   { min-height: 64px !important; }
   .brand-mark  { width: 52px !important; height: 52px !important; }
 }
 
 @media (max-width: 480px) {
-  .site-header { min-height: 56px !important; }
+  .site-header { min-height: 80px; }
   .nav-inner   { min-height: 56px !important; }
   .brand-mark  { width: 44px !important; height: 44px !important; }
 }
