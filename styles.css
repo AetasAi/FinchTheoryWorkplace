@@ -440,26 +440,30 @@ t: contain;
   background: var(--warm-grey);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding: 72px 56px 60px;
+  padding: 0;
   position: relative;
   overflow: hidden;
   min-height: 580px;
 }
 .hero-services {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 580px;
   position: relative;
   z-index: 1;
 }
 .hero-service-row {
   border-top: 1px solid var(--mid-grey);
-  padding: 24px 0;
+  padding: 24px 56px;
   display: grid;
   grid-template-columns: 36px 1fr;
   gap: 20px;
   align-items: start;
+  flex: 1;
 }
 .hero-service-row:last-child {
-  border-bottom: 1px solid var(--mid-grey);
+  border-bottom: none;
 }
 .hero-service-num {
   font-family: 'Cormorant Garamond', serif;
