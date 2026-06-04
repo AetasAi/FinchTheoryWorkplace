@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+PRODID:adamgibbons/ics
+METHOD:REQUEST
+X-PUBLISHED-TTL:PT1H
+BEGIN:VEVENT
+UID:-fPbWEmyZCsSDbZOuURQM
+SUMMARY:Initial Meeting with Mick Blacker & Daniel Cottam 
+DTSTAMP:20260604T100000Z
+DTSTART:20260610T100000Z
+DTEND:20260610T104500Z
+DESCRIPTION:\n\n==========\n\nThank you for booking a financial discovery m
+	eeting with  \n\nHere are the details of your meeting:\nDate: 10 June 2026
+	\nTime: 11:00\n\nJoin the meeting: \n\n\nYour Details \nPhone:- 07803 5214
+	93\nEmail:- mick@unitedrelocation.co.uk\n\nNeed to make a change?\nResched
+	ule:- https://link.aetas-wealth.com/widget/booking/n5aBgUcBqj5kP7bodUDb?ev
+	ent_id=Zw5Ta4MVj5aaIQkd7T8b\n\nCancel:- https://link.aetas-wealth.com/widg
+	et/cancel-booking?event_id=Zw5Ta4MVj5aaIQkd7T8b \n
+STATUS:CONFIRMED
+ORGANIZER;CN=Daniel  Cottam:mailto:daniel.cottam@aetas-wealth.com
+ATTENDEE;RSVP=TRUE;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=Mick Black
+	er:mailto:mick@unitedrelocation.co.uk
+END:VEVENT
+END:VCALENDAR
