@@ -1234,3 +1234,73 @@ label.q-option span {
 /* Remove any leftover border-radius on calculator result boxes */
 [style*="border-radius: 8px"] { border-radius: 0 !important; }
 [style*="border-radius:8px"]  { border-radius: 0 !important; }
+
+/* ============================================================
+   NAV BRAND — prevent wrapping, tighten lockup
+   ============================================================ */
+.brand-text .brand-sub {
+  white-space: nowrap !important;
+  font-size: 0.58rem !important;
+  letter-spacing: 0.12em !important;
+}
+.brand-text .brand-name {
+  white-space: nowrap !important;
+}
+.brand {
+  flex-shrink: 0 !important;
+}
+
+/* ============================================================
+   DIAGNOSTIC — 2-col option grid, no orphans
+   ============================================================ */
+.q-options {
+  grid-template-columns: repeat(2, 1fr) !important;
+}
+@media (max-width: 600px) {
+  .q-options { grid-template-columns: 1fr !important; }
+}
+
+/* ============================================================
+   SECTION-SOFT — ensure warm grey background
+   ============================================================ */
+.section-soft { background: var(--warm-grey) !important; }
+
+/* ============================================================
+   PAGE BANNER — ensure lead text is visible white
+   ============================================================ */
+.page-banner p,
+.page-banner .lead {
+  color: rgba(255,255,255,0.65) !important;
+}
+.page-banner h1 { color: #fff !important; }
+.page-banner .breadcrumbs { color: rgba(255,255,255,0.4) !important; }
+.page-banner .breadcrumbs a { color: rgba(255,255,255,0.6) !important; }
+.page-banner .hero-eyebrow { color: var(--ft-gold) !important; }
+
+/* ============================================================
+   SECTION-DARK — ensure all child text colours correct
+   ============================================================ */
+.section-dark { background: var(--ft-black) !important; }
+.section-dark h1,
+.section-dark h2,
+.section-dark h3,
+.section-dark h4 { color: #fff !important; }
+.section-dark p   { color: rgba(255,255,255,0.55) !important; }
+.section-dark .eyebrow { color: var(--ft-gold) !important; }
+.section-dark .process-step { border-right-color: rgba(255,255,255,0.08) !important; }
+.section-dark .process-num  { color: var(--ft-gold) !important; }
+.section-dark .stat-num     { color: #fff !important; }
+.section-dark .stat-label   { color: rgba(255,255,255,0.45) !important; }
+.section-dark .stat { border-right-color: rgba(255,255,255,0.1) !important; }
+
+/* ============================================================
+   CALCULATOR — result card dark bg + improved layout
+   ============================================================ */
+.calc-result-card {
+  background: var(--ft-black) !important;
+  padding: 2.5rem !important;
+}
+.calc-result-card .eyebrow,
+.calc-result-card span.eyebrow { color: var(--ft-gold) !important; }
+.calc-result-num { color: #fff !important; }
+.calc-result-card p { color: rgba(255,255,255,0.55) !important; }
