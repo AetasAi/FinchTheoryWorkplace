@@ -1,287 +1,57 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Data Processing Agreement · Finch Theory</title>
-<meta name="description" content="Finch Theory Limited Data Processing Agreement — governs the processing of personal data in connection with the Finch Theory programme.">
-<meta name="robots" content="noindex, nofollow">
-<link rel="icon" type="image/png" sizes="32x32" href="/FinchTheoryWorkplace/icons/favicon-32.png">
-<link rel="manifest" href="/FinchTheoryWorkplace/manifest.webmanifest">
-<meta name="theme-color" content="#0e0e0e">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{
-  --navy:#0e0e0e;--navy-mid:#1d4291;--navy-light:#e8ecf3;--navy-xlight:#f0f3f8;
-  --gold:#b8934a;--gold-light:#d4b07a;--gold-pale:#f5ede0;
-  --cream:#faf8f5;--white:#ffffff;
-  --text-body:#4a4a4a;--text-muted:#7a7a7a;--text-label:#0e0e0e;
-  --border:rgba(13,44,108,0.14);--border-gold:rgba(184,147,74,0.6);
-  --error:#d0442a;--success:#1a7a4a;
-}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-html{scroll-behavior:smooth;}
-body{font-family:'Open Sans', sans-serif;font-weight:300;color:var(--text-body);background:var(--cream);line-height:1.7;-webkit-font-smoothing:antialiased;}
-
-/* ── TOP BAR ───────────────────────────────────────────── */
-.topbar{background:var(--navy);padding:0 2rem;height:60px;display:flex;align-items:center;justify-content:space-between;}
-.topbar-logo{font-family:'Open Sans', sans-serif;font-size:1.15rem;font-weight:500;color:var(--white);text-decoration:none;letter-spacing:0.04em;}
-.topbar-logo span{color:var(--gold-light);}
-.topbar-link{font-size:0.75rem;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.5);text-decoration:none;transition:color 0.2s;}
-.topbar-link:hover{color:var(--gold-light);}
-
-/* ── PAGE ───────────────────────────────────────────────── */
-.page{max-width:860px;margin:0 auto;padding:3rem 2rem 5rem;}
-
-/* ── DOCUMENT HEADER ───────────────────────────────────── */
-.doc-header{text-align:center;margin-bottom:2.5rem;padding-bottom:2.5rem;border-bottom:0.5px solid var(--border);}
-.doc-org{font-size:0.78rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;}
-.doc-title{font-family:'Open Sans', sans-serif;font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:500;color:var(--navy);margin-bottom:0.25rem;}
-.doc-subtitle{font-family:'Open Sans', sans-serif;font-size:clamp(1.1rem,2vw,1.5rem);font-weight:300;font-style:italic;color:var(--gold);}
-
-/* ── AGREEMENT DETAILS TABLE ───────────────────────────── */
-.agreement-table{width:100%;border-collapse:collapse;margin:2rem 0;background:var(--white);border:0.5px solid var(--border);border-radius:4px;overflow:hidden;}
-.agreement-table tr{border-bottom:0.5px solid var(--border);}
-.agreement-table tr:last-child{border-bottom:none;}
-.agreement-table td{padding:12px 16px;vertical-align:middle;}
-.agreement-table td:first-child{background:var(--navy-xlight);font-size:0.82rem;font-weight:500;color:var(--navy);width:36%;white-space:nowrap;}
-.agreement-table td:last-child{font-size:0.9rem;}
-.agreement-table input{width:100%;border:none;border-radius:0;padding:0;font-family:'Open Sans', sans-serif;font-size:0.9rem;font-weight:300;color:var(--text-body);background:transparent;outline:none;}
-.agreement-table input:focus{background:var(--gold-pale);}
-.agreement-table .prefilled{color:var(--navy);font-weight:400;}
-.ref-code{font-family:monospace;font-size:0.85rem;color:var(--text-muted);}
-
-/* ── DIVIDER / RULE ────────────────────────────────────── */
-.doc-rule{height:0.5px;background:var(--border);margin:2rem 0;}
-
-/* ── CLAUSE TYPOGRAPHY ─────────────────────────────────── */
-.clause{margin-bottom:2rem;}
-.clause-heading{font-family:'Open Sans', sans-serif;font-size:1.15rem;font-weight:500;color:var(--navy);margin-bottom:0.75rem;padding-bottom:0.5rem;border-bottom:0.5px solid var(--border);}
-.clause-num{color:var(--gold);margin-right:8px;}
-.clause p{font-size:0.92rem;line-height:1.85;color:var(--text-body);margin-bottom:0.75rem;}
-.clause p:last-child{margin-bottom:0;}
-.clause ul{margin:0.5rem 0 0.75rem 1.5rem;display:flex;flex-direction:column;gap:5px;}
-.clause ul li{font-size:0.9rem;line-height:1.7;color:var(--text-body);}
-.clause ul li::marker{color:var(--gold);}
-
-/* ── CLAUSE SCROLL TRACKER ─────────────────────────────── */
-.scroll-notice{background:var(--navy-xlight);border:0.5px solid var(--border);border-left:3px solid var(--gold);padding:1rem 1.25rem;margin-bottom:2rem;display:flex;align-items:center;gap:12px;font-size:0.85rem;color:var(--text-body);border-radius:0 4px 4px 0;}
-.scroll-notice .scroll-icon{font-size:1.2rem;flex-shrink:0;}
-#scroll-progress{font-weight:500;color:var(--navy);}
-
-/* ── SIGNATURE SECTION ─────────────────────────────────── */
-.sig-section{margin-top:2.5rem;}
-.sig-heading{font-family:'Open Sans', sans-serif;font-size:1.3rem;font-weight:500;color:var(--navy);margin-bottom:0.5rem;}
-.sig-sub{font-size:0.87rem;color:var(--text-muted);margin-bottom:2rem;}
-.sig-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5px;background:var(--border);border:0.5px solid var(--border);border-radius:4px;overflow:hidden;margin-bottom:2rem;}
-.sig-party{background:var(--white);padding:1.75rem;}
-.sig-party-label{font-size:0.65rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem;}
-.sig-party-name{font-family:'Open Sans', sans-serif;font-size:1.1rem;font-weight:500;color:var(--navy);margin-bottom:1.25rem;padding-bottom:1rem;border-bottom:0.5px solid var(--border);}
-.sig-field{display:flex;flex-direction:column;gap:5px;margin-bottom:1rem;}
-.sig-field:last-child{margin-bottom:0;}
-.sig-field label{font-size:0.78rem;font-weight:500;color:var(--text-label);}
-.sig-field input{width:100%;border:0.5px solid var(--border);border-radius:3px;padding:9px 12px;font-family:'Open Sans', sans-serif;font-size:0.9rem;font-weight:300;color:var(--text-body);background:var(--white);transition:border-color 0.2s,box-shadow 0.2s;}
-.sig-field input:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(184,147,74,0.12);}
-.sig-field input[readonly]{background:var(--navy-xlight);color:var(--navy);cursor:default;}
-.sig-field input.sig-input{font-family:'Open Sans', sans-serif;font-size:1.1rem;font-style:italic;border-bottom:1.5px solid var(--navy);border-top:none;border-left:none;border-right:none;border-radius:0;padding-left:2px;box-shadow:none;}
-.sig-field input.sig-input:focus{border-color:var(--gold);box-shadow:none;}
-.aetas-party{background:var(--navy-xlight);}
-
-/* ── ELECTRONIC SIG NOTE ────────────────────────────────── */
-.esig-note{font-size:0.78rem;color:var(--text-muted);font-style:italic;margin-top:4px;}
-
-/* ── IMPORTANT NOTE ─────────────────────────────────────── */
-.important-note{background:var(--navy-xlight);border:0.5px solid var(--border);border-radius:4px;padding:1.5rem;margin:2rem 0;font-size:0.85rem;line-height:1.75;color:var(--text-body);}
-.important-note strong{color:var(--navy);font-weight:500;}
-
-/* ── CONSENT ────────────────────────────────────────────── */
-.consent-block{background:var(--gold-pale);border:0.5px solid var(--border-gold);border-radius:4px;padding:1.25rem 1.5rem;margin-bottom:1.5rem;}
-.checkbox-row{display:flex;gap:12px;align-items:flex-start;}
-.checkbox-row input[type=checkbox]{width:18px;height:18px;min-width:18px;margin-top:2px;accent-color:var(--gold);cursor:pointer;}
-.checkbox-row label{font-size:0.88rem;color:var(--text-body);line-height:1.7;cursor:pointer;}
-
-/* ── VALIDATION ─────────────────────────────────────────── */
-.error-msg{font-size:0.75rem;color:var(--error);margin-top:4px;display:none;}
-.sig-field.has-error input{border-color:var(--error);}
-.sig-field.has-error .error-msg{display:block;}
-
-/* ── ACTIONS ────────────────────────────────────────────── */
-.form-actions{display:flex;gap:12px;flex-wrap:wrap;padding-top:1.5rem;border-top:0.5px solid var(--border);}
-.btn-submit{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;background:var(--gold);color:var(--navy);font-family:'Open Sans', sans-serif;font-size:0.82rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;border:none;border-radius:2px;cursor:pointer;transition:background 0.2s;}
-.btn-submit:hover{background:var(--gold-light);}
-.btn-submit:disabled{background:var(--text-muted);cursor:not-allowed;opacity:0.7;}
-.btn-print{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;background:transparent;color:var(--text-muted);font-family:'Open Sans', sans-serif;font-size:0.8rem;font-weight:400;letter-spacing:0.08em;text-transform:uppercase;border:0.5px solid var(--border);border-radius:2px;cursor:pointer;transition:all 0.2s;}
-.btn-print:hover{color:var(--navy);border-color:var(--navy);}
-.btn-spinner{display:none;width:16px;height:16px;border:2px solid rgba(13,44,108,0.2);border-top-color:var(--navy);border-radius:50%;animation:spin 0.7s linear infinite;}
-.btn-submit.loading .btn-spinner{display:block;}
-@keyframes spin{to{transform:rotate(360deg);}}
-
-/* ── SUCCESS ────────────────────────────────────────────── */
-#success-screen{display:none;text-align:center;padding:5rem 2rem;}
-.success-check{width:72px;height:72px;border-radius:50%;background:var(--gold-pale);border:0.5px solid var(--border-gold);display:flex;align-items:center;justify-content:center;margin:0 auto 2rem;font-size:2rem;}
-#success-screen h2{font-family:'Open Sans', sans-serif;font-size:2.2rem;font-weight:300;color:var(--navy);margin-bottom:1rem;}
-#success-screen p{font-size:0.97rem;color:var(--text-muted);line-height:1.8;max-width:540px;margin:0 auto 2rem;}
-.success-ref{font-family:monospace;font-size:0.9rem;color:var(--navy);background:var(--navy-xlight);padding:8px 16px;border-radius:3px;display:inline-block;margin-bottom:2rem;}
-.btn-success{display:inline-block;padding:12px 28px;background:var(--navy);color:var(--white);font-family:'Open Sans', sans-serif;font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border-radius:2px;transition:background 0.2s;}
-.btn-success:hover{background:var(--navy-mid);}
-
-/* ── FOOTER ─────────────────────────────────────────────── */
-
-/* ── RESPONSIVE ─────────────────────────────────────────── */
-@media(max-width:680px){
-  .sig-grid{grid-template-columns:1fr;}
-  .page{padding:1.5rem 1rem 4rem;}
-  .agreement-table td:first-child{width:45%;}
-}
-
-@media print{
-  .topbar,.scroll-notice,.form-actions,.consent-block{display:none!important;}
-  body{background:#fff;}
-  .page{padding:1rem;}
-  .clause{page-break-inside:avoid;}
-  .sig-grid{border:1px solid #ccc;}
-  .sig-field input{border:none;border-bottom:1px solid #999;border-radius:0;background:transparent!important;}
-}
-
-
-/* ── PRINT NAME UPPERCASE ────────────────────────────────────────── */
-#print_name, #client_print_name {
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-/* ── SIGNATURE FONT ─────────────────────────────────────────────── */
-.sig-input, input.sig-input {
-  font-family: 'Great Vibes', cursive !important;
-  font-size: 1.6rem !important;
-  line-height: 1.4 !important;
-  color: var(--navy) !important;
-  letter-spacing: 0.02em;
-  padding: 6px 4px !important;
-  height: auto !important;
-}
-.sig-input::placeholder {
-  font-family: 'Open Sans', sans-serif !important;
-  font-size: 0.85rem !important;
-  color: var(--text-muted) !important;
-  font-style: italic;
-  letter-spacing: 0;
-}
-
-  /* brand-refresh: inline logo marks */
-  .nav-mark    { width: 32px; height: 32px; vertical-align: middle; margin-right: 10px; }
-  .nav-brand .nav-mark { width: 28px; height: 28px; margin-right: 8px; }
-
-  /* type-refresh: wealth-style nav lockup */
-  /* Mark sits as a flex child of the anchor; tagline stacked beneath brand. */
-  .nav-logo  { display: inline-flex; align-items: center; gap: 12px; }
-  .nav-brand { display: inline-flex; align-items: center; gap: 10px; }
-  .nav-logo .nav-mark, .nav-brand .nav-mark {
-    margin-right: 0; vertical-align: middle; flex-shrink: 0; display: block;
-  }
-  .nav-lockup { display: flex; flex-direction: column; line-height: 1.05; }
-  .nav-logo .nav-brand-text, .nav-brand .nav-brand-text {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    font-size: 1.0rem;
-    letter-spacing: 0;
-    color: var(--navy);
-  }
-  .nav-brand .nav-brand-text { color: var(--white); }
-  .nav-logo .nav-tagline, .nav-brand .nav-tagline {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-size: 0.6rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: #00aabb;
-    margin-top: 3px;
-  }
-  /* Soften nav links to mixed-case to match the Wealth nav. */
-  .nav-links a, nav .nav-links a {
-    text-transform: none !important;
-    letter-spacing: 0 !important;
-    font-size: 0.88rem !important;
-  }
-  .nav-links .nav-cta, nav .nav-links .nav-cta {
-    font-size: 0.82rem !important;
-    letter-spacing: 0.02em !important;
-  }
-/* ---------- ITW canonical 4-column footer ---------- */
-.site-footer {
-  background: #001640;
-  color: rgba(255, 255, 255, 0.7);
-  padding: 4rem 0 2rem;
-  position: relative;
-  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-}
-.site-footer::before {
-  content: '';
-  position: absolute;
-  inset: 0 0 auto 0;
-  height: 3px;
-  background: linear-gradient(90deg, #9A7B3A 0%, #009CA6 100%);
-}
-.site-footer-inner {
-  width: 100%;
-  max-width: 1200px;
-  margin-inline: auto;
-  padding-inline: clamp(1.25rem, 4vw, 2.5rem);
-}
-.site-footer .footer-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2.5rem;
-  margin-bottom: 3rem;
-}
-@media (max-width: 880px) {
-  .site-footer .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
-}
-@media (max-width: 480px) {
-  .site-footer .footer-grid { grid-template-columns: 1fr; }
-}
-.site-footer .footer-grid h4 {
-  color: #fff;
-  font-size: 0.78rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  margin: 0 0 1rem;
-  font-weight: 600;
-}
-.site-footer .footer-grid ul { list-style: none; padding: 0; margin: 0; }
-.site-footer .footer-grid li { margin-bottom: 0.55rem; }
-.site-footer .footer-grid a {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 0.92rem;
-  text-decoration: none;
-  transition: color 180ms ease;
-}
-.site-footer .footer-grid a:hover { color: #fff; }
-.site-footer .footer-sublabel {
-  margin: 1rem 0 0.4rem;
-  font-weight: 600;
-  color: #fff;
-  font-size: 0.92rem;
-}
-.site-footer .footer-address { margin-bottom: 1.25rem; }
-.site-footer .footer-address li { color: rgba(255, 255, 255, 0.7); font-size: 0.92rem; }
-.site-footer .footer-bottom {
-  padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
-  font-size: 0.78rem;
-  color: rgba(255, 255, 255, 0.55);
-  line-height: 1.7;
-}
-.site-footer .footer-bottom p { margin: 0 0 0.5rem; color: inherit; }
-.site-footer .footer-bottom a { color: rgba(255, 255, 255, 0.7); text-decoration: none; }
-.site-footer .footer-bottom a:hover { color: #fff; }
-.site-footer .footer-bottom strong { color: rgba(255, 255, 255, 0.85); font-weight: 600; }
-/* ---------- /ITW canonical 4-column footer ---------- */
-
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data Processing Agreement — Finch Theory</title>
+  <meta name="description" content="UK GDPR Data Processing Agreement for Finch Theory clients.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://finchtheory.com/data-processing-agreement.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Data Processing Agreement — Finch Theory">
+  <meta property="og:description" content="UK GDPR Data Processing Agreement for Finch Theory clients.">
+  <meta property="og:image" content="https://finchtheory.com/og-image.png">
+  <meta property="og:site_name" content="Finch Theory">
+  <meta property="og:locale" content="en_GB">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Data Processing Agreement — Finch Theory">
+  <meta name="twitter:image" content="https://finchtheory.com/og-image.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/FinchTheoryWorkplace/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/FinchTheoryWorkplace/icons/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/FinchTheoryWorkplace/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/FinchTheoryWorkplace/manifest.webmanifest">
+  <meta name="theme-color" content="#0e0e0e">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/FinchTheoryWorkplace/styles.css">
 </head>
 <body>
+
+<header class="site-header">
+  <div class="container nav-inner">
+    <a href="./" class="brand" aria-label="Finch Theory home">
+      <span class="brand-mark"><img src="/FinchTheoryWorkplace/assets/finch-theory-mark.png" alt="Finch Theory"></span>
+      <span class="brand-text">
+        <span class="brand-name">Finch Theory</span>
+        <span class="brand-sub">The Business Performance Solution</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="limited-companies.html">Limited companies</a></li>
+      <li><a href="llps.html">LLPs</a></li>
+      <li><a href="investment.html">Pricing</a></li>
+      <li><a href="calculator.html">Calculator</a></li>
+      <li><a href="diagnostic.html">Diagnostic</a></li>
+      <li><a href="insights.html">Insights</a></li>
+      <li><a href="faqs.html">FAQs</a></li>
+      <li><a href="https://links.aetas-partners.com/widget/booking/IacdM2cW2bnLm0pK7Jty" class="nav-cta" target="_blank" rel="noopener">Book a Review</a></li>
+    </ul>
+  </div>
+</header>
 
 <!-- TOP BAR -->
 <div class="topbar">
@@ -297,7 +67,7 @@ body{font-family:'Open Sans', sans-serif;font-weight:300;color:var(--text-body);
     <h2>Agreement submitted successfully.</h2>
     <p>Thank you. Your signed Data Processing Agreement has been received by Finch Theory Limited. A copy will be sent to the email address provided for your records.</p>
     <div class="success-ref" id="success-ref-display"></div>
-    <p style="font-size:0.85rem;color:var(--text-muted);">Please retain your agreement reference for your records.</p>
+    <p style="font-size:0.85rem;color:var(--text-tertiary);">Please retain your agreement reference for your records.</p>
     <a href="https://finchtheory.com/" class="btn-success">Return to Finch Theory →</a>
   </div>
 
@@ -490,13 +260,13 @@ body{font-family:'Open Sans', sans-serif;font-weight:300;color:var(--text-body);
             <div class="sig-party-label">For and on behalf of</div>
             <div class="sig-party-name" id="client-party-name">Client Organisation</div>
             <div class="sig-field" id="f-sig">
-              <label>Signature <span style="color:var(--gold);">*</span></label>
+              <label>Signature <span style="color:var(--ft-gold);">*</span></label>
               <input type="text" id="client_signature" name="client_signature" class="sig-input" placeholder="Type your full name to sign" required>
               <span class="esig-note">Your typed name constitutes a legally valid electronic signature</span>
               <span class="error-msg">Please type your name to sign</span>
             </div>
             <div class="sig-field" id="f-print">
-              <label>Print Name <span style="color:var(--gold);">*</span></label>
+              <label>Print Name <span style="color:var(--ft-gold);">*</span></label>
               <input type="text" id="client_print_name" name="client_print_name" required oninput="this.value=this.value.toUpperCase()">
               <span class="error-msg">Please print your name</span>
             </div>
@@ -505,12 +275,12 @@ body{font-family:'Open Sans', sans-serif;font-weight:300;color:var(--text-body);
               <input type="text" id="client_position" name="client_position">
             </div>
             <div class="sig-field" id="f-email">
-              <label>Email Address <span style="color:var(--gold);">*</span></label>
+              <label>Email Address <span style="color:var(--ft-gold);">*</span></label>
               <input type="email" id="client_email" name="client_email" required placeholder="For your copy of this agreement">
               <span class="error-msg">Please enter a valid email address</span>
             </div>
             <div class="sig-field" id="f-date">
-              <label>Date <span style="color:var(--gold);">*</span></label>
+              <label>Date <span style="color:var(--ft-gold);">*</span></label>
               <input type="text" id="client_date" name="client_date" readonly>
             </div>
           </div>
@@ -547,8 +317,12 @@ body{font-family:'Open Sans', sans-serif;font-weight:300;color:var(--text-body);
 </div><!-- /page -->
 
 <footer class="site-footer">
-  <div class="site-footer-inner">
+  <div class="container">
     <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="eyebrow" style="margin-bottom:0.75rem;">Finch Theory</span>
+        <p>The Business Performance Solution for SMEs, LLPs, and professional practices.</p>
+      </div>
       <div>
         <h4>Site</h4>
         <ul>
@@ -563,312 +337,46 @@ body{font-family:'Open Sans', sans-serif;font-weight:300;color:var(--text-body);
       <div>
         <h4>Services</h4>
         <ul>
-          <li><a href="https://link.finchtheory.com/widget/form/9fkQAaigUnxLJQqOM17V" target="_blank" rel="noopener">Book a Review</a></li>
+          <li><a href="https://links.aetas-partners.com/widget/booking/IacdM2cW2bnLm0pK7Jty" target="_blank" rel="noopener">Book a Review</a></li>
           <li><a href="calculator.html">ROEI Calculator</a></li>
           <li><a href="diagnostic.html">Diagnostic</a></li>
         </ul>
       </div>
       <div>
-        <h4>Useful</h4>
-        <ul>
-          <li><a href="https://finchtheory.com/working-with-us.html" target="_blank" rel="noopener">Working with Us</a></li>
-          <li><a href="https://finchtheory.com/professional-introducers.html" target="_blank" rel="noopener">Professional Introducers</a></li>
-          <li><a href="https://finchtheory.com/lifetime-to-legacy.html" target="_blank" rel="noopener">Lifetime to Legacy</a></li>
-        </ul>
-        <p class="footer-sublabel">External Links</p>
-        <ul>
-          <li><a href="https://finchtheory.com/" target="_blank" rel="noopener">Finch Theory</a></li>
-          <li><a href="#" target="_blank" rel="noopener">Charity Performance Audit</a></li>
-        </ul>
-      </div>
-      <div>
         <h4>Offices</h4>
-        <p class="footer-sublabel">London</p>
-        <ul class="footer-address">
-          <li>13 Hanover Square</li>
-          <li>Mayfair, London</li>
-          <li>W1S 1HN</li>
+        <p style="margin:0 0 0.4rem;font-weight:600;color:#fff;font-family:var(--font-sans);font-size:0.82rem;">London</p>
+        <ul style="margin-bottom:1.25rem;">
+          <li>13 Hanover Square</li><li>Mayfair, London</li><li>W1S 1HN</li>
         </ul>
-        <p class="footer-sublabel">Norwich</p>
-        <ul class="footer-address">
-          <li>Insight House</li>
-          <li>7a Alkmaar Way</li>
-          <li>Norwich International Business Park</li>
-          <li>NR6 6BF</li>
+        <p style="margin:0 0 0.4rem;font-weight:600;color:#fff;font-family:var(--font-sans);font-size:0.82rem;">Norwich</p>
+        <ul>
+          <li>Insight House</li><li>7a Alkmaar Way</li>
+          <li>Norwich International Business Park</li><li>NR6 6BF</li>
         </ul>
       </div>
     </div>
-
     <div class="footer-bottom">
-      <p>Finch Theory provides workplace financial wellbeing, education, and consultancy services to employers. These services support financial understanding, engagement, and resilience but do not constitute regulated financial advice. Where regulated advice is required, this is provided separately by <strong>Finch Theory</strong>, an FCA-authorised adviser.</p>
+      <p>Finch Theory provides workplace financial wellbeing, education, and consultancy services to employers. These services do not constitute regulated financial advice. Where regulated advice is required, this is provided separately by an FCA-authorised adviser.</p>
       <p>&copy; <span data-year>2026</span> Finch Theory. All rights reserved. <a href="privacy.html">Privacy Policy</a></p>
     </div>
   </div>
 </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-  <script>
-  // ── EMAILJS CONFIG (same credentials as benefits form) ────────────────
-  const EMAILJS_PUBLIC_KEY        = 'T-OvAY8-q_r_P4tAA';
-  const EMAILJS_SERVICE_ID        = 'service_dztbuyl';
-  const EMAILJS_TEMPLATE_INTERNAL = 'template_283g3pp';
-  const EMAILJS_TEMPLATE_CONFIRM  = 'template_2hfklis';
-  emailjs.init(EMAILJS_PUBLIC_KEY);
-  // ── FONT PRELOAD ──────────────────────────────────────────────────────
-  if (document.fonts && document.fonts.load) {
-    document.fonts.load("1.6rem 'Great Vibes'").then(function() {
-      document.querySelectorAll('.sig-input').forEach(function(el) {
-        el.style.fontFamily = "'Great Vibes', cursive";
-      });
+<script>
+(function(){
+  'use strict';
+  const toggle = document.querySelector('.nav-toggle');
+  const links  = document.querySelector('.nav-links');
+  if (toggle && links) {
+    toggle.addEventListener('click', function(){
+      const open = links.classList.toggle('is-open');
+      toggle.classList.toggle('is-open', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
   }
-
-
-  
-  // ── DATE FORMATTER — always returns "DD Month YYYY" ─────────────────
-  function _fmtDate(d) {
-    var M = ['January','February','March','April','May','June',
-             'July','August','September','October','November','December'];
-    return String(d.getDate()).padStart(2,'0') + ' ' + M[d.getMonth()] + ' ' + d.getFullYear();
-  }
-
-  // ── AUTO-FILL ─────────────────────────────────────────────────────────
-  (function(){
-    // today replaced by _fmtDate(new Date()) below
-    var iso   = new Date().toISOString().split('T')[0];
-    var ref   = 'APL-DPA-'+new Date().getFullYear()+String(new Date().getMonth()+1).padStart(2,'0')
-               +'-'+Math.random().toString(36).substring(2,6).toUpperCase();
-    document.getElementById('agreement_date').value = _fmtDate(new Date());
-    document.getElementById('agreement_ref').value  = ref;
-    document.getElementById('aetas_date').value      = _fmtDate(new Date());
-    document.getElementById('client_date').value     = _fmtDate(new Date());
-    window._DPA_REF = ref;
-  })();
-
-  // ── DYNAMIC ORG NAME ──────────────────────────────────────────────────
-  document.getElementById('client_org').addEventListener('input', function(){
-    document.getElementById('client-party-name').textContent = this.value.trim() || 'Client Organisation';
-  });
-
-  // ── SCROLL PROGRESS ───────────────────────────────────────────────────
-  var _dpaProgress = document.getElementById('scroll-progress');
-  var _dpaClauses = document.querySelectorAll('.clause, .sig-section');
-  var _maxSeen = 0;
-  var _scrollObs = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if(e.isIntersecting){
-        var n = parseInt(e.target.id.replace('clause-',''));
-        if(n > _maxSeen){
-          _maxSeen = n;
-          var pct = Math.min(100, Math.round((n/16)*100));
-          _dpaProgress.textContent = pct >= 100
-            ? 'All clauses reviewed \u2713'
-            : pct + '% reviewed \u2014 please continue scrolling.';
-          if(pct >= 100) _dpaProgress.style.color = 'var(--success)';
-        }
-      }
-    });
-  }, {threshold: 0.4});
-  _dpaClauses.forEach(function(c){ _scrollObs.observe(c); });
-
-  // ── GENERATE DPA PDF ──────────────────────────────────────────────────
-  function generateDPAPDF(clientOrg, clientSig, clientPrint, clientPos, clientEmail, clientDate, ref) {
-    var jsPDF = window.jspdf.jsPDF;
-    var doc = new jsPDF({orientation:'portrait',unit:'mm',format:'a4'});
-    var W=210, M=18, CW=W-M*2, y=20;
-
-    function chk(h){if(y+h>275){doc.addPage();y=20;}}
-    function para(txt,sz,col,bold){
-      sz=sz||9; col=col||[60,60,60];
-      doc.setFont('helvetica',bold?'bold':'normal');
-      doc.setFontSize(sz); doc.setTextColor(col[0],col[1],col[2]);
-      var lines=doc.splitTextToSize(txt,CW);
-      lines.forEach(function(l){chk(5);doc.text(l,M,y);y+=5;});
-    }
-    function clauseHead(num,title){
-      chk(10); y+=3;
-      doc.setFont('helvetica','bold'); doc.setFontSize(9.5); doc.setTextColor(26,43,74);
-      doc.text(num+'. '+title,M,y);
-      doc.setDrawColor(184,147,74); doc.line(M,y+2,M+CW,y+2);
-      y+=7;
-    }
-
-    // Header
-    doc.setFillColor(26,43,74); doc.rect(0,0,W,34,'F');
-    doc.setFont('helvetica','bold'); doc.setFontSize(14); doc.setTextColor(255,255,255);
-    doc.text('AETAS PARTNERS LIMITED',W/2,12,{align:'center'});
-    doc.setFont('helvetica','normal'); doc.setFontSize(11); doc.setTextColor(212,176,122);
-    doc.text('Data Processing Agreement',W/2,21,{align:'center'});
-    doc.setFontSize(8); doc.setTextColor(180,180,180);
-    doc.text('Reference: '+ref+'  |  Date: '+new Date().toLocaleDateString('en-GB',{day:'2-digit',month:'long',year:'numeric'}),W/2,29,{align:'center'});
-    y=42;
-
-    // Agreement details box
-    doc.setDrawColor(200,200,200); doc.rect(M,y,CW,28);
-    var rows=[['Agreement Date',new Date().toLocaleDateString('en-GB',{day:'2-digit',month:'long',year:'numeric'})],['Agreement Reference',ref],['Data Controller (Client)',clientOrg],['Data Processor','Finch Theory Limited']];
-    var ry=y+5;
-    rows.forEach(function(r){
-      doc.setFont('helvetica','bold'); doc.setFontSize(8.5); doc.setTextColor(26,43,74);
-      doc.text(r[0]+':',M+4,ry);
-      doc.setFont('helvetica','normal'); doc.setTextColor(60,60,60);
-      doc.text(r[1]||'—',M+55,ry); ry+=6;
-    });
-    y+=34;
-
-    // All 15 clauses
-    var clauses=[
-      ['Purpose of this Agreement','This Agreement governs the processing of personal data by Finch Theory Limited (the Processor) on behalf of the Client (the Controller) in connection with the provision of consultancy and advisory services under the Finch Theory programme. It is intended to ensure that all personal data is handled lawfully, securely, and in line with UK data protection legislation.\n\nThe Agreement is supplementary to any Letter of Engagement or Terms of Business in place between the parties and does not replace those documents.'],
-      ['Legal Framework','This Agreement is made in accordance with: the UK General Data Protection Regulation (UK GDPR); the Data Protection Act 2018; and any applicable guidance issued by the Information Commissioner\'s Office (ICO).\n\nThe Processor shall process personal data only in accordance with the Controller\'s documented instructions, as set out in this Agreement and in any associated engagement documentation.'],
-      ['Roles and Responsibilities','The Client is the Data Controller and determines the purposes and means of processing. Finch Theory Limited acts as the Data Processor and processes personal data only on the instructions of the Controller.\n\nEach party shall comply with its respective obligations under the UK GDPR and the Data Protection Act 2018 in connection with its role.'],
-      ['Nature and Purpose of Processing','Personal data will be processed for the purpose of delivering the Finch Theory service, which is designed to review and improve the Client\'s employee benefits and payroll structure, support staff financial wellbeing, and enhance employee engagement and retention.\n\nProcessing will take the form of collection, review, analysis, storage, and reporting of data. It will not involve automated decision-making or profiling.'],
-      ['Categories of Data and Data Subjects','Data processed under this Agreement is limited to what is necessary for the purposes stated above. It may include: anonymised or aggregated employee data relating to benefits participation and contribution structures; pension and employee benefits scheme information; and payroll structure data, provided in anonymised or summary form wherever possible.\n\nWhere identifiable personal data is shared, this will be limited to the minimum necessary and handled in accordance with the data minimisation principle under Article 5(1)(c) UK GDPR. Data subjects covered by this Agreement are current and former employees of the Client organisation.'],
-      ['Confidentiality','Finch Theory Limited acknowledges that all information shared under this Agreement is commercially sensitive. The Processor undertakes to apply the same standard of care to the Client\'s data as it applies to its own confidential information, and as a minimum to apply appropriate technical and organisational measures to protect it.\n\nOnly those individuals within Finch Theory Limited who require access to the data in order to perform the services will be permitted to do so, and all such individuals are subject to binding confidentiality obligations.'],
-      ['Data Security','The Processor shall implement appropriate technical and organisational measures to protect personal data against accidental or unlawful destruction, loss, alteration, unauthorised disclosure, or access. These measures shall take into account the nature, scope, context, and purposes of the processing, as well as the risks to individuals.\n\nSuch measures include, but are not limited to: access controls and password-protected systems; encrypted data transmission where applicable; restricted access on a need-to-know basis; and secure disposal of data when no longer required.'],
-      ['Personal Data Breach Notification','In the event of a personal data breach involving the Client\'s data, Finch Theory Limited will notify the Client without undue delay and, where feasible, within 72 hours of becoming aware of the breach. The Controller remains responsible for any further notifications to the ICO or affected data subjects required under Articles 33 and 34 UK GDPR.'],
-      ['Data Subject Rights','The Processor shall assist the Controller in fulfilling its obligations to respond to data subject rights requests, including rights of access, rectification, erasure, restriction, portability, and objection, as provided under Chapter III of the UK GDPR.\n\nWhere a data subject contacts the Processor directly, the Processor shall promptly refer the request to the Controller and shall not respond substantively without the Controller\'s instruction, unless required to do so by law.'],
-      ['Sub-Processors','Finch Theory Limited shall not engage any sub-processor in connection with the processing of the Client\'s personal data without the prior written consent of the Client. Where sub-processors are engaged with the Client\'s consent, the Processor shall impose equivalent data protection obligations on the sub-processor by way of a written contract.'],
-      ['International Data Transfers','The Processor shall not transfer personal data outside of the United Kingdom without the prior written consent of the Controller, and only where an appropriate transfer mechanism exists in accordance with Chapter V of the UK GDPR.'],
-      ['Data Retention and Deletion','Personal data will be retained by the Processor only for as long as is necessary for the purposes of this Agreement or as otherwise required by law. Upon termination of the engagement, the Processor shall, at the election of the Controller, either securely return or destroy all personal data processed on behalf of the Controller and confirm in writing that this has been done.'],
-      ['Audit and Inspection','The Processor shall make available to the Controller all information reasonably necessary to demonstrate compliance with this Agreement and with applicable data protection legislation. The Processor shall permit and contribute to audits or inspections conducted by the Controller or an auditor appointed by the Controller, on reasonable notice and at the Controller\'s cost.'],
-      ['Term and Termination','This Agreement shall come into force on the date first written above and shall remain in effect for the duration of the engagement between the parties, unless terminated earlier. Either party may terminate this Agreement on 30 days\' written notice.'],
-      ['Governing Law and Jurisdiction','This Agreement shall be governed by and construed in accordance with the laws of England and Wales. Any dispute arising under or in connection with this Agreement shall be subject to the exclusive jurisdiction of the courts of England and Wales.'],
-    ];
-
-    clauses.forEach(function(c,i){
-      clauseHead(i+1,c[0]);
-      para(c[1],8.5);
-      y+=3;
-    });
-
-    // Signature section
-    chk(60); y+=6;
-    doc.setFont('helvetica','bold'); doc.setFontSize(10); doc.setTextColor(26,43,74);
-    doc.text('16. Signatures',M,y); y+=8;
-
-    // Two signature boxes
-    var bw=(CW-6)/2;
-    function sigBox(x,label,orgLabel,sig,name,pos,date){
-      var bh=45;
-      doc.setDrawColor(200,200,200); doc.rect(x,y,bw,bh);
-      doc.setFillColor(240,243,248); doc.rect(x,y,bw,8,'F');
-      doc.setFont('helvetica','bold'); doc.setFontSize(7.5); doc.setTextColor(26,43,74);
-      doc.text('For and on behalf of',x+4,y+4);
-      doc.setFontSize(9); doc.text(orgLabel,x+4,y+9);
-      var fy=y+16; var fh=7;
-      [['Signature',sig],['Print Name',name],['Position',pos],['Date',date]].forEach(function(r){
-        doc.setFont('helvetica','bold'); doc.setFontSize(7); doc.setTextColor(26,43,74);
-        doc.text(r[0]+':',x+4,fy);
-        doc.setFont('helvetica','normal'); doc.setTextColor(60,60,60);
-        if(r[1]) doc.text(r[1],x+28,fy);
-        else { doc.setDrawColor(180,180,180); doc.line(x+28,fy+1,x+bw-4,fy+1); }
-        fy+=fh;
-      });
-    }
-    sigBox(M, 'Finch Theory Limited', 'Finch Theory Limited', 'Matthew Steiner', 'Matthew Steiner', 'Co-Founder and Managing Director', new Date().toLocaleDateString('en-GB'));
-    sigBox(M+bw+6, 'Client Organisation', clientOrg||'Client Organisation', clientSig, clientPrint, clientPos, clientDate);
-    y+=55;
-
-    // Important note
-    chk(30);
-    doc.setFillColor(240,243,248); doc.rect(M,y,CW,28,'F');
-    doc.setDrawColor(26,43,74); doc.rect(M,y,CW,28);
-    doc.setFont('helvetica','bold'); doc.setFontSize(8); doc.setTextColor(26,43,74);
-    doc.text('Important Note',M+4,y+6);
-    doc.setFont('helvetica','normal'); doc.setFontSize(7.5); doc.setTextColor(60,60,60);
-    var noteText='This Agreement relates solely to the processing of personal data in connection with the Finch Theory consultancy service provided by Finch Theory Limited. Finch Theory Limited is not authorised by the Financial Conduct Authority to provide regulated financial advice. Regulated financial planning and advice is provided separately by Finch Theory, a trading style of an FCA-authorised adviser. This Agreement does not constitute a guarantee of outcome, a commitment to act, or a substitute for independent legal advice.';
-    var nl=doc.splitTextToSize(noteText,CW-8);
-    nl.forEach(function(l,i){doc.text(l,M+4,y+12+(i*4.5));});
-    y+=34;
-
-    // Page footers
-    var pc=doc.internal.getNumberOfPages();
-    for(var i=1;i<=pc;i++){
-      doc.setPage(i); doc.setFillColor(26,43,74); doc.rect(0,287,W,10,'F');
-      doc.setFont('helvetica','normal'); doc.setFontSize(7); doc.setTextColor(180,180,180);
-      doc.text('Finch Theory Limited | Data Processing Agreement | '+ref+' | Page '+i+' of '+pc,W/2,293,{align:'center'});
-    }
-    return doc;
-  }
-
-  // ── FORM SUBMIT ───────────────────────────────────────────────────────
-  document.getElementById('dpa-form').addEventListener('submit', async function(e){
-    e.preventDefault();
-    var ref = window._DPA_REF;
-
-    // Validate
-    var req=[
-      {w:'f-sig',i:'client_signature'},{w:'f-print',i:'client_print_name'},
-      {w:'f-email',i:'client_email'},{w:'f-date',i:'client_date'}
-    ];
-    var valid=true;
-    var orgInput=document.getElementById('client_org');
-    if(!orgInput.value.trim()){orgInput.style.borderColor='var(--error)';valid=false;}
-    else orgInput.style.borderColor='';
-
-    req.forEach(function(r){
-      var w=document.getElementById(r.w), inp=document.getElementById(r.i);
-      if(!inp.value.trim()||(inp.type==='email'&&!/\S+@\S+\.\S+/.test(inp.value))){
-        w.classList.add('has-error'); valid=false;
-      } else w.classList.remove('has-error');
-    });
-    var consent=document.getElementById('dpa_confirmed');
-    var cRow=document.getElementById('consent-row');
-    if(!consent.checked){cRow.style.color='var(--error)';valid=false;}
-    else cRow.style.color='';
-
-    if(!valid){
-      var fe=document.querySelector('.has-error');
-      if(fe) fe.scrollIntoView({behavior:'smooth',block:'center'});
-      return;
-    }
-
-    var btn=document.getElementById('submit-btn');
-    var btnText=btn.querySelector('.btn-text');
-    btn.classList.add('loading'); btn.disabled=true;
-    btnText.textContent='Generating PDF...';
-
-    var clientOrg   = document.getElementById('client_org').value;
-    var clientSig   = document.getElementById('client_signature').value;
-    var clientPrint = document.getElementById('client_print_name').value;
-    var clientPos   = document.getElementById('client_position').value;
-    var clientEmail = document.getElementById('client_email').value;
-    var clientDate  = document.getElementById('client_date').value;
-
-    try {
-      var doc = generateDPAPDF(clientOrg,clientSig,clientPrint,clientPos,clientEmail,clientDate,ref);
-      var pdfBlob = doc.output('blob');
-      var pdfB64  = doc.output('datauristring');
-      var fname   = 'Finch Theory-DPA-'+ref+'.pdf';
-      var dl=document.createElement('a'); dl.href=URL.createObjectURL(pdfBlob); dl.download=fname; dl.click(); URL.revokeObjectURL(dl.href);
-      sessionStorage.setItem('aetas_pdf_data',pdfB64);
-      sessionStorage.setItem('aetas_pdf_name',fname);
-
-      btnText.textContent='Sending confirmation...';
-
-      if(EMAILJS_PUBLIC_KEY!=='T-OvAY8-q_r_P4tAA'){
-        await emailjs.send(EMAILJS_SERVICE_ID,EMAILJS_TEMPLATE_INTERNAL,{
-          ref:ref, org:clientOrg, contact:clientPrint, email:clientEmail,
-          form_type:'Data Processing Agreement', form_data:'Client: '+clientOrg+'\nSigned: '+clientSig+'\nDate: '+clientDate,
-          submitted:new Date().toLocaleString('en-GB'), to_email:'matthew.steiner@finchtheory.com'
-        });
-        if(clientEmail){
-          await emailjs.send(EMAILJS_SERVICE_ID,EMAILJS_TEMPLATE_CONFIRM,{
-            ref:ref, org:clientOrg, contact:clientPrint, to_email:clientEmail, form_type:'Data Processing Agreement'
-          });
-        }
-      }
-
-      if(typeof gtag!=='undefined') gtag('event','form_submit',{event_category:'DPA',event_label:ref});
-      window.location.href='form-thankyou.html?form=dpa&org='+encodeURIComponent(clientOrg)+'&ref='+encodeURIComponent(ref);
-
-    } catch(err){
-      console.error(err);
-      btn.classList.remove('loading'); btn.disabled=false; btnText.textContent='Sign and submit agreement';
-      window.location.href='form-thankyou.html?form=dpa&org='+encodeURIComponent(clientOrg)+'&ref='+encodeURIComponent(ref);
-    }
-  });
-  </script>
-
+  const yr = document.querySelector('[data-year]');
+  if (yr) yr.textContent = new Date().getFullYear();
+})();
+</script>
 </body>
 </html>

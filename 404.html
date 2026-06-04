@@ -1,134 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Page Not Found · Finch Theory</title>
-<meta name="robots" content="noindex, follow" />
-<link rel="icon" type="image/png" sizes="32x32" href="/FinchTheoryWorkplace/icons/favicon-32.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="/FinchTheoryWorkplace/icons/favicon-16.png" />
-<link rel="apple-touch-icon" sizes="180x180" href="/FinchTheoryWorkplace/icons/apple-touch-icon.png" />
-<link rel="manifest" href="/FinchTheoryWorkplace/manifest.webmanifest" />
-<meta name="theme-color" content="#0e0e0e" />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-<style>
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-:root {
-  --navy: #0e0e0e; --navy-dark: #081f4d;
-  --gold: #b8934a; --gold-light: #d4b97a;
-  --cream: #f8f4ee; --white: #ffffff;
-  --muted: #5c5c5c; --border: rgba(184,154,90,0.22);
-}
-html, body { height: 100%; }
-body {
-  font-family: 'Open Sans', sans-serif; font-weight: 300;
-  background: var(--navy); color: var(--white);
-  display: flex; flex-direction: column;
-  align-items: center; justify-content: center;
-  min-height: 100vh; padding: 40px 24px;
-  text-align: center; overflow: hidden;
-  position: relative;
-}
-body::before {
-  content: ''; position: absolute; top: -120px; right: -120px;
-  width: 600px; height: 600px; border-radius: 50%;
-  border: 1px solid rgba(184,154,90,0.08); pointer-events: none;
-}
-body::after {
-  content: ''; position: absolute; bottom: -160px; left: -100px;
-  width: 460px; height: 460px; border-radius: 50%;
-  border: 1px solid rgba(184,154,90,0.05); pointer-events: none;
-}
-.inner { position: relative; z-index: 1; max-width: 520px; }
-.label {
-  display: block; font-size: 0.68rem; font-weight: 500;
-  letter-spacing: 0.14em; text-transform: uppercase;
-  color: var(--gold); margin-bottom: 20px;
-}
-.num {
-  font-family: 'Open Sans', sans-serif;
-  font-size: clamp(6rem, 18vw, 10rem);
-  font-weight: 300; color: rgba(255,255,255,0.08);
-  line-height: 1; margin-bottom: -20px;
-  position: relative; z-index: 0;
-}
-h1 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: clamp(1.8rem, 4vw, 2.6rem);
-  font-weight: 400; color: var(--white);
-  line-height: 1.2; margin-bottom: 20px;
-  position: relative; z-index: 1;
-}
-h1 em { font-style: italic; color: var(--gold-light); }
-.rule { width: 44px; height: 1px; background: var(--gold); margin: 0 auto 24px; }
-p { color: rgba(255,255,255,0.5); font-size: 0.95rem; line-height: 1.75; margin-bottom: 36px; }
-.links { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
-.btn {
-  display: inline-block; font-family: 'Open Sans', sans-serif;
-  font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em;
-  text-transform: uppercase; text-decoration: none;
-  padding: 12px 26px; border: 1px solid transparent;
-  transition: background 0.3s, color 0.3s, border-color 0.3s;
-}
-.btn-primary { background: var(--gold); color: var(--navy); border-color: var(--gold); }
-.btn-primary:hover { background: var(--gold-light); border-color: var(--gold-light); }
-.btn-ghost { background: transparent; color: rgba(255,255,255,0.6); border-color: rgba(255,255,255,0.2); }
-.btn-ghost:hover { color: var(--white); border-color: rgba(255,255,255,0.5); }
-.brand {
-  position: absolute; top: 28px; left: 40px;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 0.95rem; font-weight: 500;
-  color: rgba(255,255,255,0.5); text-decoration: none;
-  letter-spacing: 0.02em;
-  transition: color 0.3s;
-}
-.brand:hover { color: var(--gold-light); }
-@media (max-width: 600px) { .brand { left: 24px; } }
-
-  /* brand-refresh: inline logo marks */
-  .nav-mark    { width: 32px; height: 32px; vertical-align: middle; margin-right: 10px; }
-  .nav-brand .nav-mark { width: 28px; height: 28px; margin-right: 8px; }
-  .footer-mark { width: 28px; height: 28px; vertical-align: middle; margin-right: 10px; }
-  .footer-brand .footer-mark { width: 26px; height: 26px; margin-right: 8px; }
-
-  /* type-refresh: wealth-style nav lockup */
-  /* Mark sits as a flex child of the anchor; tagline stacked beneath brand. */
-  .nav-logo  { display: inline-flex; align-items: center; gap: 12px; }
-  .nav-brand { display: inline-flex; align-items: center; gap: 10px; }
-  .nav-logo .nav-mark, .nav-brand .nav-mark {
-    margin-right: 0; vertical-align: middle; flex-shrink: 0; display: block;
-  }
-  .nav-lockup { display: flex; flex-direction: column; line-height: 1.05; }
-  .nav-logo .nav-brand-text, .nav-brand .nav-brand-text {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    font-size: 1.0rem;
-    letter-spacing: 0;
-    color: var(--navy);
-  }
-  .nav-brand .nav-brand-text { color: var(--white); }
-  .nav-logo .nav-tagline, .nav-brand .nav-tagline {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-size: 0.6rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: #00aabb;
-    margin-top: 3px;
-  }
-  /* Soften nav links to mixed-case to match the Wealth nav. */
-  .nav-links a, nav .nav-links a {
-    text-transform: none !important;
-    letter-spacing: 0 !important;
-    font-size: 0.88rem !important;
-  }
-  .nav-links .nav-cta, nav .nav-links .nav-cta {
-    font-size: 0.82rem !important;
-    letter-spacing: 0.02em !important;
-  }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page Not Found — Finch Theory</title>
+  <meta name="description" content="The page you were looking for could not be found.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://finchtheory.com/404">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Page Not Found — Finch Theory">
+  <meta property="og:description" content="The page you were looking for could not be found.">
+  <meta property="og:image" content="https://finchtheory.com/og-image.png">
+  <meta property="og:site_name" content="Finch Theory">
+  <meta property="og:locale" content="en_GB">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Page Not Found — Finch Theory">
+  <meta name="twitter:image" content="https://finchtheory.com/og-image.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/FinchTheoryWorkplace/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/FinchTheoryWorkplace/icons/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/FinchTheoryWorkplace/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/FinchTheoryWorkplace/manifest.webmanifest">
+  <meta name="theme-color" content="#0e0e0e">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/FinchTheoryWorkplace/styles.css">
 </head>
 <body>
+
+<header class="site-header">
+  <div class="container nav-inner">
+    <a href="./" class="brand" aria-label="Finch Theory home">
+      <span class="brand-mark"><img src="/FinchTheoryWorkplace/assets/finch-theory-mark.png" alt="Finch Theory"></span>
+      <span class="brand-text">
+        <span class="brand-name">Finch Theory</span>
+        <span class="brand-sub">The Business Performance Solution</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="limited-companies.html">Limited companies</a></li>
+      <li><a href="llps.html">LLPs</a></li>
+      <li><a href="investment.html">Pricing</a></li>
+      <li><a href="calculator.html">Calculator</a></li>
+      <li><a href="diagnostic.html">Diagnostic</a></li>
+      <li><a href="insights.html">Insights</a></li>
+      <li><a href="faqs.html">FAQs</a></li>
+      <li><a href="https://links.aetas-partners.com/widget/booking/IacdM2cW2bnLm0pK7Jty" class="nav-cta" target="_blank" rel="noopener">Book a Review</a></li>
+    </ul>
+  </div>
+</header>
 
 <a class="brand" href="/">Finch Theory</a>
 
@@ -146,26 +69,66 @@ p { color: rgba(255,255,255,0.5); font-size: 0.95rem; line-height: 1.75; margin-
   </div>
 </div>
 
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="eyebrow" style="margin-bottom:0.75rem;">Finch Theory</span>
+        <p>The Business Performance Solution for SMEs, LLPs, and professional practices.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li><a href="limited-companies.html">Limited companies</a></li>
+          <li><a href="llps.html">LLPs</a></li>
+          <li><a href="investment.html">Pricing</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="insights.html">Insights</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="https://links.aetas-partners.com/widget/booking/IacdM2cW2bnLm0pK7Jty" target="_blank" rel="noopener">Book a Review</a></li>
+          <li><a href="calculator.html">ROEI Calculator</a></li>
+          <li><a href="diagnostic.html">Diagnostic</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Offices</h4>
+        <p style="margin:0 0 0.4rem;font-weight:600;color:#fff;font-family:var(--font-sans);font-size:0.82rem;">London</p>
+        <ul style="margin-bottom:1.25rem;">
+          <li>13 Hanover Square</li><li>Mayfair, London</li><li>W1S 1HN</li>
+        </ul>
+        <p style="margin:0 0 0.4rem;font-weight:600;color:#fff;font-family:var(--font-sans);font-size:0.82rem;">Norwich</p>
+        <ul>
+          <li>Insight House</li><li>7a Alkmaar Way</li>
+          <li>Norwich International Business Park</li><li>NR6 6BF</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Finch Theory provides workplace financial wellbeing, education, and consultancy services to employers. These services do not constitute regulated financial advice. Where regulated advice is required, this is provided separately by an FCA-authorised adviser.</p>
+      <p>&copy; <span data-year>2026</span> Finch Theory. All rights reserved. <a href="privacy.html">Privacy Policy</a></p>
+    </div>
+  </div>
+</footer>
 
 <script>
 (function(){
-  var burger = document.getElementById('navBurger');
-  var links  = document.querySelector('.nav-links');
-  if (!burger || !links) return;
-  burger.addEventListener('click', function(){
-    var open = links.classList.toggle('open');
-    burger.classList.toggle('open', open);
-    burger.setAttribute('aria-expanded', open);
-    document.body.style.overflow = open ? 'hidden' : '';
-  });
-  document.addEventListener('click', function(e){
-    if (!burger.contains(e.target) && !links.contains(e.target)){
-      links.classList.remove('open');
-      burger.classList.remove('open');
-      burger.setAttribute('aria-expanded', 'false');
-      document.body.style.overflow = '';
-    }
-  });
+  'use strict';
+  const toggle = document.querySelector('.nav-toggle');
+  const links  = document.querySelector('.nav-links');
+  if (toggle && links) {
+    toggle.addEventListener('click', function(){
+      const open = links.classList.toggle('is-open');
+      toggle.classList.toggle('is-open', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+  const yr = document.querySelector('[data-year]');
+  if (yr) yr.textContent = new Date().getFullYear();
 })();
 </script>
 </body>

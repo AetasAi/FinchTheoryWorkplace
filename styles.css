@@ -855,3 +855,107 @@ input[type=range]::-webkit-slider-runnable-track {
 
 /* ---------- 26. Reveal fallback — show all content regardless of scroll ---------- */
 .reveal { opacity: 1 !important; transform: none !important; }
+
+/* ---------- 27. Article / post body typography ---------- */
+.post-body h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  font-weight: 300;
+  color: var(--ft-black);
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+.post-body h3 {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--ft-black);
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+}
+.post-body p {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--ink-soft);
+  margin-bottom: 1.25rem;
+}
+.post-body ul, .post-body ol {
+  margin: 1rem 0 1.5rem 1.5rem;
+}
+.post-body li {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--ink-soft);
+  margin-bottom: 0.5rem;
+}
+.post-body blockquote {
+  border-left: 1px solid var(--ft-gold);
+  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+  background: var(--warm-grey);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--ft-black);
+}
+
+/* ---------- 28. Article header ---------- */
+.article-header {
+  background: var(--ft-black);
+  padding: clamp(3rem, 7vw, 5rem) 0;
+  border-bottom: 1px solid var(--ft-gold);
+}
+.article-header h1 { color: #fff; }
+.article-meta {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ft-gold);
+}
+.article-cta {
+  margin-top: 3rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--mid-grey);
+}
+
+/* ---------- 29. Case study header ---------- */
+.case-header {
+  background: var(--ft-black);
+  padding: clamp(3rem, 7vw, 5rem) 0;
+  border-bottom: 1px solid var(--ft-gold);
+}
+.case-header h1 { color: #fff; max-width: 720px; }
+.case-detail {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1px;
+  background: var(--mid-grey);
+  border: 1px solid var(--mid-grey);
+  margin: 3rem 0;
+}
+.case-detail-item {
+  background: var(--warm-white);
+  padding: 1.5rem 1.75rem;
+}
+.case-detail-label {
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ft-gold);
+  margin-bottom: 0.5rem;
+}
+.case-detail-value {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--ft-black);
+}
