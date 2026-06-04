@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<script defer src="/assets/js/analytics.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Case Study: Supporting Employee Financial Resilience — Finch Theory</title>
+<meta name="description" content="How Finch Theory helped a Bristol-based organisation strengthen employee financial resilience, review pension arrangements, and build a more structured approach to workforce wellbeing.">
+<link rel="canonical" href="https://finchtheory.com/case-studies/bristol-organisation.html">
+<meta property="og:title" content="Case Study: Supporting Employee Financial Resilience">
+<meta property="og:description" content="How Finch Theory helped a Bristol-based organisation strengthen employee financial resilience and improve their benefits proposition.">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0e0e0e;--navy-mid:#1d4291;--navy-light:#e8ecf3;--navy-xlight:#f0f3f8;--gold:#b8934a;--gold-light:#d4b07a;--gold-pale:#f5ede0;--cream:#faf8f5;--white:#ffffff;--text-body:#3a3a3a;--text-muted:#6a6a6a;--border:rgba(13,44,108,0.12);--border-gold:rgba(184,147,74,0.3);}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Open Sans', sans-serif;font-weight:300;color:var(--text-body);background:var(--cream);line-height:1.7;-webkit-font-smoothing:antialiased;}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;height:64px;background:var(--navy);border-bottom:1px solid rgba(184,154,90,0.18);display:flex;align-items:center;justify-content:space-between;padding:0 40px;}
+.nav-brand{font-family:'Open Sans', sans-serif;font-weight:500;font-size:1rem;letter-spacing:0.03em;color:var(--white);text-decoration:none;}
+.nav-brand span{color:var(--gold-light);}
+.nav-links{display:flex;align-items:center;gap:28px;list-style:none;}
+.nav-links a{font-size:0.72rem;font-weight:400;letter-spacing:0.09em;text-transform:uppercase;color:rgba(255,255,255,0.6);text-decoration:none;transition:color 0.3s;}
+.nav-links a:hover{color:var(--gold-light);}
+.nav-cta{background:var(--gold)!important;color:var(--navy)!important;padding:7px 18px;border-radius:2px;}
+.nav-cta:hover{background:var(--gold-light)!important;}
+.nav-burger{display:none;flex-direction:column;justify-content:center;gap:5px;background:none;border:none;cursor:pointer;padding:6px;}
+.nav-burger span{display:block;width:22px;height:1.5px;background:var(--white);border-radius:2px;transition:transform 0.25s ease,opacity 0.25s ease;}
+
+/* HERO */
+.hero{padding:120px 40px 72px;background:var(--navy);position:relative;overflow:hidden;}
+.hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 75% 35%,rgba(184,147,74,0.09) 0%,transparent 60%);pointer-events:none;}
+.hero-inner{max-width:1080px;margin:0 auto;position:relative;z-index:1;}
+.hero-eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:1.25rem;}
+.hero-eyebrow a{font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-light);text-decoration:none;transition:color 0.2s;}
+.hero-eyebrow a:hover{color:var(--white);}
+.hero-eyebrow-sep{color:rgba(255,255,255,0.25);}
+.hero-eyebrow-cat{font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.45);}
+.hero h1{font-family:'Open Sans', sans-serif;font-size:clamp(2rem,4.5vw,3rem);font-weight:400;color:var(--white);line-height:1.2;max-width:720px;margin-bottom:1.25rem;}
+.hero h1 em{font-style:italic;color:var(--gold-light);}
+.hero-sub{font-size:1rem;color:rgba(255,255,255,0.6);max-width:600px;line-height:1.85;}
+
+/* LAYOUT */
+.cs-layout{max-width:1080px;margin:0 auto;padding:4rem 40px 6rem;display:grid;grid-template-columns:1fr 340px;gap:4rem;align-items:start;}
+
+/* SIDEBAR */
+.sidebar{position:sticky;top:88px;}
+.sidebar-card{background:var(--white);border:0.5px solid var(--border);border-radius:4px;overflow:hidden;margin-bottom:1.5rem;}
+.sidebar-card-head{background:var(--navy);padding:1rem 1.25rem;}
+.sidebar-card-head span{font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-light);}
+.sidebar-row{padding:0.85rem 1.25rem;border-bottom:0.5px solid var(--border);display:flex;flex-direction:column;gap:3px;}
+.sidebar-row:last-child{border-bottom:none;}
+.sidebar-label{font-size:0.72rem;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;color:var(--text-muted);}
+.sidebar-value{font-size:0.92rem;color:var(--navy);font-weight:400;}
+.sidebar-value.tag{display:inline-flex;align-items:center;gap:6px;}
+.sidebar-value.tag::before{content:'✓';color:var(--gold);font-size:0.75rem;}
+
+/* OUTCOMES CARD */
+.outcomes-card{background:var(--gold-pale);border:0.5px solid var(--border-gold);border-radius:4px;padding:1.25rem;}
+.outcomes-label{font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;display:block;}
+.outcome-item{display:flex;gap:10px;align-items:flex-start;margin-bottom:0.75rem;}
+.outcome-item:last-child{margin-bottom:0;}
+.outcome-check{color:var(--gold);font-size:0.85rem;flex-shrink:0;margin-top:2px;}
+.outcome-text{font-size:0.87rem;color:var(--text-body);line-height:1.6;}
+
+/* CTA CARD */
+.cta-card{background:var(--navy);border-radius:4px;padding:1.5rem;}
+.cta-card span{font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-light);display:block;margin-bottom:0.6rem;}
+.cta-card h3{font-family:'Open Sans', sans-serif;font-size:1.2rem;font-weight:400;color:var(--white);line-height:1.3;margin-bottom:0.75rem;}
+.cta-card p{font-size:0.83rem;color:rgba(255,255,255,0.55);line-height:1.65;margin-bottom:1.25rem;}
+.btn-cta-white{display:inline-block;padding:11px 20px;background:var(--gold);color:var(--navy);font-family:'Open Sans', sans-serif;font-size:0.73rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border-radius:2px;transition:background 0.2s;}
+.btn-cta-white:hover{background:var(--gold-light);}
+
+/* BODY */
+.cs-body{}
+.cs-body h2{font-family:'Open Sans', sans-serif;font-size:clamp(1.4rem,2.5vw,1.9rem);font-weight:500;color:var(--navy);margin:2.5rem 0 0.75rem;line-height:1.25;}
+.cs-body h2:first-child{margin-top:0;}
+.cs-body p{font-size:0.97rem;line-height:1.9;color:var(--text-body);margin-bottom:1.1rem;}
+.cs-rule{height:0.5px;background:var(--border);margin:2.5rem 0;}
+
+/* PROGRAMME BOXES */
+.programme-grid{display:flex;flex-direction:column;gap:1.5px;margin:1.5rem 0;}
+.programme-item{background:var(--white);border:0.5px solid var(--border);border-left:2px solid var(--gold);padding:1.25rem 1.5rem;}
+.programme-item-label{font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem;display:block;}
+.programme-item h3{font-family:'Open Sans', sans-serif;font-size:1.1rem;font-weight:500;color:var(--navy);margin-bottom:0.6rem;}
+.programme-item ul{list-style:none;padding:0;display:flex;flex-direction:column;gap:6px;}
+.programme-item ul li{font-size:0.88rem;color:var(--text-body);display:flex;gap:10px;align-items:flex-start;line-height:1.6;}
+.programme-item ul li::before{content:'○';color:var(--gold);font-size:0.7rem;flex-shrink:0;margin-top:3px;}
+.programme-item p{font-size:0.88rem;color:var(--text-muted);line-height:1.7;margin:0;}
+
+/* PARTNER GRID */
+.partner-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5px;margin:1.25rem 0;}
+.partner-card{background:var(--navy-xlight);border:0.5px solid var(--border);padding:1.25rem;}
+.partner-card-label{font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem;display:block;}
+.partner-card h4{font-family:'Open Sans', sans-serif;font-size:1.05rem;font-weight:500;color:var(--navy);margin-bottom:0.4rem;}
+.partner-card p{font-size:0.85rem;color:var(--text-muted);line-height:1.65;margin:0;}
+
+/* STATUS BAND */
+.status-band{background:var(--gold-pale);border:0.5px solid var(--border-gold);border-radius:4px;padding:1.25rem 1.5rem;margin:2rem 0;display:flex;align-items:center;gap:14px;}
+.status-dot{width:10px;height:10px;border-radius:50%;background:var(--gold);flex-shrink:0;}
+.status-text{font-size:0.9rem;color:var(--text-body);line-height:1.7;}
+.status-text strong{color:var(--navy);font-weight:500;}
+
+/* MORE CASE STUDIES (placeholder for future) */
+.more-section{padding:4rem 40px;background:var(--white);border-top:0.5px solid var(--border);}
+.more-inner{max-width:1080px;margin:0 auto;}
+.more-eyebrow{font-size:0.68rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;display:flex;align-items:center;gap:10px;}
+.more-eyebrow::before{content:'';display:block;width:20px;height:1px;background:var(--gold);}
+.more-section h2{font-family:'Open Sans', sans-serif;font-size:1.5rem;font-weight:400;color:var(--navy);margin-bottom:0.75rem;}
+.more-section p{font-size:0.9rem;color:var(--text-muted);line-height:1.75;max-width:540px;margin-bottom:1.5rem;}
+.btn-outline-navy{display:inline-block;padding:11px 22px;background:transparent;color:var(--navy);font-family:'Open Sans', sans-serif;font-size:0.75rem;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border:0.5px solid rgba(13,44,108,0.35);border-radius:2px;transition:all 0.2s;}
+.btn-outline-navy:hover{background:var(--navy);color:var(--white);}
+
+/* FOOTER */
+footer{background:var(--navy);padding:2.5rem 40px;}
+.footer-inner{max-width:1080px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:1.5rem;}
+.footer-brand{font-family:'Open Sans', sans-serif;font-size:1rem;font-weight:500;color:var(--white);}
+.footer-brand span{color:var(--gold-light);}
+.footer-contact{font-size:0.82rem;color:rgba(255,255,255,0.45);margin-top:4px;}
+.footer-contact a{color:rgba(255,255,255,0.45);text-decoration:none;transition:color 0.2s;}
+.footer-contact a:hover{color:var(--gold-light);}
+.footer-reg{font-size:0.72rem;line-height:1.7;color:rgba(255,255,255,0.3);max-width:480px;}
+.footer-links{display:flex;gap:16px;flex-wrap:wrap;margin-top:1rem;}
+.footer-links a{font-size:0.68rem;letter-spacing:0.07em;text-transform:uppercase;color:rgba(255,255,255,0.3);text-decoration:none;transition:color 0.2s;}
+.footer-links a:hover{color:var(--gold-light);}
+
+/* RESPONSIVE */
+@media(max-width:800px){
+  .cs-layout{grid-template-columns:1fr;gap:2.5rem;}
+  .sidebar{position:static;}
+  .partner-grid{grid-template-columns:1fr;}
+  nav,footer,.hero,.more-section{padding-left:24px;padding-right:24px;}
+  .cs-layout{padding-left:24px;padding-right:24px;}
+  .nav-links{display:none;}
+  .nav-burger{display:flex;}
+  .nav-links.open{display:flex!important;flex-direction:column;align-items:flex-start;gap:0;position:fixed;top:64px;left:0;right:0;background:rgba(13,44,108,0.98);border-bottom:1px solid rgba(184,154,90,0.18);padding:1rem 24px 1.5rem;z-index:99;}
+  .nav-links.open li a{font-size:0.9rem;padding:0.65rem 0;border-bottom:0.5px solid rgba(255,255,255,0.08);width:100%;display:block;}
+  .nav-links.open li:last-child a{border-bottom:none;}
+}
+.fade-in{opacity:0;transform:translateY(14px);transition:opacity 0.5s ease,transform 0.5s ease;}
+.fade-in.visible{opacity:1;transform:none;}
+
+  /* brand-refresh: inline logo marks */
+  .nav-mark    { width: 32px; height: 32px; vertical-align: middle; margin-right: 10px; }
+  .nav-brand .nav-mark { width: 28px; height: 28px; margin-right: 8px; }
+  .footer-mark { width: 28px; height: 28px; vertical-align: middle; margin-right: 10px; }
+  .footer-brand .footer-mark { width: 26px; height: 26px; margin-right: 8px; }
+
+  /* type-refresh: wealth-style nav lockup */
+  /* Mark sits as a flex child of the anchor; tagline stacked beneath brand. */
+  .nav-logo  { display: inline-flex; align-items: center; gap: 12px; }
+  .nav-brand { display: inline-flex; align-items: center; gap: 10px; }
+  .nav-logo .nav-mark, .nav-brand .nav-mark {
+    margin-right: 0; vertical-align: middle; flex-shrink: 0; display: block;
+  }
+  .nav-lockup { display: flex; flex-direction: column; line-height: 1.05; }
+  .nav-logo .nav-brand-text, .nav-brand .nav-brand-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.0rem;
+    letter-spacing: 0;
+    color: var(--navy);
+  }
+  .nav-brand .nav-brand-text { color: var(--white); }
+  .nav-logo .nav-tagline, .nav-brand .nav-tagline {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.6rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #00aabb;
+    margin-top: 3px;
+  }
+  /* Soften nav links to mixed-case to match the Wealth nav. */
+  .nav-links a, nav .nav-links a {
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+    font-size: 0.88rem !important;
+  }
+  .nav-links .nav-cta, nav .nav-links .nav-cta {
+    font-size: 0.82rem !important;
+    letter-spacing: 0.02em !important;
+  }
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Case Study: Supporting Employee Financial Resilience","description":"Bristol-based organisation engagement covering financial resilience workshops, workplace pension review, and partner services.","author":{"@type":"Person","name":"Anne Fergusson","url":"https://www.finchtheory.com"},"publisher":{"@type":"Organization","name":"Finch Theory","url":"https://finchtheory.com/","logo":{"@type":"ImageObject","url":"https://finchtheory.com/icons/favicon-32.png"}},"datePublished":"2026-05-06","dateModified":"2026-05-06","mainEntityOfPage":{"@type":"WebPage","@id":"https://finchtheory.com/case-studies/bristol-organisation.html"},"image":"https://finchtheory.com/og-image.png","inLanguage":"en-GB","articleSection":"Case Studies","keywords":"financial resilience workshop, workplace pension review, partner services"}</script>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="/index.html"><img src="/aetas-mark-reverse.svg" alt="" class="nav-mark" width="34" height="34"><span class="nav-lockup"><span class="nav-brand-text">Finch Theory</span><span class="nav-tagline">The Business Performance Solution</span></span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="/limited-companies.html">Limited companies</a></li>
+    <li><a href="/llps.html">LLPs</a></li>
+    <li><a href="/investment.html">Pricing</a></li>
+    <li><a href="/calculator.html">Calculator</a></li>
+    <li><a href="/diagnostic.html">Diagnostic</a></li>
+    <li><a href="/insights.html">Insights</a></li>
+    <li><a href="/faqs.html">FAQs</a></li>
+    <li><a href="https://links.finchtheory.com/widget/booking/IacdM2cW2bnLm0pK7Jty" target="_blank" class="nav-cta">Book a Review</a></li>
+  </ul>
+  <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">
+      <a href="/index.html">← Finch Theory</a>
+      <span class="hero-eyebrow-sep">·</span>
+      <span class="hero-eyebrow-cat">Case Study</span>
+    </div>
+    <h1>Supporting Employee Financial Resilience<br><em>within a Bristol-based Organisation</em></h1>
+    <p class="hero-sub">How a structured programme of workshops, pension review, and partner services helped one organisation build a more visible and effective approach to employee financial wellbeing.</p>
+  </div>
+</div>
+
+<!-- MAIN LAYOUT -->
+<div class="cs-layout">
+
+  <!-- BODY -->
+  <div class="cs-body fade-in">
+
+    <h2>The starting point</h2>
+    <p>A Bristol-based organisation approached Finch Theory looking for practical ways to strengthen employee wellbeing, improve financial confidence, and review the support already available to its team.</p>
+    <p>Leadership recognised that financial pressure and uncertainty were increasingly affecting employees both personally and professionally. The challenge they faced is one we hear consistently: genuine care for the workforce, but a lack of structure to translate that care into something meaningful and measurable. Benefits were in place, but it was unclear whether they were understood, valued, or used.</p>
+    <p>The organisation wanted to introduce support that was practical, accessible, and relevant to everyday life — without adding complexity to an already stretched leadership team.</p>
+
+    <div class="cs-rule"></div>
+
+    <h2>The programme</h2>
+    <p>Following an initial discovery process, Finch Theory delivered a programme structured around three areas of support.</p>
+
+    <div class="programme-grid">
+
+      <div class="programme-item">
+        <span class="programme-item-label">Pillar one</span>
+        <h3>Financial Resilience Workshop</h3>
+        <p>A tailored workshop delivered specifically for the organisation and its employees — covering the financial topics that mattered most to their workforce at their particular stage. The session focused on:</p>
+        <ul>
+          <li>Building practical financial resilience</li>
+          <li>Budgeting and cashflow awareness</li>
+          <li>Understanding pensions and long-term planning</li>
+          <li>Financial protection for families</li>
+          <li>Improving financial confidence and understanding</li>
+          <li>Helping employees better understand the benefits already available to them</li>
+        </ul>
+      </div>
+
+      <div class="programme-item">
+        <span class="programme-item-label">Pillar two</span>
+        <h3>Workplace Pension Review</h3>
+        <p>Alongside the workshop programme, Finch Theory carried out a structured review of the organisation's workplace pension arrangements. The review identified a number of opportunities to improve the overall employee proposition, increase engagement, and strengthen long-term value for staff. Recommendations were provided to the leadership team and are currently in the process of being implemented.</p>
+      </div>
+
+      <div class="programme-item">
+        <span class="programme-item-label">Pillar three</span>
+        <h3>Partner Services</h3>
+        <p>As part of the wider support framework, the organisation was introduced to selected partner services, chosen for their relevance to the workforce and ease of implementation:</p>
+        <div class="partner-grid" style="margin:0.75rem 0 0;">
+          <div class="partner-card">
+            <span class="partner-card-label">Everyday value</span>
+            <h4>Shop St</h4>
+            <p>Providing employees with access to everyday discounts and savings — immediate, tangible benefit at no cost to the organisation.</p>
+          </div>
+          <div class="partner-card">
+            <span class="partner-card-label">Legacy planning</span>
+            <h4>Online wills service</h4>
+            <p>Helping employees put simple estate planning arrangements in place, while also supporting the organisation's longer-term legacy giving objectives.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="cs-rule"></div>
+
+    <h2>The outcome</h2>
+    <p>The overall programme helped the organisation create a more structured and visible approach to employee financial wellbeing. In an environment where financial pressure on staff had been a background concern without a clear framework for addressing it, there is now a concrete programme employees can point to and leadership can build on.</p>
+    <p>The pension review has surfaced meaningful improvements that the leadership team is now implementing — changes that will improve long-term value for staff without requiring significant additional employer cost. The workshop gave employees a practical foundation in areas many had never had structured guidance on, and the partner services extended the proposition into everyday life in a way that required minimal ongoing management.</p>
+
+    <div class="status-band">
+      <div class="status-dot"></div>
+      <div class="status-text"><strong>Ongoing engagement.</strong> The organisation is now exploring additional areas of support through the wider Finch Theory framework, including ongoing financial education and wider employee wellbeing initiatives.</div>
+    </div>
+
+    <p>Crucially, the approach reinforced the organisation's commitment to supporting employees both inside and outside the workplace — giving leadership a clear, evidenced narrative about what has been introduced and why it matters.</p>
+
+  </div>
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+
+    <div class="sidebar-card">
+      <div class="sidebar-card-head"><span>Engagement summary</span></div>
+      <div class="sidebar-row">
+        <span class="sidebar-label">Organisation type</span>
+        <span class="sidebar-value">Bristol-based organisation</span>
+      </div>
+      <div class="sidebar-row">
+        <span class="sidebar-label">Starting point</span>
+        <span class="sidebar-value">No-cost Workplace Performance Review</span>
+      </div>
+      <div class="sidebar-row">
+        <span class="sidebar-label">Pillars delivered</span>
+        <span class="sidebar-value">Clarity, Confidence, Stability</span>
+      </div>
+      <div class="sidebar-row">
+        <span class="sidebar-label">Status</span>
+        <span class="sidebar-value" style="color:var(--gold);font-weight:400;">Ongoing engagement</span>
+      </div>
+    </div>
+
+    <div class="outcomes-card fade-in">
+      <span class="outcomes-label">What was delivered</span>
+      <div class="outcome-item">
+        <span class="outcome-check">✓</span>
+        <span class="outcome-text">Bespoke Financial Resilience Workshop delivered to employees</span>
+      </div>
+      <div class="outcome-item">
+        <span class="outcome-check">✓</span>
+        <span class="outcome-text">Workplace pension review completed — improvements identified and in implementation</span>
+      </div>
+      <div class="outcome-item">
+        <span class="outcome-check">✓</span>
+        <span class="outcome-text">Shop St employee discount platform introduced</span>
+      </div>
+      <div class="outcome-item">
+        <span class="outcome-check">✓</span>
+        <span class="outcome-text">Online wills and legacy planning service introduced</span>
+      </div>
+      <div class="outcome-item">
+        <span class="outcome-check">✓</span>
+        <span class="outcome-text">Structured approach to financial wellbeing established — ongoing programme in place</span>
+      </div>
+    </div>
+
+    <div class="cta-card fade-in">
+      <span>Could this be your organisation?</span>
+      <h3>Find out what a Workplace Performance Review would identify for your team.</h3>
+      <p>Two 30-minute conversations. No cost. No obligation.</p>
+      <a href="https://links.finchtheory.com/widget/booking/IacdM2cW2bnLm0pK7Jty" target="_blank" class="btn-cta-white">Book a Review</a>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- MORE / NEXT STEP -->
+<div class="more-section">
+  <div class="more-inner fade-in">
+    <div class="more-eyebrow">More from Finch Theory</div>
+    <h2>See another engagement in practice.</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5px;background:var(--border);margin-bottom:2rem;border-radius:4px;overflow:hidden;">
+      <a href="/case-studies/uk-retail-group.html" style="background:var(--cream);padding:1.5rem;text-decoration:none;display:block;transition:background 0.2s;" onmouseover="this.style.background='var(--gold-pale)'" onmouseout="this.style.background='var(--cream)'">
+        <span style="font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:0.5rem;">Case study</span>
+        <h3 style="font-family:'Open Sans', sans-serif;font-size:1.05rem;font-weight:500;color:var(--navy);line-height:1.35;margin-bottom:0.4rem;">Practical Financial Support for a Larger Workforce — UK Retail Group</h3>
+        <p style="font-size:0.82rem;color:var(--text-muted);line-height:1.6;margin:0;">Why the most impactful recommendation was also the simplest — and why recommending against a pension change was the right advice.</p>
+      </a>
+      <div style="background:var(--navy-xlight);padding:1.5rem;display:flex;flex-direction:column;justify-content:center;">
+        <span style="font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:0.5rem;">Book a Review</span>
+        <h3 style="font-family:'Open Sans', sans-serif;font-size:1.05rem;font-weight:500;color:var(--navy);line-height:1.35;margin-bottom:0.4rem;">What would the diagnostic identify for your organisation?</h3>
+        <p style="font-size:0.82rem;color:var(--text-muted);margin-bottom:1rem;line-height:1.6;">No cost. No obligation. Two short conversations.</p>
+        <a href="https://links.finchtheory.com/widget/booking/IacdM2cW2bnLm0pK7Jty" target="_blank" class="btn-cta-white" style="align-self:flex-start;">Book a Workplace Performance Review</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand"><img src="/aetas-mark-reverse.svg" alt="" class="footer-mark" width="26" height="26">Finch Theory <span>in the Workplace</span></div>
+      <div class="footer-contact"><a href="mailto:matthew.steiner@finchtheory.com">matthew.steiner@finchtheory.com</a> &nbsp;·&nbsp; <a href="https://www.finchtheory.com">finchtheory.com</a></div>
+      <div class="footer-links">
+        <a href="/faqs.html">FAQs</a>
+        <a href="/diagnostic.html">Diagnostic</a>
+        <a href="/privacy.html">Privacy policy</a>
+      </div>
+    </div>
+    <div class="footer-reg">Finch Theory provides workplace financial wellbeing, education, and consultancy services to employers. These services do not constitute regulated financial advice. Where regulated advice is required, this is provided separately by Finch Theory, an FCA-authorised adviser. Details in this case study have been anonymised.</div>
+  </div>
+
+  <!-- brand-refresh: aetas partners lockup -->
+  <div style="margin-top:1.75rem;padding-top:1.25rem;border-top:0.5px solid rgba(255,255,255,0.08);text-align:center;">
+    <a href="https://finchtheory.com/" aria-label="Part of Finch Theory" style="display:inline-block;opacity:0.65;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.65'">
+      <img src="/aetas-horizontal-reverse.svg" alt="Finch Theory" style="display:block;height:30px;width:auto;">
+    </a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var b=document.getElementById('navBurger'),l=document.getElementById('navLinks');
+  if(!b||!l)return;
+  b.addEventListener('click',function(){var o=l.classList.toggle('open');b.classList.toggle('open',o);b.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':'';});
+  document.addEventListener('click',function(e){if(!b.contains(e.target)&&!l.contains(e.target)){l.classList.remove('open');b.classList.remove('open');b.setAttribute('aria-expanded','false');document.body.style.overflow='';}});
+})();
+var obs=new IntersectionObserver(function(e){e.forEach(function(e){if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:0.08});
+document.querySelectorAll('.fade-in').forEach(function(el){obs.observe(el);});
+</script>
+</body>
+</html>

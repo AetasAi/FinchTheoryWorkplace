@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<script defer src="/assets/js/analytics.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Benefits Data Capture &middot; Finch Theory</title>
+<meta name="description" content="Employee benefits and pension data capture form for the Finch Theory Workplace Performance Review.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Great+Vibes&display=swap">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="https://finchtheory.com/" class="topbar-brand">
+    <img src="/icons/favicon-32.png" alt="" class="topbar-brand-mark" width="32" height="32">
+    <span class="topbar-brand-text">
+      <span class="topbar-brand-name">Finch Theory</span>
+      <span class="topbar-brand-tagline">The Business Performance Solution</span>
+    </span>
+  </a>
+  <a href="https://finchtheory.com/" class="topbar-link">&larr; Back to site</a>
+</header>
+
+<nav class="progress-bar" aria-label="Form progress">
+  <div class="progress-inner">
+    <a class="progress-step active" data-target="section-1">Organisation</a>
+    <a class="progress-step" data-target="section-2">Pension</a>
+    <a class="progress-step" data-target="section-3">Benefits</a>
+    <a class="progress-step" data-target="section-4">Advisers</a>
+    <a class="progress-step" data-target="section-5">Documents</a>
+    <a class="progress-step" data-target="section-6">Notes</a>
+    <a class="progress-step" data-target="section-7">Consent</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <div class="page-header">
+    <span class="eyebrow">Workplace Performance Review</span>
+    <h1>Employee Benefits <span class="accent">Data Capture</span></h1>
+    <hr class="rule">
+    <p class="lead">A structured capture of your existing pension and benefits arrangements. Used by the Finch Theory team to identify inefficiencies, opportunities, and where the value sits before any recommendations are made.</p>
+    <p style="font-size: 1rem;">You do not need to know every answer precisely. "Don't know" is a useful answer in its own right. Documents can be attached at the end. Most people complete this in around twenty minutes.</p>
+    <div class="notice-box">
+      <p><strong>What happens next.</strong> Once submitted, you receive a confirmation email. Matthew and the Finch Theory team review your submission and any attached documents before your next meeting. Information is held confidentially and used only for the purposes of the Review.</p>
+    </div>
+  </div>
+
+  <form id="briefing-form" action="https://formspree.io/f/xaqlqpdy" method="POST" novalidate>
+
+    <!-- 01 ORGANISATION -->
+    <section class="form-section" id="section-1">
+      <div class="section-head"><span class="section-num">01</span><span class="section-title">Organisation details</span></div>
+      <div class="section-body">
+        <p class="section-intro">Basic organisation and contact information.</p>
+        <div class="field-grid">
+          <div class="field"><label for="organisation_name">Organisation name <span class="req">*</span></label><input type="text" id="organisation_name" name="organisation_name" required></div>
+          <div class="field"><label for="contact_name">Contact name <span class="req">*</span></label><input type="text" id="contact_name" name="contact_name" required></div>
+          <div class="field"><label for="job_title">Job title</label><input type="text" id="job_title" name="job_title"></div>
+          <div class="field"><label for="email">Email <span class="req">*</span></label><input type="email" id="email" name="email" required></div>
+          <div class="field"><label for="number_of_employees">Number of employees <span class="req">*</span></label><input type="number" id="number_of_employees" name="number_of_employees" min="1" required></div>
+          <div class="field"><label for="date_completed">Date completed</label><input type="date" id="date_completed" name="date_completed" readonly></div>
+          <div class="field field-full">
+            <label for="description">Brief description of the business</label>
+            <span class="hint">What you do and who for. A sentence is fine.</span>
+            <textarea id="description" name="description" rows="2"></textarea>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 PENSION -->
+    <section class="form-section" id="section-2">
+      <div class="section-head"><span class="section-num">02</span><span class="section-title">Current pension provision</span></div>
+      <div class="section-body">
+        <p class="section-intro">Workplace pension scheme details. Ranges and approximate figures are fine where exact numbers are not to hand.</p>
+        <div class="field-grid">
+          <div class="field field-full">
+            <label for="pension_provider">Pension scheme name and provider</label>
+            <span class="hint">For example: NEST, Aviva, Standard Life Master Trust, Royal London GPP.</span>
+            <input type="text" id="pension_provider" name="pension_provider">
+          </div>
+          <div class="field">
+            <label for="employer_contribution">Employer contribution (%)</label>
+            <input type="text" id="employer_contribution" name="employer_contribution" placeholder="e.g. 5">
+          </div>
+          <div class="field">
+            <label for="employee_contribution">Employee contribution (%)</label>
+            <input type="text" id="employee_contribution" name="employee_contribution" placeholder="e.g. 5">
+          </div>
+          <div class="field">
+            <label for="auto_enrolment_compliant">Auto-enrolment compliant?</label>
+            <select id="auto_enrolment_compliant" name="auto_enrolment_compliant">
+              <option value="">Select</option>
+              <option>Yes</option>
+              <option>No</option>
+              <option>Don't know</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="salary_exchange_in_place">Salary exchange in place?</label>
+            <select id="salary_exchange_in_place" name="salary_exchange_in_place">
+              <option value="">Select</option>
+              <option>Yes, most employees</option>
+              <option>Yes, some employees</option>
+              <option>Available but rarely used</option>
+              <option>No</option>
+              <option>Don't know</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="staging_reenrolment_date">Most recent staging/re-enrolment date</label>
+            <input type="text" id="staging_reenrolment_date" name="staging_reenrolment_date" placeholder="e.g. April 2024 or Don't know">
+          </div>
+          <div class="field">
+            <label for="pension_adviser">Current pension adviser</label>
+            <input type="text" id="pension_adviser" name="pension_adviser" placeholder="None / unknown / firm name">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 BENEFITS -->
+    <section class="form-section" id="section-3">
+      <div class="section-head"><span class="section-num">03</span><span class="section-title">Group risk and health benefits</span></div>
+      <div class="section-body">
+        <p class="section-intro">For each benefit type, mark whether it is in place. Provider and renewal date are useful where known.</p>
+        <div class="benefits-table-wrap">
+          <table class="benefits-table">
+            <thead>
+              <tr>
+                <th>Benefit</th>
+                <th>In place?</th>
+                <th>Provider</th>
+                <th>Renewal</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Private medical insurance</td>
+                <td><div class="in-place-toggle">
+                  <label><input type="radio" name="pmi_in_place" value="Yes">Yes</label>
+                  <label><input type="radio" name="pmi_in_place" value="No">No</label>
+                </div></td>
+                <td><input type="text" name="pmi_provider" placeholder="Provider"></td>
+                <td><input type="text" name="pmi_renewal" placeholder="MM / YYYY"></td>
+              </tr>
+              <tr>
+                <td>Group life assurance</td>
+                <td><div class="in-place-toggle">
+                  <label><input type="radio" name="group_life_in_place" value="Yes">Yes</label>
+                  <label><input type="radio" name="group_life_in_place" value="No">No</label>
+                </div></td>
+                <td><input type="text" name="group_life_provider" placeholder="Provider"></td>
+                <td><input type="text" name="group_life_renewal" placeholder="MM / YYYY"></td>
+              </tr>
+              <tr>
+                <td>Group income protection</td>
+                <td><div class="in-place-toggle">
+                  <label><input type="radio" name="group_ip_in_place" value="Yes">Yes</label>
+                  <label><input type="radio" name="group_ip_in_place" value="No">No</label>
+                </div></td>
+                <td><input type="text" name="group_ip_provider" placeholder="Provider"></td>
+                <td><input type="text" name="group_ip_renewal" placeholder="MM / YYYY"></td>
+              </tr>
+              <tr>
+                <td>Group critical illness</td>
+                <td><div class="in-place-toggle">
+                  <label><input type="radio" name="group_ci_in_place" value="Yes">Yes</label>
+                  <label><input type="radio" name="group_ci_in_place" value="No">No</label>
+                </div></td>
+                <td><input type="text" name="group_ci_provider" placeholder="Provider"></td>
+                <td><input type="text" name="group_ci_renewal" placeholder="MM / YYYY"></td>
+              </tr>
+              <tr>
+                <td>Dental cover</td>
+                <td><div class="in-place-toggle">
+                  <label><input type="radio" name="dental_in_place" value="Yes">Yes</label>
+                  <label><input type="radio" name="dental_in_place" value="No">No</label>
+                </div></td>
+                <td><input type="text" name="dental_provider" placeholder="Provider"></td>
+                <td><input type="text" name="dental_renewal" placeholder="MM / YYYY"></td>
+              </tr>
+              <tr>
+                <td>Employee Assistance Programme</td>
+                <td><div class="in-place-toggle">
+                  <label><input type="radio" name="eap_in_place" value="Yes">Yes</label>
+                  <label><input type="radio" name="eap_in_place" value="No">No</label>
+                </div></td>
+                <td><input type="text" name="eap_provider" placeholder="Provider"></td>
+                <td><input type="text" name="eap_renewal" placeholder="MM / YYYY"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 ADVISERS -->
+    <section class="form-section" id="section-4">
+      <div class="section-head"><span class="section-num">04</span><span class="section-title">Current adviser arrangements</span></div>
+      <div class="section-body">
+        <p class="section-intro">Who currently advises on benefits, pensions, or workplace financial wellbeing.</p>
+        <div class="field-grid">
+          <div class="field">
+            <label for="benefits_adviser">Benefits adviser</label>
+            <span class="hint">Firm or person. "None" is a valid answer.</span>
+            <input type="text" id="benefits_adviser" name="benefits_adviser">
+          </div>
+          <div class="field">
+            <label for="adviser_renewal_date">Adviser contract renewal date</label>
+            <input type="text" id="adviser_renewal_date" name="adviser_renewal_date" placeholder="MM / YYYY or rolling">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 SUPPORTING DOCUMENTS -->
+    <section class="form-section" id="section-5">
+      <div class="section-head"><span class="section-num">05</span><span class="section-title">Supporting documents</span></div>
+      <div class="section-body">
+        <p class="section-intro">Documents are sent by email rather than uploaded here. The button below opens a pre-addressed email so you can attach files from your machine and send them directly.</p>
+
+        <div style="background: var(--warm-grey); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.5rem; margin-bottom: 1.5rem;">
+          <p style="font-weight: 600; color: var(--ft-black); margin: 0 0 0.75rem;">Documents that help us most</p>
+          <p style="font-size: 0.9rem; margin-bottom: 0.85rem;">Attach whatever you have. Common items:</p>
+          <ul style="font-size: 0.9rem; color: var(--ink-soft); margin: 0 0 1.25rem; padding-left: 1.25rem; line-height: 1.85;">
+            <li>Pension contribution schedule or monthly upload</li>
+            <li>Member-level scheme data (gender, date of birth, job title, salary)</li>
+            <li>Benefits and renewal documents</li>
+            <li>Any provider statements, scheme literature, or policy paperwork</li>
+          </ul>
+
+          <a id="email-docs-btn" href="#" class="btn btn-primary" style="margin-bottom: 0.75rem;">
+            <span>&#9993;</span>
+            <span>Submit documents by email</span>
+          </a>
+          <p style="font-size: 0.82rem; color: var(--ink-muted); margin: 0;">Opens a pre-addressed email in your default email program. Attach files from your machine, then send. Use the same address as your form contact email where possible so we can match the submissions.</p>
+        </div>
+
+        <div class="field field-full">
+          <label for="attachment_notes">Notes about the documents you are sending</label>
+          <span class="hint">Optional. Anything we should know about the files, missing data, password-protected documents, or items still being gathered.</span>
+          <textarea id="attachment_notes" name="attachment_notes" rows="4" placeholder="Notes about the documents. Missing data, password-protected documents, items still being gathered."></textarea>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 ADDITIONAL NOTES -->
+    <section class="form-section" id="section-6">
+      <div class="section-head"><span class="section-num">06</span><span class="section-title">Additional notes and priorities</span></div>
+      <div class="section-body">
+        <p class="section-intro">Anything not captured above. Priorities, concerns, or specific outcomes you are looking for.</p>
+        <div class="field field-full">
+          <label for="additional_notes">Notes</label>
+          <textarea id="additional_notes" name="additional_notes" rows="6" placeholder="Particular concerns, recent changes, priorities for the Review, anything you think we should know."></textarea>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 CONSENT -->
+    <section class="form-section" id="section-7">
+      <div class="section-head"><span class="section-num">07</span><span class="section-title">Consent and authorisation</span></div>
+      <div class="section-body">
+        <p style="font-size: 0.95rem; color: var(--ink-soft); margin-bottom: 1.5rem;">By submitting this form, you confirm that the information provided is accurate to the best of your knowledge and that you authorise Finch Theory Limited to use it for the purposes of the Workplace Performance Review.</p>
+        <div class="field-grid">
+          <div class="field" id="f-signed">
+            <label for="signed_on_behalf">Signed on behalf of organisation <span class="req">*</span></label>
+            <input type="text" id="signed_on_behalf" name="signed_on_behalf" class="sig-input" placeholder="Type your full name to sign" required>
+            <span class="error-msg">Please enter a name</span>
+          </div>
+          <div class="field" id="f-print">
+            <label for="print_name">Print name <span class="req">*</span></label>
+            <input type="text" id="print_name" name="print_name" required oninput="this.value=this.value.toUpperCase()">
+            <span class="error-msg">Please print your name</span>
+          </div>
+          <div class="field">
+            <label for="position_title">Position or title</label>
+            <input type="text" id="position_title" name="position_title">
+          </div>
+          <div class="field">
+            <label for="signature_date">Date</label>
+            <input type="text" id="signature_date" name="signature_date" readonly>
+          </div>
+        </div>
+        <div class="consent-row">
+          <input type="checkbox" id="consent_confirmed" name="consent_confirmed" value="Confirmed" required>
+          <label for="consent_confirmed">I confirm that I am authorised to submit this information on behalf of the organisation, and that I agree to Finch Theory using it for the purposes of the Workplace Performance Review.</label>
+        </div>
+      </div>
+    </section>
+
+    <div class="legal-note">
+      <strong>Confidentiality and legal note.</strong> Finch Theory Limited is not authorised to provide regulated financial advice. This form is used solely for information-gathering and scoping purposes in connection with the Finch Theory Workplace Performance Review. Regulated financial planning and advice is provided separately by Finch Theory, a trading style of Insight Financial Associates Limited, authorised and regulated by the Financial Conduct Authority (FCA registration 458421). Completion of this form does not constitute a commitment by either party to enter into any formal engagement.
+    </div>
+
+    <!-- Honeypot for spam protection -->
+    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+    <!-- Subject line for Formspree email -->
+    <input type="hidden" name="_subject" id="formspree_subject" value="Benefits Data Capture submission">
+    <!-- Form reference (populated by JS) -->
+    <input type="hidden" name="form_reference" id="form_reference">
+
+    <div class="form-actions">
+      <button type="submit" class="btn btn-primary" id="submit-btn">
+        <span class="btn-text">Submit form</span>
+        <span class="btn-spinner"></span>
+      </button>
+      <button type="reset" class="btn btn-ghost" onclick="if(!confirm('Clear all responses?')) event.preventDefault();">Clear form</button>
+    </div>
+
+  </form>
+</div>
+
+<footer class="page-footer">
+  Finch Theory &nbsp;&middot;&nbsp; A trading style of Finch Theory, Insight Financial Associates Limited &nbsp;&middot;&nbsp; FCA reg 458421 &nbsp;&middot;&nbsp;
+  <a href="https://finchtheory.com/privacy.html">Privacy Policy</a>
+</footer>
+
+<script>
+// FORM REFERENCE
+const FORM_REF = (function(){
+  const d=new Date(), ym=d.getFullYear()+String(d.getMonth()+1).padStart(2,'0');
+  return 'AEB-'+ym+'-'+Math.random().toString(36).substring(2,6).toUpperCase();
+})();
+
+document.addEventListener('DOMContentLoaded', function(){
+
+  // Populate auto fields
+  const today = new Date();
+  const dateIso = today.toISOString().split('T')[0];
+  const dateLong = today.toLocaleDateString('en-GB', { day: '2-digit', month: 'long', year: 'numeric' });
+  const dateEl = document.getElementById('date_completed');
+  if(dateEl) dateEl.value = dateIso;
+  const sigDateEl = document.getElementById('signature_date');
+  if(sigDateEl) sigDateEl.value = dateLong;
+
+  // Populate form reference and subject
+  document.getElementById('form_reference').value = FORM_REF;
+  const orgInput = document.getElementById('organisation_name');
+  const subjectEl = document.getElementById('formspree_subject');
+  function updateSubject(){
+    const org = (orgInput.value || '').trim() || '(unknown)';
+    subjectEl.value = 'Benefits Data Capture: ' + org + ' (' + FORM_REF + ')';
+  }
+  orgInput.addEventListener('input', updateSubject);
+  updateSubject();
+
+  // Email documents button. Opens default email client pre-addressed to Matthew
+  // with subject and body populated from current form context.
+  const emailBtn = document.getElementById('email-docs-btn');
+  if(emailBtn){
+    function buildMailto(){
+      const org = (document.getElementById('organisation_name').value || '').trim() || '[Organisation]';
+      const contact = (document.getElementById('contact_name').value || '').trim() || '[Your name]';
+      const subject = 'Benefits Data Capture documents: ' + org + ' (' + FORM_REF + ')';
+      const body = [
+        'Hi Matthew,',
+        '',
+        'Documents to support the Benefits Data Capture submission for ' + org + '.',
+        '',
+        'Form reference: ' + FORM_REF,
+        'Submitted by: ' + contact,
+        '',
+        'Attached:',
+        '  - [list the documents you are attaching]',
+        '',
+        'Notes:',
+        '  - [any context about the files, missing data, password-protected items]',
+        '',
+        'Kind regards,',
+        contact
+      ].join('\r\n');
+      return 'mailto:matthew.steiner@finchtheory.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    }
+    emailBtn.addEventListener('click', function(e){
+      e.preventDefault();
+      window.location.href = buildMailto();
+    });
+  }
+
+  // Progress bar navigation
+  document.querySelectorAll('.progress-step').forEach(function(step){
+    step.addEventListener('click', function(){
+      const target = document.getElementById(this.dataset.target);
+      if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+    });
+  });
+
+  // Progress bar active state on scroll
+  const sections = Array.from(document.querySelectorAll('.form-section'));
+  const steps = Array.from(document.querySelectorAll('.progress-step'));
+  window.addEventListener('scroll', function(){
+    const scrollPos = window.scrollY + 200;
+    let activeIdx = 0;
+    sections.forEach(function(s, i){ if(s.offsetTop <= scrollPos) activeIdx = i; });
+    steps.forEach(function(s, i){
+      s.classList.toggle('active', i === activeIdx);
+      s.classList.toggle('complete', i < activeIdx);
+    });
+  });
+
+  // Submit handler. Lets Formspree handle the actual POST, just adds loading state and validation.
+  const form = document.getElementById('briefing-form');
+  const btn = document.getElementById('submit-btn');
+  const btnText = btn.querySelector('.btn-text');
+
+  form.addEventListener('submit', function(e){
+    if(!form.checkValidity()){
+      e.preventDefault();
+      form.reportValidity();
+      return;
+    }
+    btn.classList.add('loading');
+    btn.disabled = true;
+    btnText.textContent = 'Submitting...';
+
+    if(typeof gtag !== 'undefined'){
+      gtag('event', 'form_submit', { event_category: 'Benefits Data Capture', event_label: FORM_REF });
+    }
+    // Let the native form POST to Formspree happen.
+  });
+});
+</script>
+
+</body>
+</html>

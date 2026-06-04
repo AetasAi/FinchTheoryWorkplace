@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<script defer src="/assets/js/analytics.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>When Everyday Life Stops Talking Back — Finch Theory</title>
+<meta name="description" content="Britain is changing in ways that appear practical and inevitable. Post offices close, services move online, shops automate, and workplaces digitise.">
+<link rel="canonical" href="https://finchtheory.com/insights/when-everyday-life-stops-talking-back.html">
+<meta property="og:title" content="When Everyday Life Stops Talking Back">
+<meta property="og:description" content="Britain is changing in ways that appear practical and inevitable. Post offices close, services move online, shops automate, and workplaces digitise.">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0e0e0e;--navy-mid:#1d4291;--navy-light:#e8ecf3;--navy-xlight:#f0f3f8;--gold:#b8934a;--gold-light:#d4b07a;--gold-pale:#f5ede0;--cream:#faf8f5;--white:#ffffff;--text-body:#3a3a3a;--text-muted:#6a6a6a;--border:rgba(13,44,108,0.12);}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Open Sans', sans-serif;font-weight:300;color:var(--text-body);background:var(--cream);line-height:1.7;-webkit-font-smoothing:antialiased;}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;height:64px;background:var(--navy);border-bottom:1px solid rgba(184,154,90,0.18);display:flex;align-items:center;justify-content:space-between;padding:0 40px;}
+.nav-brand{font-family:'Open Sans', sans-serif;font-weight:500;font-size:1rem;letter-spacing:0.03em;color:var(--white);text-decoration:none;white-space:nowrap;}
+.nav-brand span{color:var(--gold-light);}
+.nav-links{display:flex;align-items:center;gap:28px;list-style:none;}
+.nav-links a{font-size:0.72rem;font-weight:400;letter-spacing:0.09em;text-transform:uppercase;color:rgba(255,255,255,0.6);text-decoration:none;transition:color 0.3s;}
+.nav-links a:hover{color:var(--gold-light);}
+.nav-cta{background:var(--gold)!important;color:var(--navy)!important;padding:7px 18px;border-radius:2px;}
+.nav-cta:hover{background:var(--gold-light)!important;}
+.nav-burger{display:none;flex-direction:column;justify-content:center;gap:5px;background:none;border:none;cursor:pointer;padding:6px;}
+.nav-burger span{display:block;width:22px;height:1.5px;background:var(--white);border-radius:2px;transition:transform 0.25s ease,opacity 0.25s ease;}
+
+/* ARTICLE HERO */
+.article-hero{padding:120px 40px 60px;background:var(--navy);position:relative;overflow:hidden;}
+.article-hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 40%,rgba(184,147,74,0.08) 0%,transparent 60%);pointer-events:none;}
+.article-hero-inner{max-width:760px;margin:0 auto;position:relative;z-index:1;}
+.article-eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:1.25rem;}
+.article-eyebrow a{font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-light);text-decoration:none;transition:color 0.2s;}
+.article-eyebrow a:hover{color:var(--white);}
+.article-eyebrow-sep{color:rgba(255,255,255,0.25);font-size:0.7rem;}
+.article-eyebrow-cat{font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.45);}
+.article-hero h1{font-family:'Open Sans', sans-serif;font-size:clamp(2rem,4.5vw,3.2rem);font-weight:400;color:var(--white);line-height:1.2;margin-bottom:1.25rem;letter-spacing:-0.01em;}
+.article-hero h1 em{font-style:italic;color:var(--gold-light);}
+.article-standfirst{font-size:1.05rem;line-height:1.85;color:rgba(255,255,255,0.65);max-width:640px;margin-bottom:2rem;}
+.article-meta{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;padding-top:1.5rem;border-top:0.5px solid rgba(255,255,255,0.12);}
+.article-meta-item{font-size:0.78rem;color:rgba(255,255,255,0.45);display:flex;align-items:center;gap:6px;}
+.article-meta-item strong{color:rgba(255,255,255,0.7);font-weight:400;}
+
+/* ARTICLE BODY */
+.article-layout{max-width:760px;margin:0 auto;padding:4rem 40px 6rem;}
+.article-body{max-width:680px;}
+.article-body h2{font-family:'Open Sans', sans-serif;font-size:clamp(1.5rem,2.5vw,2rem);font-weight:500;color:var(--navy);margin:2.5rem 0 0.75rem;line-height:1.25;}
+.article-body h3{font-family:'Open Sans', sans-serif;font-size:1.25rem;font-weight:500;color:var(--navy);margin:2rem 0 0.6rem;}
+.article-body p{font-size:0.97rem;line-height:1.9;color:var(--text-body);margin-bottom:1.25rem;}
+.article-body p:last-child{margin-bottom:0;}
+.article-body ul,.article-body ol{margin:0.5rem 0 1.25rem 1.5rem;}
+.article-body li{font-size:0.95rem;line-height:1.85;color:var(--text-body);margin-bottom:0.4rem;}
+.article-body li::marker{color:var(--gold);}
+.article-body strong{font-weight:500;color:var(--navy);}
+.article-body em{font-style:italic;}
+.article-body blockquote{margin:2rem 0;padding:1.25rem 1.5rem;border-left:3px solid var(--gold);background:var(--gold-pale);border-radius:0 4px 4px 0;}
+.article-body blockquote p{font-family:'Open Sans', sans-serif;font-size:1.15rem;font-style:italic;color:var(--navy);margin:0;}
+.article-rule{height:0.5px;background:var(--border);margin:2.5rem 0;}
+
+/* PULL QUOTE */
+.pull-quote{margin:2.5rem 0;padding:2rem;background:var(--navy);border-radius:4px;text-align:center;}
+.pull-quote p{font-family:'Open Sans', sans-serif;font-size:clamp(1.2rem,2.5vw,1.6rem);font-weight:300;font-style:italic;color:var(--white);line-height:1.4;margin:0;}
+.pull-quote cite{display:block;margin-top:1rem;font-family:'Open Sans', sans-serif;font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold-light);font-style:normal;}
+
+/* ARTICLE CTA */
+.article-cta{margin-top:3.5rem;padding:2rem;background:var(--navy-xlight);border:0.5px solid var(--border);border-left:3px solid var(--gold);border-radius:0 4px 4px 0;}
+.article-cta-label{font-size:0.65rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.6rem;display:block;}
+.article-cta h3{font-family:'Open Sans', sans-serif;font-size:1.3rem;font-weight:500;color:var(--navy);margin-bottom:0.5rem;}
+.article-cta p{font-size:0.88rem;color:var(--text-muted);line-height:1.75;margin-bottom:1.25rem;}
+.btn-article-cta{display:inline-block;padding:12px 24px;background:var(--navy);color:var(--white);font-family:'Open Sans', sans-serif;font-size:0.75rem;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border-radius:2px;transition:background 0.2s;}
+.btn-article-cta:hover{background:var(--navy-mid);}
+
+/* MORE ARTICLES */
+.more-articles{padding:4rem 40px;background:var(--white);border-top:0.5px solid var(--border);}
+.more-articles-inner{max-width:760px;margin:0 auto;}
+.more-eyebrow{font-size:0.68rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;display:flex;align-items:center;gap:10px;}
+.more-eyebrow::before{content:'';display:block;width:20px;height:1px;background:var(--gold);}
+.more-articles h2{font-family:'Open Sans', sans-serif;font-size:1.5rem;font-weight:400;color:var(--navy);margin-bottom:2rem;}
+.more-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5px;background:var(--border);}
+.more-card{background:var(--cream);padding:1.5rem;text-decoration:none;transition:background 0.2s;}
+.more-card:hover{background:var(--gold-pale);}
+.more-card-cat{font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:0.5rem;}
+.more-card h3{font-family:'Open Sans', sans-serif;font-size:1.05rem;font-weight:500;color:var(--navy);line-height:1.35;margin-bottom:0.4rem;}
+.more-card p{font-size:0.82rem;color:var(--text-muted);line-height:1.6;}
+
+/* FOOTER */
+footer{background:var(--navy);padding:2.5rem 40px;}
+.footer-inner{max-width:760px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:1.5rem;}
+.footer-brand{font-family:'Open Sans', sans-serif;font-size:1rem;font-weight:500;color:var(--white);}
+.footer-brand span{color:var(--gold-light);}
+.footer-contact{font-size:0.82rem;color:rgba(255,255,255,0.45);margin-top:4px;}
+.footer-contact a{color:rgba(255,255,255,0.45);text-decoration:none;transition:color 0.2s;}
+.footer-contact a:hover{color:var(--gold-light);}
+.footer-reg{font-size:0.72rem;line-height:1.7;color:rgba(255,255,255,0.3);max-width:480px;}
+.footer-links{display:flex;gap:16px;flex-wrap:wrap;margin-top:1rem;}
+.footer-links a{font-size:0.68rem;letter-spacing:0.07em;text-transform:uppercase;color:rgba(255,255,255,0.3);text-decoration:none;transition:color 0.2s;}
+.footer-links a:hover{color:var(--gold-light);}
+
+/* RESPONSIVE */
+@media(max-width:700px){
+  nav{padding:0 24px;}
+  .nav-links{display:none;}
+  .nav-burger{display:flex;}
+  .article-hero,.article-layout,.more-articles,footer{padding-left:24px;padding-right:24px;}
+  .more-grid{grid-template-columns:1fr;}
+  .nav-links.open{display:flex!important;flex-direction:column;align-items:flex-start;gap:0;position:fixed;top:64px;left:0;right:0;background:rgba(13,44,108,0.98);border-bottom:1px solid rgba(184,154,90,0.18);padding:1rem 24px 1.5rem;z-index:99;}
+  .nav-links.open li a{font-size:0.9rem;padding:0.65rem 0;border-bottom:0.5px solid rgba(255,255,255,0.08);width:100%;display:block;}
+  .nav-links.open li:last-child a{border-bottom:none;}
+}
+
+.fade-in{opacity:0;transform:translateY(16px);transition:opacity 0.55s ease,transform 0.55s ease;}
+.fade-in.visible{opacity:1;transform:none;}
+
+  /* brand-refresh: inline logo marks */
+  .nav-mark    { width: 32px; height: 32px; vertical-align: middle; margin-right: 10px; }
+  .nav-brand .nav-mark { width: 28px; height: 28px; margin-right: 8px; }
+  .footer-mark { width: 28px; height: 28px; vertical-align: middle; margin-right: 10px; }
+  .footer-brand .footer-mark { width: 26px; height: 26px; margin-right: 8px; }
+
+  /* type-refresh: wealth-style nav lockup */
+  /* Mark sits as a flex child of the anchor; tagline stacked beneath brand. */
+  .nav-logo  { display: inline-flex; align-items: center; gap: 12px; }
+  .nav-brand { display: inline-flex; align-items: center; gap: 10px; }
+  .nav-logo .nav-mark, .nav-brand .nav-mark {
+    margin-right: 0; vertical-align: middle; flex-shrink: 0; display: block;
+  }
+  .nav-lockup { display: flex; flex-direction: column; line-height: 1.05; }
+  .nav-logo .nav-brand-text, .nav-brand .nav-brand-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.0rem;
+    letter-spacing: 0;
+    color: var(--navy);
+  }
+  .nav-brand .nav-brand-text { color: var(--white); }
+  .nav-logo .nav-tagline, .nav-brand .nav-tagline {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.6rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #00aabb;
+    margin-top: 3px;
+  }
+  /* Soften nav links to mixed-case to match the Wealth nav. */
+  .nav-links a, nav .nav-links a {
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+    font-size: 0.88rem !important;
+  }
+  .nav-links .nav-cta, nav .nav-links .nav-cta {
+    font-size: 0.82rem !important;
+    letter-spacing: 0.02em !important;
+  }
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"When Everyday Life Stops Talking Back","description":"How financial pressure manifests through silence, withdrawal, and the slow disengagement that quietly undermines workforce performance.","author":{"@type":"Person","name":"Daniel Cottam","url":"https://www.finchtheory.com"},"publisher":{"@type":"Organization","name":"Finch Theory","url":"https://finchtheory.com/","logo":{"@type":"ImageObject","url":"https://finchtheory.com/icons/favicon-32.png"}},"datePublished":"2026-04-08","dateModified":"2026-04-08","mainEntityOfPage":{"@type":"WebPage","@id":"https://finchtheory.com/insights/when-everyday-life-stops-talking-back.html"},"image":"https://finchtheory.com/og-image.png","inLanguage":"en-GB","articleSection":"Insights","keywords":"financial wellbeing, employee engagement, mental load, workforce performance"}</script>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="/index.html"><img src="/aetas-mark-reverse.svg" alt="" class="nav-mark" width="34" height="34"><span class="nav-lockup"><span class="nav-brand-text">Finch Theory</span><span class="nav-tagline">The Business Performance Solution</span></span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="/limited-companies.html">Limited companies</a></li>
+    <li><a href="/llps.html">LLPs</a></li>
+    <li><a href="/investment.html">Pricing</a></li>
+    <li><a href="/calculator.html">Calculator</a></li>
+    <li><a href="/diagnostic.html">Diagnostic</a></li>
+    <li><a href="/insights.html" class="active">Insights</a></li>
+    <li><a href="/faqs.html">FAQs</a></li>
+    <li><a href="https://links.finchtheory.com/widget/booking/IacdM2cW2bnLm0pK7Jty" target="_blank" class="nav-cta">Book a Review</a></li>
+  </ul>
+  <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<div class="article-hero">
+  <div class="article-hero-inner">
+    <div class="article-eyebrow">
+      <a href="/insights.html">← Insights</a>
+      <span class="article-eyebrow-sep">·</span>
+      <span class="article-eyebrow-cat">Business performance</span>
+    </div>
+    <h1>When Everyday Life Stops Talking Back</h1>
+    <p class="article-standfirst">Britain is changing in ways that appear practical and inevitable. Post offices close, services move online, shops automate, and workplaces digitise.</p>
+    <div class="article-meta">
+      <div class="article-meta-item"><strong>Matthew Steiner</strong></div>
+      <div class="article-meta-item">February 27, 2026</div>
+      <div class="article-meta-item">3 min read</div>
+    </div>
+  </div>
+</div>
+
+<!-- BODY -->
+<div class="article-layout">
+  <div class="article-body fade-in">
+
+    <ul>
+    <li>Everyday automation and digitisation are reducing routine human interaction across the UK.</li>
+    <li>Small social encounters function as social infrastructure, not optional lifestyle experiences.</li>
+    <li>The impact differs across generations but affects all age groups.</li>
+    <li>Organisations and leaders must design efficiency alongside human connection.</li>
+    </ul>
+    <p>Britain is changing in ways that appear practical and inevitable. Post offices close, services move online, shops automate, and workplaces digitise.</p>
+    <p>Small, informal interactions such as greetings, brief conversations, and familiar recognition that reinforce belonging without requiring deliberate social planning.</p>
+    <p>Across daily life, several structural forces now reinforce one another:</p>
+    <ul>
+    <li>Physical community locations are closing.</li>
+    <li>Rising costs reduce casual social activity.</li>
+    <li>Public services increasingly require digital navigation.</li>
+    <li>Retail and service environments are becoming automated.</li>
+    </ul>
+    <p>These shifts unintentionally engineer out spontaneous interaction.</p>
+    <h3>In summary</h3>
+    <ul>
+    <li>Routine interaction supports psychological stability.</li>
+    <li>Social disconnection develops gradually rather than suddenly.</li>
+    </ul>
+    <p>Why are older adults most affected by loss of routine interaction?</p>
+    <p>For many older adults, especially following bereavement, everyday interactions provide structure and reassurance.</p>
+    <p>Post offices, cafés and local venues historically acted as informal social hubs. When replaced by limited outreach services or digital alternatives:</p>
+    <ul>
+    <li>confidence reduces</li>
+    <li>long periods pass without conversation</li>
+    </ul>
+    <p>Digital exclusion compounds this effect. Studies show strong associations between lack of internet access and increased loneliness among older adults.</p>
+    <ul>
+    <li>Loss of routine accelerates loneliness.</li>
+    <li>Digital exclusion increases isolation.</li>
+    <li>Social interaction supports independence and wellbeing.</li>
+    </ul>
+    <p>Why is Generation X experiencing hidden disconnection?</p>
+    <p>Generation X often balances careers, children and ageing parents while managing financial pressure.</p>
+    <p>Although digitally capable, reduced community interaction creates quieter challenges:</p>
+    <ul>
+    <li>fewer informal outlets for decompression</li>
+    <li>reduced spontaneous conversation</li>
+    <li>rising costs limiting social participation</li>
+    </ul>
+    <p>Rather than identifying as lonely, many experience sustained fatigue and background disconnection.</p>
+    <ul>
+    <li>Capability does not eliminate emotional cost.</li>
+    <li>Financial pressure reinforces isolation patterns.</li>
+    </ul>
+    <p>Are younger generations immune to loneliness in a digital world?</p>
+    <p>Younger generations appear adapted to digital communication, yet adaptability does not equal protection.</p>
+    <p>Online interaction often replaces shared physical experiences. Surveys suggest many young adults report insufficient regular human interaction, particularly in remote or hybrid working environments.</p>
+    <p>Cost pressures also reduce social participation, pushing connection further online.</p>
+    <p>Digital connection can support relationships, but it rarely replicates the emotional reassurance created through physical presence.</p>
+    <ul>
+    <li>Digital familiarity does not prevent loneliness.</li>
+    <li>Online interaction differs from embodied connection.</li>
+    <li>Economic factors shape social behaviour.</li>
+    </ul>
+    <p>Structural change produces different outcomes depending on life stage and circumstance.</p>
+    <p>Effective leadership is not about resisting progress but designing change responsibly.</p>
+    <p>Before removing human interaction, organisations should consider:</p>
+    <ul>
+    <li>Who relies on this interaction as part of routine?</li>
+    <li>Where will replacement connection occur?</li>
+    <li>Is there a visible human alternative?</li>
+    <li>How will disengagement be noticed early?</li>
+    </ul>
+    <p>Purposeful social design, including shared spaces and accessible support systems, can protect wellbeing while maintaining efficiency.</p>
+    <ul>
+    <li>Human connection supports productivity.</li>
+    <li>Preventative design reduces long term social costs.</li>
+    <li>Leadership decisions shape social outcomes.</li>
+    </ul>
+    <p>Frequently Asked Questions</p>
+    <p>Why does automation increase loneliness?</p>
+    <p>Automation removes casual interactions that previously occurred naturally during everyday tasks, reducing effortless social connection.</p>
+    <p>Is loneliness only a problem for older people?</p>
+    <p>No. Loneliness affects all generations, although causes vary from bereavement to digital substitution and financial pressure.</p>
+    <p>How is loneliness linked to financial wellbeing?</p>
+    <p>Financial stress limits social participation, while isolation increases anxiety and decision fatigue, creating reinforcing cycles affecting wellbeing and economic behaviour.</p>
+    <p>Can digital communication replace in person interaction?</p>
+    <p>Digital tools support connection but rarely replicate emotional reassurance created by shared physical environments.</p>
+    <p>What can employers do to reduce workplace isolation?</p>
+    <p>Employers can design structured interaction through mentoring, shared environments, financial wellbeing programmes and intentional hybrid work models.</p>
+    <p>AI Summary: The Core Argument</p>
+    <p>Key Takeaways</p>
+    <ul>
+    <li>Efficiency without connection creates delayed societal costs.</li>
+    <li>Loneliness is a structural issue rather than an individual failure.</li>
+    <li>Organisations and leaders can actively design connection back into modern life.</li>
+    </ul>
+    <p>Societies are held together not only by institutions but by familiar faces, brief conversations and shared routines.</p>
+    <p>Different generations experience change differently, yet no generation thrives in isolation.</p>
+    <p>Efficiency can be rebuilt. Connection, once lost, is far harder to restore.</p>
+
+    <div class="article-rule"></div>
+
+    <!-- IN-ARTICLE CTA -->
+    <div class="article-cta">
+      <span class="article-cta-label">Take the next step</span>
+      <h3>Find out what financial pressure is costing your business.</h3>
+      <p>The Workplace Performance Review is a no-cost, two-session conversation with Matthew Steiner. It identifies where financial pressure is showing up in your specific business — and what a proportionate response looks like.</p>
+      <a href="https://links.finchtheory.com/widget/booking/IacdM2cW2bnLm0pK7Jty" target="_blank" class="btn-article-cta">Book a Workplace Performance Review</a>
+    </div>
+
+  </div>
+</div>
+
+<!-- MORE ARTICLES -->
+<div class="more-articles">
+  <div class="more-articles-inner fade-in">
+    <div class="more-eyebrow">More from Insights</div>
+    <h2>Further reading</h2>
+    <div class="more-grid" id="more-articles-grid">
+      <!-- Populated by JS -->
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand"><img src="/aetas-mark-reverse.svg" alt="" class="footer-mark" width="26" height="26">Finch Theory <span>in the Workplace</span></div>
+      <div class="footer-contact"><a href="mailto:matthew.steiner@finchtheory.com">matthew.steiner@finchtheory.com</a> &nbsp;·&nbsp; <a href="https://www.finchtheory.com">finchtheory.com</a></div>
+      <div class="footer-links">
+        <a href="/faqs.html">FAQs</a>
+        <a href="/diagnostic.html">Diagnostic</a>
+        <a href="/privacy.html">Privacy policy</a>
+      </div>
+    </div>
+    <div class="footer-reg">Finch Theory provides workplace financial wellbeing, education, and consultancy services to employers. These services do not constitute regulated financial advice. Where regulated advice is required, this is provided separately by Finch Theory, an FCA-authorised adviser.</div>
+  </div>
+
+  <!-- brand-refresh: aetas partners lockup -->
+  <div style="margin-top:1.75rem;padding-top:1.25rem;border-top:0.5px solid rgba(255,255,255,0.08);text-align:center;">
+    <a href="https://finchtheory.com/" aria-label="Part of Finch Theory" style="display:inline-block;opacity:0.65;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.65'">
+      <img src="/aetas-horizontal-reverse.svg" alt="Finch Theory" style="display:block;height:30px;width:auto;">
+    </a>
+  </div>
+</footer>
+
+<script>
+// Nav burger
+(function(){
+  var b=document.getElementById('navBurger'), l=document.getElementById('navLinks');
+  if(!b||!l)return;
+  b.addEventListener('click',function(){
+    var open=l.classList.toggle('open');
+    b.classList.toggle('open',open);
+    b.setAttribute('aria-expanded',open);
+    document.body.style.overflow=open?'hidden':'';
+  });
+  document.addEventListener('click',function(e){
+    if(!b.contains(e.target)&&!l.contains(e.target)){l.classList.remove('open');b.classList.remove('open');b.setAttribute('aria-expanded','false');document.body.style.overflow='';}
+  });
+})();
+
+// Fade in
+var obs=new IntersectionObserver(function(e){e.forEach(function(e){if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:0.08});
+document.querySelectorAll('.fade-in').forEach(function(el){obs.observe(el);});
+
+// More articles — populate from master list, excluding current
+var CURRENT_SLUG = 'when-everyday-life-stops-talking-back';
+var ALL_ARTICLES = [{"slug": "why-financial-wellbeing-is-a-business-issue", "cat": "Business performance", "title": "Why Financial Wellbeing Has Become a Business Issue for SMEs", "summary": "That assumption no longer holds."}, {"slug": "when-everyday-life-stops-talking-back", "cat": "Business performance", "title": "When Everyday Life Stops Talking Back", "summary": "Britain is changing in ways that appear practical and inevitable. Post offices close, services move online, shops automate, and workplaces digitise."}, {"slug": "introducing-the-aetas-collective", "cat": "Business performance", "title": "Introducing the Finch Theory: Bringing Financial Wellbeing Expertise Together for SMEs", "summary": "Across the UK, many small and medium-sized businesses are facing a quiet but significant challenge. Financial pressure, wellbeing, and performance are"}, {"slug": "financial-wellbeing-in-the-workplace", "cat": "Business performance", "title": "Financial Wellbeing? Introducing Finch Theory In the Workplace", "summary": "In today’s fast-moving business landscape, employee wellbeing is much more than a nice-to-have benefit. For small and medium-sized enterprises (SMEs),"}, {"slug": "strengthening-your-team-through-financial-wellbeing", "cat": "Business performance", "title": "Strengthening Your Team Through Financial Wellbeing", "summary": "Helping Your Team Feel Confident, Supported, and Ready for the Future"}];
+
+
+var grid = document.getElementById('more-articles-grid');
+if(grid){
+  var others = ALL_ARTICLES.filter(function(a){return a.slug !== CURRENT_SLUG;}).slice(0,4);
+  others.forEach(function(a){
+    var card = document.createElement('a');
+    card.className = 'more-card';
+    card.href = '/insights/' + a.slug + '.html';
+    card.innerHTML = '<span class="more-card-cat">'+a.cat+'</span><h3>'+a.title+'</h3><p>'+a.summary+'</p>';
+    grid.appendChild(card);
+  });
+}
+</script>
+</body>
+</html>

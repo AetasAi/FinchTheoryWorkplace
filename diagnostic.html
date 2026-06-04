@@ -1,0 +1,853 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HNH05BKNFX"></script>
+  <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-HNH05BKNFX');</script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workplace Diagnostic · Finch Theory</title>
+  <meta name="description" content="A free 15-question employer diagnostic on financial wellbeing across three pillars. Takes 8 minutes, with personalised results emailed to you.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://finchtheory.com/diagnostic.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://finchtheory.com/diagnostic.html">
+  <meta property="og:title" content="Diagnostic · Finch Theory">
+  <meta property="og:description" content="A free 15-question employer diagnostic on financial wellbeing across three pillars. Takes 8 minutes, with personalised results emailed to you.">
+  <meta property="og:site_name" content="Finch Theory">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:image" content="https://finchtheory.com/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Diagnostic · Finch Theory">
+  <meta name="twitter:description" content="A free 15-question employer diagnostic on financial wellbeing across three pillars. Takes 8 minutes, with personalised results emailed to you.">
+  <meta name="twitter:image" content="https://finchtheory.com/og-image.png">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <meta name="theme-color" content="#0e0e0e">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap">
+
+  <link rel="stylesheet" href="/styles.css">
+
+  
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-inner">
+    <a href="./" class="brand" aria-label="Finch Theory home">
+      <span class="brand-mark"><img src="/assets/finch-theory-mark.png" alt="Finch Theory"></span>
+      <span class="brand-text">
+        <span>Finch Theory</span>
+        <span class="brand-sub">The Business Performance Solution</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="limited-companies.html">Limited companies</a></li>
+      <li><a href="llps.html">LLPs</a></li>
+      <li><a href="investment.html">Pricing</a></li>
+      <li><a href="calculator.html">Calculator</a></li>
+      <li><a href="diagnostic.html">Diagnostic</a></li>
+      <li><a href="insights.html">Insights</a></li>
+      <li><a href="faqs.html">FAQs</a></li>
+      <li><a href="https://link.finchtheory.com/widget/form/9fkQAaigUnxLJQqOM17V" class="nav-cta" target="_blank" rel="noopener">Book a Review</a></li>
+    </ul>
+  </div>
+</header>
+
+
+<section class="page-banner">
+  <div class="container">
+    <p class="breadcrumbs"><a href="./">Home</a> <span class="sep">/</span> Diagnostic</p>
+    <div class="hero-eyebrow" style="color: var(--ft-gold-light); margin-bottom: 1.5rem;">Employer diagnostic</div>
+    <h1>How well is your organisation doing on <span class="accent">financial wellbeing?</span></h1>
+    <p class="lead">A free 15-question employer diagnostic across three pillars: Benefits and Reward, Financial Education and Guidance, and Wellbeing and Culture. Takes about eight minutes. Personalised results and recommendations delivered to your inbox.</p>
+  </div>
+</section>
+
+
+<!-- PROGRESS -->
+<section class="section-tight" style="border-bottom: 1px solid var(--line); position: sticky; top: 64px; background: rgba(255,255,255,0.96); backdrop-filter: blur(8px); z-index: 10;">
+  <div class="container-narrow">
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <div style="flex: 1; height: 4px; background: var(--line-soft); border-radius: 2px; overflow: hidden;">
+        <div id="progress-fill" style="height: 100%; width: 0%; background: var(--ft-gold); transition: width 240ms var(--ease);"></div>
+      </div>
+      <div style="display: flex; gap: 0.5rem; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-muted);">
+        <span>Q&nbsp;</span><span id="prog-2">0</span><span>of</span><span id="prog-3">15</span><span>·</span><span id="prog-4">0%</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FORM -->
+<section class="section">
+  <div class="container-narrow">
+
+    <div id="form-section">
+      <form id="diagnostic-form" novalidate>
+
+
+  <div class="q-category-header">
+    <span class="eyebrow">Section 01 of 03</span>
+    <h2>Benefits and Reward</h2>
+    <p style="color: rgba(255,255,255,0.78); font-size: 0.9rem; margin: 0.5rem 0 0;">How well your current benefits package serves the genuine financial needs of your workforce, and how effectively employees engage with it.</p>
+  </div>
+
+    <fieldset class="q-block">
+      <legend><span style="color: var(--ft-gold); font-weight: 700; margin-right: 0.5rem;">Question 1 of 15</span>When did you last conduct a structured review of your employee benefits package, assessing both cost and employee value?</legend>
+      <div class="q-options">
+        <label class="q-option"><input type="radio" name="q1" value="1" required><span>We have never formally reviewed our benefits</span></label>
+        <label class="q-option"><input type="radio" name="q1" value="2" required><span>More than three years ago</span></label>
+        <label class="q-option"><input type="radio" name="q1" value="3" required><span>Within the last one to three years</span></label>
+        <label class="q-option"><input type="radio" name="q1" value="4" required><span>We review benefits annually with clear metrics on usage and impact</span></label>
+      </div>
+    </fieldset>
+
+
+    <fieldset class="q-block">
+      <legend><span style="color: var(--ft-gold); font-weight: 700; margin-right: 0.5rem;">Question 2 of 15</span>How well do your employees understand and actively use the benefits available to them?</legend>
+      <div class="q-options">
+        <label class="q-option"><input type="radio" name="q2" value="1" required><span>Most employees are unaware of what is available</span></label>
+        <label class="q-option"><input type="radio" name="q2" value="2" required><span>Some awareness, but engagement is low and inconsistent</span></label>
+        <label class="q-option"><input type="radio" name="q2" value="3" required><span>Good awareness and reasonable engagement across the team</span></label>
+        <label class="q-option"><input type="radio" name="q2" value="4" required><span>High engagement, employees actively value and use their benefits</span></label>
+      </div>
+    </fieldset>
+
+
+    <fieldset class="q-block">
+      <legend><span style="color: var(--ft-gold); font-weight: 700; margin-right: 0.5rem;">Question 3 of 15</span>Does your benefits package include financial wellbeing provisions, such as salary advance, debt support, savings schemes, or financial coaching?</legend>
+      <div class="q-options">
+        <label class="q-option"><input type="radio" name="q3" value="1" required><span>None, our benefits are limited to standard statutory provisions</span></label>
+        <label class="q-option"><input type="radio" name="q3" value="2" required><span>We are considering adding financial wellbeing provisions</span></label>
+        <label class="q-option"><input type="radio" name="q3" value="3" required><span>One or two provisions are in place but not consistently communicated</span></label>
+        <label class="q-option"><input type="radio" name="q3" value="4" required><span>A comprehensive suite of financial wellbeing tools is available and well used</span></label>
+      </div>
+    </fieldset>
+
+
+    <fieldset class="q-block">
+      <legend><span style="color: var(--ft-gold); font-weight: 700; margin-right: 0.5rem;">Question 4 of 15</span>How well do your benefits support employees at different life stages, from those starting out financially, through to those approaching retirement?</legend>
+      <div class="q-options">
+        <label class="q-option"><input type="radio" name="q4" value="1" required><span>We have not considered life stage relevance in our benefits design</span></label>
+        <label class="q-option"><input type="radio" name="q4" value="2" required><span>Benefits are largely one-size-fits-all with limited flexibility</span></label>
+        <label class="q-option"><input type="radio" name="q4" value="3" required><span>Some flexibility exists, but life stage relevance is not explicit</span></label>
+        <label class="q-option"><input type="radio" name="q4" value="4" required><span>Benefits are designed and communicated with life stage relevance at the centre</span></label>
+      </div>
+    </fieldset>
+
+
+    <fieldset class="q-block">
+      <legend><span style="color: var(--ft-gold); font-weight: 700; margin-right: 0.5rem;">Question 5 of 15</span>Do you have a structured reward or recognition programme that connects to performance, values, or key milestones?</legend>
+      <div class="q-options">
+        <label class="q-option"><input type="radio" name="q5" value="1" required><span>Recognition is ad hoc and largely informal</span></label>
+        <label class="q-option"><input type="radio" name="q5" value="2" required><span>We have some structure, but it is inconsistently applied</span></label>
+        <label class="q-option"><input type="radio" name="q5" value="3" required><span>A structured programme exists and is reasonably embedded</span></label>
+        <label class="q-option"><input type="radio" name="q5" value="4" required><span>Recognition is deeply embedded in our culture and clearly linked to performance</span></label>
+      </div>
+    </fieldset>
+
+
+
+  <div class="q-category-header">
+    <span class="eyebrow">Section 02 of 03</span>
+    <h2>Financial Education and Guidance</h2>
+    <p style="color: rgba(255,255,255,0.78); font-size: 0.9rem; margin: 0.5rem 0 0;">How structured the financial education provided to your team is, and whether they have access to qualified support when they need it.</p>
+  </div>
+
+    <fieldset class="q-block">
+      <legend><span style="color: var(--ft-gold); font-weight: 700; margin-right: 0.5rem;">Question 6 of 15</span>Do you have any insight into the level of financial stress within your workforce, and its impact on productivity, absence, or engagement?</legend>
+      <div class="q-options">
+        <label class="q-option"><input type="radio" name="q6" value="1" required><span>We have no visibility of financial stress in our workforce</span></label>
+        <label class="q-option"><input type="radio" name="q6" value="2" required><span>We are aware it is a likely issue but have not measured it</span></label>
+        <label class="q-option"><input type="radio" name="q6" value="3" required><span>We have conducted surveys or informal conversations to understand the picture</span></label>
+        <label class="q-option"><input type="radio" name="q6" value="4" required><span>We formally measure financial stress and track its impact on business performance</span></label>
+      </div>
+    </fieldset>
+
+
+    <fieldset class="q-block">
+      <legend><span style="color: var(--ft-gold); font-weight: 700; margin-right: 0.5rem;">Question 7 of 15</span>Does your organisation provide financial education, such as workshops, webinars, or written guides, on topics relevant to your employees' lives?</legend>
+      <div class="q-options">
+        <label class="q-option"><input type="radio" name="q7" value="1" required><span>We provide no financial education of any kind</span></label>
+        <label class="q-option"><input type="radio" name="q7" value="2" required><span>Occasional, unstructured content is shared but not as a programme</span></label>
+        <label class="q-option"><input type="radio" name="q7" value="3" required><span>We run periodic sessions, though not consistently planned or evaluated</span></label>
+        <label class="q-option"><input type="radio" name="q7" value="4" required><span>A structured, regular financial education programme is in place and well attended</span></label>
+      </div>
+    </fieldset>
+
+
+    <fieldset class="q-block">
+      <legend><span style="color: var(--ft-gold); font-weight: 700; margin-right: 0.5rem;">Question 8 of 15</span>Do your employees have access to a qualified, regulated financial adviser as a workplace benefit, for individual guidance on pensions, savings, or financial planning?</legend>
+      <div class="q-options">
+        <label class="q-option"><input type="radio" name="q8" value="1" required><span>No, employees must source financial advice entirely independently</span></label>
+        <label class="q-option"><input type="radio" name="q8" value="2" required><span>We signpost employees to external resources but provide no direct access</span></label>
+        <label class="q-option"><input type="radio" name="q8" value="3" required><span>Informal access exists through a known contact, but it is not a structured benefit</span></label>
+        <label class="q-option"><input type="radio" name="q8" value="4" required><span>Regulated financial advice is a formal workplace benefit available to all employees</span></label>
+      </div>
+    </fieldset>
+
+
+    <fieldset class="q-block">
+      <legend><span style="color: var(--ft-gold); font-weight: 700; margin-right: 0.5rem;">Question 9 of 15</span>How confident are you that your employees genuinely understand their pension, including what they are contributing, what they will receive, and how to optimise it?</legend>
+      <div class="q-options">
+        <label class="q-option"><input type="radio" name="q9" value="1" required><span>Most employees have very little understanding of their pension position</span></label>
+        <label class="q-option"><input type="radio" name="q9" value="2" required><span>Basic information is provided at onboarding, but ongoing engagement is low</span></label>
+        <label class="q-option"><input type="radio" name="q9" value="3" required><span>We provide regular pension communications and encourage active engagement</span></label>
+        <label class="q-option"><input type="radio" name="q9" value="4" required><span>Employees receive structured guidance and individual support to understand and optimise their pension</span></label>
+      </div>
+    </fieldset>
+
+
+    <fieldset class="q-block">
+      <legend><span style="color: var(--ft-gold); font-weight: 700; margin-right: 0.5rem;">Question 10 of 15</span>Have you ever calculated, even informally, the financial cost to your business of employee financial stress (through absenteeism, presenteeism, or turnover)?</legend>
+      <div class="q-options">
+        <label class="q-option"><input type="radio" name="q10" value="1" required><span>This has never been considered or discussed</span></label>
+        <label class="q-option"><input type="radio" name="q10" value="2" required><span>We know it is a cost but have not attempted to quantify it</span></label>
+        <label class="q-option"><input type="radio" name="q10" value="3" required><span>We have made rough estimates and believe the cost is significant</span></label>
+        <label class="q-option"><input type="radio" name="q10" value="4" required><span>We have formally measured the cost and use this to inform investment in employee support</span></label>
+      </div>
+    </fieldset>
+
+
+
+  <div class="q-category-header">
+    <span class="eyebrow">Section 03 of 03</span>
+    <h2>Wellbeing and Culture</h2>
+    <p style="color: rgba(255,255,255,0.78); font-size: 0.9rem; margin: 0.5rem 0 0;">Whether financial wellbeing has a strategic place in how your organisation operates, and how leadership engages with the topic.</p>
+  </div>
+
+    <fieldset class="q-block">
+      <legend><span style="color: var(--ft-gold); font-weight: 700; margin-right: 0.5rem;">Question 11 of 15</span>Is financial wellbeing actively discussed and prioritised as part of your people and culture strategy, not just as an HR compliance issue?</legend>
+      <div class="q-options">
+        <label class="q-option"><input type="radio" name="q11" value="1" required><span>Financial wellbeing is not part of our people strategy</span></label>
+        <label class="q-option"><input type="radio" name="q11" value="2" required><span>It is acknowledged occasionally but has no formal place in our strategy</span></label>
+        <label class="q-option"><input type="radio" name="q11" value="3" required><span>It is on our agenda and beginning to be embedded in our people approach</span></label>
+        <label class="q-option"><input type="radio" name="q11" value="4" required><span>Financial wellbeing is central to our people strategy and championed by leadership</span></label>
+      </div>
+    </fieldset>
+
+
+    <fieldset class="q-block">
+      <legend><span style="color: var(--ft-gold); font-weight: 700; margin-right: 0.5rem;">Question 12 of 15</span>How engaged is your senior leadership team in financial wellbeing, not just as a benefit, but as a direct driver of business performance and retention?</legend>
+      <div class="q-options">
+        <label class="q-option"><input type="radio" name="q12" value="1" required><span>There is no leadership awareness or appetite on this topic</span></label>
+        <label class="q-option"><input type="radio" name="q12" value="2" required><span>Some leaders are personally aware but it is not a business priority</span></label>
+        <label class="q-option"><input type="radio" name="q12" value="3" required><span>Leadership is supportive and beginning to connect it to business outcomes</span></label>
+        <label class="q-option"><input type="radio" name="q12" value="4" required><span>There is a board-level champion and financial wellbeing is treated as a commercial lever</span></label>
+      </div>
+    </fieldset>
+
+
+    <fieldset class="q-block">
+      <legend><span style="color: var(--ft-gold); font-weight: 700; margin-right: 0.5rem;">Question 13 of 15</span>What is your current employee retention picture, and to what degree do you believe financial pressure plays a role in voluntary departures?</legend>
+      <div class="q-options">
+        <label class="q-option"><input type="radio" name="q13" value="1" required><span>Turnover is high and we have not explored the connection to financial pressure</span></label>
+        <label class="q-option"><input type="radio" name="q13" value="2" required><span>We suspect financial pressure contributes but have not acted on it</span></label>
+        <label class="q-option"><input type="radio" name="q13" value="3" required><span>We are actively addressing the link between financial stress and retention</span></label>
+        <label class="q-option"><input type="radio" name="q13" value="4" required><span>Retention is strong and financial wellbeing is a recognised part of why people stay</span></label>
+      </div>
+    </fieldset>
+
+
+    <fieldset class="q-block">
+      <legend><span style="color: var(--ft-gold); font-weight: 700; margin-right: 0.5rem;">Question 14 of 15</span>Do you measure or track Return on Employee Investment, understanding what your total people cost delivers in terms of output, engagement, and commercial performance?</legend>
+      <div class="q-options">
+        <label class="q-option"><input type="radio" name="q14" value="1" required><span>We do not measure ROEI or think in these terms</span></label>
+        <label class="q-option"><input type="radio" name="q14" value="2" required><span>We track some people metrics but not in a commercial ROEI framework</span></label>
+        <label class="q-option"><input type="radio" name="q14" value="3" required><span>We are beginning to connect people investment to commercial outcomes</span></label>
+        <label class="q-option"><input type="radio" name="q14" value="4" required><span>ROEI is formally measured, reported to leadership, and informs people strategy decisions</span></label>
+      </div>
+    </fieldset>
+
+
+    <fieldset class="q-block">
+      <legend><span style="color: var(--ft-gold); font-weight: 700; margin-right: 0.5rem;">Question 15 of 15</span>What is your primary motivation for engaging with financial wellbeing at this stage?</legend>
+      <div class="q-options">
+        <label class="q-option"><input type="radio" name="q15" value="1" required><span>Regulatory or compliance pressure</span></label>
+        <label class="q-option"><input type="radio" name="q15" value="2" required><span>Recruitment, we need to improve our proposition to attract talent</span></label>
+        <label class="q-option"><input type="radio" name="q15" value="3" required><span>Retention, we are losing people and want to understand why</span></label>
+        <label class="q-option"><input type="radio" name="q15" value="4" required><span>Culture and performance, we want to build a workplace where people genuinely thrive</span></label>
+      </div>
+    </fieldset>
+
+
+
+        <!-- LEAD CAPTURE -->
+        <div class="q-category-header" style="background: var(--ft-gold); margin-top: 3rem;">
+          <span class="eyebrow" style="color: rgba(255,255,255,0.9);">One last step</span>
+          <h2>Where should we send your results?</h2>
+          <p style="color: rgba(255,255,255,0.85); font-size: 0.9rem; margin: 0.5rem 0 0;">Your personalised report will be calculated immediately. Enter your details below to receive it.</p>
+        </div>
+
+        <fieldset class="q-block">
+          <legend>Your details</legend>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-field">
+              <label for="name">First name *</label>
+              <input type="text" id="name" name="name" required placeholder="First name only">
+            </div>
+            <div class="form-field">
+              <label for="job_title">Job title</label>
+              <input type="text" id="job_title" name="job_title" placeholder="e.g. Managing Director">
+            </div>
+            <div class="form-field">
+              <label for="company">Organisation name *</label>
+              <input type="text" id="company" name="company" required placeholder="Company name">
+            </div>
+            <div class="form-field">
+              <label for="email">Work email address *</label>
+              <input type="email" id="email" name="email" required placeholder="you@company.com">
+            </div>
+            <div class="form-field">
+              <label for="sector">Sector</label>
+              <select id="sector" name="sector">
+                <option value="">Select sector</option>
+                <option>Professional Services</option>
+                <option>Financial Services</option>
+                <option>Healthcare</option>
+                <option>Technology</option>
+                <option>Construction and Property</option>
+                <option>Retail and Hospitality</option>
+                <option>Manufacturing</option>
+                <option>Not-for-Profit / Charity</option>
+                <option>Education</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="employees">Number of employees</label>
+              <select id="employees" name="employees">
+                <option value="">Select range</option>
+                <option>1 to 10</option>
+                <option>11 to 25</option>
+                <option>26 to 50</option>
+                <option>51 to 100</option>
+                <option>101 to 250</option>
+                <option>251+</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <div style="text-align: center; margin-top: 2rem;">
+          <p style="font-size: 0.85rem; color: var(--ink-muted); margin-bottom: 1.25rem; max-width: 540px; margin-left: auto; margin-right: auto;">Your results will be calculated immediately and sent to your email address. Matthew Steiner at Finch Theory will receive a copy and may be in touch to discuss your results. All responses are treated in confidence.</p>
+          <button type="submit" id="submit-btn" class="btn btn-primary btn-arrow">Calculate my results</button>
+          <p id="error-msg" style="display: none; color: var(--color-text-danger, #c0392b); font-size: 0.9rem; margin-top: 1rem;">Please answer all 15 questions and complete your name, organisation, and email before submitting.</p>
+        </div>
+
+      </form>
+    </div>
+
+
+    <!-- RESULTS (initially hidden, shown by JS after submission) -->
+    <div id="results" style="display: none;">
+
+      <div style="background: var(--ft-black); color: #fff; padding: 3rem 2rem; border-radius: 8px; text-align: center; margin-bottom: 2rem;">
+        <div id="results-band" style="display: inline-block; padding: 0.5rem 1.25rem; background: var(--ft-gold); color: #fff; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; border-radius: 2px; margin-bottom: 1.5rem;"></div>
+        <div style="font-size: 3.5rem; font-weight: 300; color: var(--ft-gold-light); line-height: 1;" id="results-score">0</div>
+        <p style="color: rgba(255,255,255,0.6); font-size: 0.85rem; margin: 0.5rem 0 1.5rem;">out of 60</p>
+        <h2 style="color: #fff; margin-bottom: 0.75rem;" id="results-title"></h2>
+        <p style="color: rgba(255,255,255,0.82); max-width: 600px; margin: 0 auto;" id="results-subtitle"></p>
+      </div>
+
+      <div class="grid grid-3" style="margin-bottom: 2.5rem;">
+        <div class="card" style="text-align: center;">
+          <h4 style="font-size: 0.85rem; letter-spacing: 0.05em; color: var(--ft-black); margin-bottom: 0.75rem;">Benefits and Reward</h4>
+          <div style="height: 6px; background: var(--line-soft); border-radius: 3px; overflow: hidden; margin-bottom: 1rem;">
+            <div id="bar-benefits" style="height: 100%; width: 0%; background: var(--ft-gold); transition: width 600ms var(--ease);"></div>
+          </div>
+          <div><span id="score-benefits" style="font-size: 1.5rem; font-weight: 300; color: var(--ft-black);">0</span><span style="color: var(--ink-muted); font-size: 0.85rem;"> / 20</span></div>
+        </div>
+        <div class="card" style="text-align: center;">
+          <h4 style="font-size: 0.85rem; letter-spacing: 0.05em; color: var(--ft-black); margin-bottom: 0.75rem;">Financial Education</h4>
+          <div style="height: 6px; background: var(--line-soft); border-radius: 3px; overflow: hidden; margin-bottom: 1rem;">
+            <div id="bar-education" style="height: 100%; width: 0%; background: var(--ft-gold); transition: width 600ms var(--ease);"></div>
+          </div>
+          <div><span id="score-education" style="font-size: 1.5rem; font-weight: 300; color: var(--ft-black);">0</span><span style="color: var(--ink-muted); font-size: 0.85rem;"> / 20</span></div>
+        </div>
+        <div class="card" style="text-align: center;">
+          <h4 style="font-size: 0.85rem; letter-spacing: 0.05em; color: var(--ft-black); margin-bottom: 0.75rem;">Wellbeing and Culture</h4>
+          <div style="height: 6px; background: var(--line-soft); border-radius: 3px; overflow: hidden; margin-bottom: 1rem;">
+            <div id="bar-culture" style="height: 100%; width: 0%; background: var(--ft-gold); transition: width 600ms var(--ease);"></div>
+          </div>
+          <div><span id="score-culture" style="font-size: 1.5rem; font-weight: 300; color: var(--ft-black);">0</span><span style="color: var(--ink-muted); font-size: 0.85rem;"> / 20</span></div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-bottom: 1.25rem;">
+        <h3>Your assessment</h3>
+        <div id="results-narrative"></div>
+      </div>
+
+      <div class="card" style="margin-bottom: 1.25rem;">
+        <h3>Recommended next steps</h3>
+        <ul id="results-recs" style="padding-left: 1.25rem; line-height: 1.7;"></ul>
+      </div>
+
+      <div id="email-confirm" style="display: none; padding: 1rem 1.25rem; background: rgba(0,156,166,0.08); border-left: 3px solid var(--ft-gold); border-radius: 4px; margin-bottom: 1.25rem; color: var(--ft-black); font-size: 0.95rem;">
+        ✓ A copy of these results has been sent to your email address.
+      </div>
+
+      <div class="card" style="background: var(--ft-black); color: #fff; text-align: center; border: none;">
+        <h3 style="color: #fff;">Ready to take the next step?</h3>
+        <p style="color: rgba(255,255,255,0.82); max-width: 540px; margin-left: auto; margin-right: auto;">Book a complimentary conversation with Matthew Steiner to talk through your results and explore what Finch Theory could mean for your organisation.</p>
+        <p style="margin-top: 1.5rem; margin-bottom: 0;"><a href="https://link.finchtheory.com/widget/form/9fkQAaigUnxLJQqOM17V" target="_blank" rel="noopener" class="btn btn-gold btn-arrow" style="background: var(--ft-gold); color: #fff;">Book a Workplace Performance Review</a></p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<style>
+.form-field label { display: block; font-size: 0.82rem; font-weight: 600; color: var(--ft-black); margin-bottom: 0.45rem; }
+.form-field input, .form-field select { width: 100%; font-family: inherit; font-size: 0.95rem; padding: 0.7rem 0.85rem; background: #fff; border: 1px solid var(--line); border-radius: 4px; color: var(--ink); }
+.form-field input:focus, .form-field select:focus { outline: 0; border-color: var(--ft-gold); box-shadow: 0 0 0 3px rgba(0,156,166,0.12); }
+@media (max-width: 600px) {
+  .q-block legend { font-size: 0.95rem; }
+  fieldset.q-block > div[style*="grid-template-columns"] { grid-template-columns: 1fr !important; }
+}
+</style>
+
+<script>
+
+// ── Scoring data ───────────────────────────────────────────────────────────────
+const BANDS = [
+  { min: 15, max: 25, name: "Foundation",  cls: "band-foundation",
+    title: "Significant opportunity ahead",
+    subtitle: "Your organisation is at the start of its financial wellbeing journey. The good news is that the impact of early action is considerable, and the competitive advantage of moving now is real.",
+    narrative: [
+      "Your diagnostic results suggest that financial wellbeing has not yet become a structured part of how your organisation operates. This is more common than you might expect, particularly in SMEs where every resource counts and people initiatives often follow rather than lead business priorities.",
+      "What the data consistently shows, however, is that organisations at this stage carry a hidden cost: financial stress in the workforce manifests in reduced productivity, higher absence, and elevated turnover. For a business where every person matters, this is a material risk.",
+      "The opportunity from here is significant. Moving from Foundation to Developing typically requires focused action in just two or three areas, and the return on that investment is measurable within twelve months."
+    ],
+    recs: [
+      { icon: "📋", text: "Commission a benefits audit to understand what you currently spend and whether employees value it, you may find significant budget to redeploy more effectively." },
+      { icon: "💬", text: "Introduce a simple financial wellbeing survey to understand where your employees are, even basic insight will sharpen your next steps considerably." },
+      { icon: "🎓", text: "Run a single financial education workshop with your team, pension basics, cost of living, and financial planning fundamentals. Measure attendance and feedback." },
+      { icon: "👔", text: "Brief your senior leadership team on the business case for financial wellbeing, frame it as a retention and productivity issue, not a welfare one." },
+      { icon: "📞", text: "Book a diagnostic review with Finch Theory to explore what a structured programme could look like for your organisation and workforce." }
+    ]
+  },
+  { min: 26, max: 38, name: "Developing",  cls: "band-developing",
+    title: "Good foundations, clear gaps to address",
+    subtitle: "You have taken meaningful steps and there is genuine intent behind your approach. The priority now is moving from intention to structure, and from occasional to consistent.",
+    narrative: [
+      "Your results suggest an organisation that recognises the importance of financial wellbeing and has begun to act on it, but where delivery is still inconsistent and the business case has not yet been fully made internally.",
+      "At this stage, the risk is not inaction, it is fragmentation. Well-intentioned but unconnected initiatives rarely deliver the employee engagement or the business outcomes they promise. The shift from 'doing things' to 'running a programme' is where sustained impact begins.",
+      "The organisations that move fastest from Developing to Established are those that connect financial wellbeing to a commercial metric, retention cost, productivity, or ROEI, and give a senior leader ownership of the outcome."
+    ],
+    recs: [
+      { icon: "🔗", text: "Connect your existing financial wellbeing activity into a coherent programme with a clear annual calendar, defined objectives, and a named owner." },
+      { icon: "📊", text: "Identify one commercial metric, turnover cost, absence rate, or engagement score, and track it alongside your wellbeing activity to build the internal business case." },
+      { icon: "🏦", text: "Introduce structured access to regulated financial advice as a workplace benefit, individual guidance has a disproportionate impact on employee confidence and loyalty." },
+      { icon: "🎯", text: "Review your benefits for life stage relevance, a 25-year-old and a 52-year-old have fundamentally different financial needs, and your benefits should reflect that." },
+      { icon: "📞", text: "Talk to Finch Theory about how to formalise and deepen what you are already doing, and where the highest-impact gaps are for your specific workforce." }
+    ]
+  },
+  { min: 39, max: 51, name: "Established", cls: "band-established",
+    title: "Strong foundations, refine and deepen",
+    subtitle: "You have built something meaningful. The priority now is measuring its impact more rigorously, closing the remaining gaps, and ensuring the programme evolves as your workforce does.",
+    narrative: [
+      "Your results reflect an organisation that has made a genuine commitment to financial wellbeing and is seeing the benefits. Your benefits are reasonably well structured, employees have access to meaningful support, and leadership understands the connection to business outcomes.",
+      "At this stage, the challenge shifts from implementation to optimisation. The question is not whether to invest in financial wellbeing, you already have, but whether that investment is delivering maximum return, and whether the gaps that remain are costing you more than you realise.",
+      "Established organisations often find that the highest-value next steps are in measurement, understanding what is working, what is not, and how to make the case for deeper investment based on evidence rather than intuition."
+    ],
+    recs: [
+      { icon: "📈", text: "Build a formal ROEI framework to track the commercial return on your people investment, and present it to leadership as a business performance metric." },
+      { icon: "🔍", text: "Conduct a deep benefits audit to identify underutilised provisions and reallocate investment toward what employees actually value and engage with." },
+      { icon: "🏆", text: "Consider positioning your financial wellbeing programme as a recruitment differentiator, communicate it actively in job descriptions, interviews, and employer brand content." },
+      { icon: "🤝", text: "Explore partnership with Finch Theory to add regulated financial planning access and structured 1:1 guidance, the highest-impact addition at this stage." },
+      { icon: "🌟", text: "Evaluate your culture and leadership engagement, even strong programmes lose momentum without an active internal champion at senior level." }
+    ]
+  },
+  { min: 52, max: 60, name: "Leading",     cls: "band-leading",
+    title: "Exemplar, you are setting the standard",
+    subtitle: "Your organisation is operating at the leading edge of employee financial wellbeing for the SME market. The priority is sustaining, evolving, and sharing what you have built.",
+    narrative: [
+      "Your diagnostic results place you in a small group of SMEs that have made financial wellbeing a genuine strategic priority rather than a peripheral benefit. You are measuring impact, leadership is engaged, and employees have access to meaningful, regulated support.",
+      "At this level, the risk is complacency, the best programmes are never finished. Employee needs change, the financial landscape shifts, and a programme that felt leading-edge two years ago may have gaps today. Continuous review is what separates truly embedded programmes from those that peak and plateau.",
+      "You are also in a position to use your approach as a competitive advantage, in recruitment, retention, and culture, in a way that most of your peers cannot. That is a significant commercial asset worth actively communicating."
+    ],
+    recs: [
+      { icon: "♻️", text: "Schedule an annual strategic review of your financial wellbeing programme, treat it with the same rigour you would apply to any other business investment." },
+      { icon: "📣", text: "Actively communicate your financial wellbeing approach in your employer brand, use it in job postings, LinkedIn, and candidate conversations as a genuine differentiator." },
+      { icon: "🔬", text: "Commission a diagnostic of programme gaps, even strong programmes have blind spots, and an independent review will surface opportunities you cannot see from inside." },
+      { icon: "🌍", text: "Consider mentoring peer businesses in your network, sharing best practice is a brand-building opportunity and positions your leadership team as sector voices." }
+    ]
+  }
+];
+
+// ── Progress tracking ──────────────────────────────────────────────────────────
+document.addEventListener('change', updateProgress);
+function updateProgress() {
+  const total = 15;
+  let answered = 0;
+  for (let i = 1; i <= 15; i++) {
+    if (document.querySelector(`input[name="q${i}"]:checked`)) answered++;
+  }
+  const pct = Math.round((answered / total) * 75) + (hasDetails() ? 25 : 0);
+  document.getElementById('progress-fill').style.width = Math.min(pct, 99) + '%';
+
+  // Section labels
+  ['prog-2','prog-3','prog-4'].forEach(id => document.getElementById(id).classList.remove('active'));
+  if (answered >= 1)  document.getElementById('prog-2').classList.add('active');
+  if (answered >= 6)  document.getElementById('prog-3').classList.add('active');
+  if (answered >= 11) document.getElementById('prog-4').classList.add('active');
+}
+
+function hasDetails() {
+  return document.getElementById('name').value.trim() &&
+         document.getElementById('email').value.trim() &&
+         document.getElementById('company').value.trim();
+}
+
+['name','email','company','job_title'].forEach(id => {
+  document.getElementById(id)?.addEventListener('input', updateProgress);
+});
+
+// ── Form submit ────────────────────────────────────────────────────────────────
+document.getElementById('diagnostic-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  // Validate
+  const name    = document.getElementById('name').value.trim();
+  const email   = document.getElementById('email').value.trim();
+  const company = document.getElementById('company').value.trim();
+  const jobTitle = document.getElementById('job_title').value.trim();
+  const sector   = document.getElementById('sector').value;
+  const employees = document.getElementById('employees').value;
+
+  let allAnswered = true;
+  const answers = {};
+  const answerLabels = {};
+  for (let i = 1; i <= 15; i++) {
+    const checked = document.querySelector(`input[name="q${i}"]:checked`);
+    if (!checked) { allAnswered = false; break; }
+    answers[`q${i}`] = parseInt(checked.value);
+    answerLabels[`q${i}`] = checked.nextElementSibling.textContent.trim().replace(/^[0-9] /, '');
+  }
+
+  if (!name || !email || !company || !allAnswered) {
+    document.getElementById('error-msg').style.display = 'block';
+    return;
+  }
+  document.getElementById('error-msg').style.display = 'none';
+
+  // Calculate scores
+  const benefitsScore  = answers.q1 + answers.q2 + answers.q3 + answers.q4 + answers.q5;
+  const educationScore = answers.q6 + answers.q7 + answers.q8 + answers.q9 + answers.q10;
+  const cultureScore   = answers.q11 + answers.q12 + answers.q13 + answers.q14 + answers.q15;
+  const totalScore     = benefitsScore + educationScore + cultureScore;
+
+  const band = BANDS.find(b => totalScore >= b.min && totalScore <= b.max) || BANDS[0];
+
+  // Show results
+  showResults(name, email, company, totalScore, benefitsScore, educationScore, cultureScore, band);
+
+  // Send email
+  sendEmail(name, email, company, jobTitle, sector, employees, totalScore, benefitsScore, educationScore, cultureScore, band, answers, answerLabels);
+});
+
+// ── Display results ────────────────────────────────────────────────────────────
+function showResults(name, email, company, total, ben, edu, cul, band) {
+  document.getElementById('form-section').style.display = 'none';
+  const resultsEl = document.getElementById('results');
+  resultsEl.style.display = 'block';
+
+  document.getElementById('results-band').textContent = band.name;
+  document.getElementById('results-band').className = 'results-band ' + band.cls;
+  document.getElementById('results-score').textContent = total;
+  document.getElementById('results-title').textContent = band.title;
+  document.getElementById('results-subtitle').textContent = band.subtitle;
+
+  // Pillar bars (animate after render)
+  setTimeout(() => {
+    document.getElementById('score-benefits').textContent = ben;
+    document.getElementById('score-education').textContent = edu;
+    document.getElementById('score-culture').textContent = cul;
+    document.getElementById('bar-benefits').style.width  = (ben / 20 * 100) + '%';
+    document.getElementById('bar-education').style.width = (edu / 20 * 100) + '%';
+    document.getElementById('bar-culture').style.width   = (cul / 20 * 100) + '%';
+  }, 100);
+
+  // Narrative
+  const narDiv = document.getElementById('results-narrative');
+  narDiv.innerHTML = band.narrative.map(p => `<p>${p}</p>`).join('');
+
+  // Recommendations
+  const recList = document.getElementById('results-recs');
+  recList.innerHTML = band.recs.map(r =>
+    `<li><span class="rec-icon">${r.icon}</span>${r.text}</li>`
+  ).join('');
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  document.getElementById('progress-fill').style.width = '100%';
+}
+
+// ── Send email via EmailJS ─────────────────────────────────────────────────────
+
+// ── Send to Go High Level via webhook ─────────────────────────────────────────
+async function sendToGHL(name, email, company, jobTitle, sector, employees, total, ben, edu, cul, band, answers, labels) {
+  const WEBHOOK_URL = "https://services.leadconnectorhq.com/hooks/iYTxfP1HHyRKz2RL1tai/webhook-trigger/1e4fa94e-883d-4693-9e57-e05a6dfcbdbf";
+
+  const questionTexts = {
+    q1: "Benefits review frequency", q2: "Employee benefits awareness",
+    q3: "Financial wellbeing provisions", q4: "Life stage relevance",
+    q5: "Recognition programme", q6: "Financial stress visibility",
+    q7: "Financial education provision", q8: "Access to regulated adviser",
+    q9: "Pension understanding", q10: "Cost of financial stress measured",
+    q11: "Financial wellbeing in strategy", q12: "Leadership engagement",
+    q13: "Retention and financial pressure", q14: "ROEI measurement",
+    q15: "Primary motivation"
+  };
+
+  const payload = {
+    // Contact fields, GHL will create/update the contact
+    firstName: name.split(' ')[0] || name,
+    lastName: name.split(' ').slice(1).join(' ') || '',
+    email: email,
+    phone: '',
+    companyName: company,
+
+    // Custom fields
+    job_title: jobTitle || '',
+    sector: sector || '',
+    employees: employees || '',
+
+    // Diagnostic scores
+    overall_score: total,
+    overall_band: band.name,
+    benefits_score: ben + '/20',
+    education_score: edu + '/20',
+    culture_score: cul + '/20',
+
+    // Tags for GHL automation
+    tags: ['ITW Diagnostic', band.name, 'Website Lead'],
+
+    // Source tracking
+    source: 'ITW Diagnostic Tool',
+    source_url: 'https://finchtheory.com/diagnostic.html',
+
+    // All 15 answers
+    ...Object.fromEntries(
+      Object.entries(answers).map(([k, v]) => [
+        questionTexts[k] || k,
+        labels[k] + ' (' + v + '/4)'
+      ])
+    )
+  };
+
+  try {
+    const response = await fetch(WEBHOOK_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+      mode: 'no-cors' // GHL webhooks don't return CORS headers
+    });
+    console.log('GHL webhook fired successfully');
+  } catch (err) {
+    console.error('GHL webhook error:', err);
+    // Fail silently, EmailJS handles the user-facing confirmation
+  }
+}
+
+function sendEmail(name, email, company, jobTitle, sector, employees, total, ben, edu, cul, band, answers, labels) {
+  if (EMAILJS_PUBLIC_KEY === "YOUR_PUBLIC_KEY") {
+    // EmailJS not configured, show on-screen confirmation only
+    document.getElementById('email-confirm').style.display = 'block';
+    document.getElementById('email-confirm').textContent = '✓ Your results have been recorded. Matthew Steiner will be in touch to discuss your diagnostic.';
+    return;
+  }
+
+  emailjs.init(EMAILJS_PUBLIC_KEY);
+
+  const recsText = band.recs.map((r, i) => `${i+1}. ${r.text}`).join('\n');
+  const narrativeText = band.narrative.join('\n\n');
+
+  const questionTexts = {
+    q1: "Benefits review frequency", q2: "Employee benefits awareness",
+    q3: "Financial wellbeing provisions", q4: "Life stage relevance",
+    q5: "Recognition programme", q6: "Financial stress visibility",
+    q7: "Financial education provision", q8: "Access to regulated adviser",
+    q9: "Pension understanding", q10: "Cost of financial stress measured",
+    q11: "Financial wellbeing in strategy", q12: "Leadership engagement",
+    q13: "Retention and financial pressure", q14: "ROEI measurement",
+    q15: "Primary motivation"
+  };
+
+  let answersText = '';
+  for (let i = 1; i <= 15; i++) {
+    const key = `q${i}`;
+    answersText += `${questionTexts[key]}: ${labels[key]} (${answers[key]}/4)\n`;
+  }
+
+  // Split recommendations into individual fields
+  const recLines = band.recs.map(r => r.text);
+
+  emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+    to_name:          name,
+    first_name:       name.split(' ')[0] || name,
+    to_email:         email,
+    company:          company,
+    job_title:        jobTitle || 'Not provided',
+    sector:           sector   || 'Not provided',
+    employees:        employees || 'Not provided',
+    overall_score:    total,
+    overall_band:     band.name,
+    benefits_score:   ben + '/20',
+    benefits_pct:     Math.round(ben / 20 * 520),
+    education_score:  edu + '/20',
+    education_pct:    Math.round(edu / 20 * 520),
+    culture_score:    cul + '/20',
+    culture_pct:      Math.round(cul / 20 * 520),
+    narrative:        narrativeText,
+    rec_1:            recLines[0] || '',
+    rec_2:            recLines[1] || '',
+    rec_3:            recLines[2] || '',
+    rec_4:            recLines[3] || '',
+    rec_5:            recLines[4] || '',
+    answers_detail:   answersText,
+    cc_email:         'matthew.steiner@finchtheory.com'
+  }).then(() => {
+    document.getElementById('email-confirm').style.display = 'block';
+  }).catch(err => {
+    console.error('EmailJS error:', err);
+    document.getElementById('email-confirm').style.display = 'block';
+    document.getElementById('email-confirm').textContent = '✓ Your results are shown above. Matthew Steiner will be in touch to discuss them with you.';
+  });
+}
+
+</script>
+
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li><a href="limited-companies.html">Limited companies</a></li>
+          <li><a href="llps.html">LLPs</a></li>
+          <li><a href="investment.html">Pricing</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="insights.html">Insights</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="https://link.finchtheory.com/widget/form/9fkQAaigUnxLJQqOM17V" target="_blank" rel="noopener">Book a Review</a></li>
+          <li><a href="calculator.html">ROEI Calculator</a></li>
+          <li><a href="diagnostic.html">Diagnostic</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Useful</h4>
+        <ul>
+          <li><a href="https://finchtheory.com/working-with-us.html" target="_blank" rel="noopener">Working with Us</a></li>
+          <li><a href="https://finchtheory.com/professional-introducers.html" target="_blank" rel="noopener">Professional Introducers</a></li>
+          <li><a href="https://finchtheory.com/lifetime-to-legacy.html" target="_blank" rel="noopener">Lifetime to Legacy</a></li>
+        </ul>
+        <p style="margin: 1rem 0 0.4rem 0; font-weight: 600; color: #fff;">External Links</p>
+        <ul>
+          <li><a href="https://finchtheory.com/" target="_blank" rel="noopener">Finch Theory</a></li>
+          <li><a href="#" target="_blank" rel="noopener">Charity Performance Audit</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Offices</h4>
+        <p style="margin: 0 0 0.4rem 0; font-weight: 600; color: #fff;">London</p>
+        <ul style="margin-bottom: 1.25rem;">
+          <li>13 Hanover Square</li>
+          <li>Mayfair, London</li>
+          <li>W1S 1HN</li>
+        </ul>
+        <p style="margin: 0 0 0.4rem 0; font-weight: 600; color: #fff;">Norwich</p>
+        <ul>
+          <li>Insight House</li>
+          <li>7a Alkmaar Way</li>
+          <li>Norwich International Business Park</li>
+          <li>NR6 6BF</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Finch Theory provides workplace financial wellbeing, education, and consultancy services to employers. These services support financial understanding, engagement, and resilience but do not constitute regulated financial advice. Where regulated advice is required, this is provided separately by <strong>Finch Theory</strong>, an FCA-authorised adviser.</p>
+      <p>© <span data-year>2026</span> Finch Theory. All rights reserved. <a href="privacy.html">Privacy Policy</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ============================================================
+   Finch Theory — Site interactions
+   Mobile nav toggle, active link, scroll reveal
+   ============================================================ */
+
+(function () {
+  'use strict';
+
+  // ---------- Mobile nav toggle ----------
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.querySelector('.nav-links');
+  if (toggle && links) {
+    toggle.addEventListener('click', function () {
+      const open = links.classList.toggle('is-open');
+      toggle.classList.toggle('is-open', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+
+  // ---------- Highlight active nav link ----------
+  const path = window.location.pathname.replace(/\/$/, '');
+  document.querySelectorAll('.nav-links a').forEach(function (a) {
+    const href = a.getAttribute('href') || '';
+    const cleaned = href.replace(/\/$/, '').replace(/^\.\//, '');
+    if (
+      (cleaned && (path.endsWith('/' + cleaned) || path.endsWith(cleaned))) ||
+      (cleaned === 'index.html' && (path === '' || path === '/'))
+    ) {
+      a.classList.add('is-active');
+    }
+  });
+
+  // ---------- Scroll reveal ----------
+  if ('IntersectionObserver' in window) {
+    const obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(function (el) { obs.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-visible'); });
+  }
+
+  // ---------- Year in footer ----------
+  const yr = document.querySelector('[data-year]');
+  if (yr) yr.textContent = new Date().getFullYear();
+})();
+
+</script>
+
+</body>
+</html>

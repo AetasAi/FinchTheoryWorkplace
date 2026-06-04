@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<script defer src="/assets/js/analytics.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You · Finch Theory</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0e0e0e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0e0e0e;--navy-mid:#1d4291;--navy-light:#e8ecf3;--gold:#b8934a;--gold-light:#d4b07a;--gold-pale:#f5ede0;--cream:#faf8f5;--white:#ffffff;--text-body:#4a4a4a;--text-muted:#7a7a7a;--border:rgba(13,44,108,0.14);}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Open Sans', sans-serif;font-weight:300;color:var(--text-body);background:var(--cream);line-height:1.7;-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;flex-direction:column;}
+
+/* TOP BAR */
+.topbar{background:var(--navy);padding:0 2rem;height:60px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;}
+.topbar-logo{font-family:'Open Sans', sans-serif;font-size:1.15rem;font-weight:500;color:var(--white);text-decoration:none;letter-spacing:0.04em;}
+.topbar-logo span{color:var(--gold-light);}
+.topbar-link{font-size:0.75rem;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.5);text-decoration:none;transition:color 0.2s;}
+.topbar-link:hover{color:var(--gold-light);}
+
+/* HERO — navy full bleed */
+.hero{background:var(--navy);padding:5rem 2rem 4rem;position:relative;overflow:hidden;flex-shrink:0;}
+.hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 40%,rgba(184,147,74,0.1) 0%,transparent 60%);pointer-events:none;}
+.hero-inner{max-width:860px;margin:0 auto;position:relative;z-index:1;text-align:center;}
+.hero-check{width:80px;height:80px;border-radius:50%;background:rgba(255,255,255,0.07);border:0.5px solid rgba(184,147,74,0.4);display:flex;align-items:center;justify-content:center;margin:0 auto 2rem;font-size:2rem;}
+.hero-eyebrow{font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold-light);margin-bottom:1rem;}
+.hero h1{font-family:'Open Sans', sans-serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:300;color:var(--white);line-height:1.2;margin-bottom:1.25rem;}
+.hero h1 em{font-style:italic;color:var(--gold-light);}
+.hero-sub{font-size:1rem;color:rgba(255,255,255,0.65);max-width:560px;margin:0 auto;line-height:1.85;}
+
+/* REF BADGE */
+.ref-band{background:var(--white);border-top:0.5px solid var(--border);border-bottom:0.5px solid var(--border);padding:1.5rem 2rem;text-align:center;flex-shrink:0;}
+.ref-inner{max-width:860px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap;}
+.ref-label{font-size:0.78rem;color:var(--text-muted);}
+.ref-value{font-family:monospace;font-size:0.92rem;font-weight:600;color:var(--navy);background:var(--navy-light);padding:6px 16px;border-radius:3px;letter-spacing:0.04em;}
+.ref-note{font-size:0.78rem;color:var(--text-muted);}
+
+/* MAIN CONTENT */
+.content{max-width:860px;margin:0 auto;padding:4rem 2rem;flex:1;}
+
+/* WHAT HAPPENS NOW */
+.steps{display:flex;flex-direction:column;gap:0;margin:2rem 0;}
+.step{display:flex;gap:1.75rem;padding:1.75rem 0;border-bottom:0.5px solid var(--border);}
+.step:first-child{padding-top:0;}
+.step:last-child{border-bottom:none;}
+.step-num{width:44px;height:44px;border-radius:50%;background:var(--gold-pale);border:0.5px solid rgba(184,147,74,0.4);display:flex;align-items:center;justify-content:center;font-family:'Open Sans', sans-serif;font-size:1.2rem;font-weight:400;color:var(--gold);flex-shrink:0;}
+.step-body{}
+.step-title{font-family:'Open Sans', sans-serif;font-size:1.15rem;font-weight:500;color:var(--navy);margin-bottom:0.4rem;}
+.step-text{font-size:0.9rem;line-height:1.8;color:var(--text-body);}
+
+/* EMAIL NOTICE */
+.email-notice{background:var(--navy-light);border:0.5px solid var(--border);border-left:3px solid var(--gold);border-radius:0 4px 4px 0;padding:1.25rem 1.5rem;margin:2rem 0;font-size:0.88rem;color:var(--text-body);line-height:1.7;}
+.email-notice strong{color:var(--navy);font-weight:500;}
+
+/* PDF DOWNLOAD SECTION */
+.pdf-band{background:var(--white);border:0.5px solid var(--border);border-radius:4px;padding:1.5rem;margin:2rem 0;display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;}
+.pdf-icon{font-size:2rem;flex-shrink:0;}
+.pdf-body{flex:1;}
+.pdf-title{font-size:0.92rem;font-weight:500;color:var(--navy);margin-bottom:3px;}
+.pdf-sub{font-size:0.83rem;color:var(--text-muted);}
+.btn-pdf{display:inline-block;padding:11px 22px;background:var(--navy);color:var(--white);font-family:'Open Sans', sans-serif;font-size:0.75rem;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border-radius:2px;transition:background 0.2s;border:none;cursor:pointer;white-space:nowrap;}
+.btn-pdf:hover{background:var(--navy-mid);}
+
+/* DIVIDER */
+.rule{height:0.5px;background:var(--border);margin:2.5rem 0;}
+
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5px;background:var(--border);border:0.5px solid var(--border);border-radius:4px;overflow:hidden;margin:1.5rem 0;}
+.contact-card{background:var(--white);padding:1.5rem;}
+.contact-label{font-size:0.65rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem;}
+.contact-name{font-family:'Open Sans', sans-serif;font-size:1.1rem;font-weight:400;color:var(--navy);margin-bottom:0.4rem;}
+.contact-detail{font-size:0.87rem;color:var(--text-muted);line-height:1.65;}
+.contact-detail a{color:var(--navy);text-decoration:none;}
+.contact-detail a:hover{color:var(--gold);}
+
+/* BACK LINKS */
+.back-links{display:flex;gap:1rem;flex-wrap:wrap;margin-top:2.5rem;}
+.btn-primary{display:inline-block;padding:13px 26px;background:var(--navy);color:var(--white);font-family:'Open Sans', sans-serif;font-size:0.78rem;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border-radius:2px;transition:background 0.2s;}
+.btn-primary:hover{background:var(--navy-mid);}
+.btn-ghost{display:inline-block;padding:12px 24px;background:transparent;color:var(--text-muted);font-family:'Open Sans', sans-serif;font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;border-radius:2px;border:0.5px solid var(--border);transition:all 0.2s;}
+.btn-ghost:hover{color:var(--navy);border-color:var(--navy);}
+
+/* FOOTER */
+footer{background:var(--navy);padding:1.5rem 2rem;text-align:center;font-size:0.75rem;color:rgba(255,255,255,0.4);line-height:1.7;flex-shrink:0;}
+footer a{color:rgba(255,255,255,0.45);text-decoration:none;}
+footer a:hover{color:var(--gold-light);}
+
+@media(max-width:600px){
+  .contact-grid{grid-template-columns:1fr;}
+  .pdf-band{flex-direction:column;align-items:flex-start;}
+  .back-links{flex-direction:column;}
+  .ref-inner{flex-direction:column;gap:0.5rem;}
+}
+
+/* Fade animation */
+.fade-in{opacity:0;transform:translateY(16px);transition:opacity 0.55s ease,transform 0.55s ease;}
+.fade-in.visible{opacity:1;transform:none;}
+
+  /* brand-refresh: inline logo marks */
+  .nav-mark    { width: 32px; height: 32px; vertical-align: middle; margin-right: 10px; }
+  .nav-brand .nav-mark { width: 28px; height: 28px; margin-right: 8px; }
+  .footer-mark { width: 28px; height: 28px; vertical-align: middle; margin-right: 10px; }
+  .footer-brand .footer-mark { width: 26px; height: 26px; margin-right: 8px; }
+
+  /* type-refresh: wealth-style nav lockup */
+  /* Mark sits as a flex child of the anchor; tagline stacked beneath brand. */
+  .nav-logo  { display: inline-flex; align-items: center; gap: 12px; }
+  .nav-brand { display: inline-flex; align-items: center; gap: 10px; }
+  .nav-logo .nav-mark, .nav-brand .nav-mark {
+    margin-right: 0; vertical-align: middle; flex-shrink: 0; display: block;
+  }
+  .nav-lockup { display: flex; flex-direction: column; line-height: 1.05; }
+  .nav-logo .nav-brand-text, .nav-brand .nav-brand-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.0rem;
+    letter-spacing: 0;
+    color: var(--navy);
+  }
+  .nav-brand .nav-brand-text { color: var(--white); }
+  .nav-logo .nav-tagline, .nav-brand .nav-tagline {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.6rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #00aabb;
+    margin-top: 3px;
+  }
+  /* Soften nav links to mixed-case to match the Wealth nav. */
+  .nav-links a, nav .nav-links a {
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+    font-size: 0.88rem !important;
+  }
+  .nav-links .nav-cta, nav .nav-links .nav-cta {
+    font-size: 0.82rem !important;
+    letter-spacing: 0.02em !important;
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a href="https://finchtheory.com/" class="topbar-logo">Finch Theory <span>in the Workplace</span></a>
+  <a href="https://finchtheory.com/" class="topbar-link">← Back to site</a>
+</div>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-check">✓</div>
+    <div class="hero-eyebrow" id="hero-eyebrow">Form received</div>
+    <h1 id="hero-title">Thank you.<br><em id="hero-subtitle">Your form has been received.</em></h1>
+    <p class="hero-sub" id="hero-sub">A PDF copy has been sent to your email address and to Matthew Steiner at Finch Theory. Your reference number is below.</p>
+  </div>
+</div>
+
+<!-- REFERENCE BAND -->
+<div class="ref-band">
+  <div class="ref-inner">
+    <span class="ref-label">Your reference</span>
+    <span class="ref-value" id="ref-display">—</span>
+    <span class="ref-note">Please keep this for your records</span>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="content">
+
+  <!-- EMAIL NOTICE -->
+  <div class="email-notice fade-in" id="email-notice">
+    <strong>Copies sent by email.</strong> A PDF of your completed form has been sent to your email address and to matthew.steiner@finchtheory.com. If you do not receive your copy within a few minutes, check your spam folder or <a href="mailto:matthew.steiner@finchtheory.com" style="color:var(--navy);">contact Matthew directly</a>.
+  </div>
+
+  <!-- PDF DOWNLOAD -->
+  <div class="pdf-band fade-in" id="pdf-band" style="display:none;">
+    <div class="pdf-icon">📄</div>
+    <div class="pdf-body">
+      <div class="pdf-title" id="pdf-title">Download your PDF copy</div>
+      <div class="pdf-sub">Your completed form as a PDF — save for your records.</div>
+    </div>
+    <button class="btn-pdf" id="pdf-download-btn" onclick="redownloadPDF()">Download PDF</button>
+  </div>
+
+  <div class="rule fade-in"></div>
+
+  <!-- WHAT HAPPENS NEXT -->
+  <div class="fade-in">
+    <h2 style="font-family:'Open Sans', sans-serif;font-size:1.8rem;font-weight:400;color:var(--navy);margin-bottom:0.5rem;">What happens next</h2>
+    <p style="font-size:0.9rem;color:var(--text-muted);margin-bottom:2rem;" id="steps-intro">Matthew Steiner will review what you have submitted ahead of your next conversation.</p>
+  </div>
+
+  <div class="steps fade-in" id="steps-container">
+    <!-- Steps injected by JS based on form type -->
+  </div>
+
+  <div class="rule fade-in"></div>
+
+  <!-- CONTACT -->
+  <div class="fade-in">
+    <h2 style="font-family:'Open Sans', sans-serif;font-size:1.4rem;font-weight:400;color:var(--navy);margin-bottom:1rem;">If you have any questions in the meantime</h2>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-label">Email</div>
+        <div class="contact-name">Matthew Steiner</div>
+        <div class="contact-detail"><a href="mailto:matthew.steiner@finchtheory.com">matthew.steiner@finchtheory.com</a><br>Replies same day during business hours.</div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-label">Website</div>
+        <div class="contact-name">Finch Theory</div>
+        <div class="contact-detail"><a href="https://finchtheory.com">finchtheory.com</a><br>Information about all our services.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="back-links fade-in">
+    <a href="https://finchtheory.com/" class="btn-primary">Return to Finch Theory</a>
+    <a href="https://finchtheory.com/whats-next.html" class="btn-ghost" id="whats-next-link" style="display:none;">What happens next →</a>
+  </div>
+
+</div>
+
+<footer>
+  Finch Theory Limited &nbsp;·&nbsp; Registered in England &amp; Wales &nbsp;·&nbsp; FCA reg 458421 &nbsp;·&nbsp;
+  <a href="https://finchtheory.com/privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+  <a href="https://www.finchtheory.com">finchtheory.com</a>
+
+  <!-- brand-refresh: aetas partners lockup -->
+  <div style="margin-top:1.75rem;padding-top:1.25rem;border-top:0.5px solid rgba(255,255,255,0.08);text-align:center;">
+    <a href="https://finchtheory.com/" aria-label="Part of Finch Theory" style="display:inline-block;opacity:0.65;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.65'">
+      <img src="/aetas-horizontal-reverse.svg" alt="Finch Theory" style="display:block;height:30px;width:auto;">
+    </a>
+  </div>
+</footer>
+
+<script>
+// ── READ URL PARAMS ────────────────────────────────────────────────────
+const params = new URLSearchParams(window.location.search);
+const formType = params.get('form') || 'general';
+const orgName  = params.get('org')  || '';
+const ref      = params.get('ref')  || '—';
+
+// ── SET REFERENCE ──────────────────────────────────────────────────────
+document.getElementById('ref-display').textContent = ref;
+
+// ── CONFIGURE BY FORM TYPE ─────────────────────────────────────────────
+const config = {
+  benefits: {
+    eyebrow:  'Employee Benefits Data Capture',
+    title:    'Your benefits form has been',
+    subtitle: 'received and confirmed.',
+    sub:      'A PDF copy of your completed Employee Benefits Data Capture form has been sent to your email address and to Matthew Steiner at Finch Theory.',
+    stepsIntro: 'Matthew Steiner will review your pension and benefits information ahead of conversation two of your Workplace Performance Review.',
+    steps: [
+      { title: 'Review of your current arrangements',
+        text: 'Matthew will review your pension provider, contribution levels, benefits in place, and adviser arrangements against current market benchmarks — identifying where savings or improvements are likely.' },
+      { title: 'Findings presented in conversation two',
+        text: 'The second Workplace Performance Review conversation brings back the findings alongside specific recommendations. You will see the commercial case — what is likely to change and what it will cost — before committing to anything.' },
+      { title: 'Written summary provided',
+        text: 'A clear written summary of all findings and recommendations will be provided after conversation two — structured for use with your leadership team, partners, or board.' },
+    ],
+    pdfTitle: 'Employee Benefits Data Capture — PDF copy',
+    showWhatsNext: true,
+  },
+  dpa: {
+    eyebrow:  'Data Processing Agreement',
+    title:    'Your Data Processing Agreement has been',
+    subtitle: 'signed and submitted.',
+    sub:      'A fully executed copy of the Data Processing Agreement has been sent to your email address and to Finch Theory Limited for their records.',
+    stepsIntro: 'Your Data Processing Agreement is now in place. Here is what follows.',
+    steps: [
+      { title: 'Agreement is now in effect',
+        text: 'The Data Processing Agreement comes into force from the date of signing. Finch Theory Limited will process data related to your employee benefits and pension arrangements only in accordance with the terms of this agreement.' },
+      { title: 'Keep your reference number',
+        text: 'Your agreement reference (shown above) is your record of this agreement. Please retain the PDF copy for your files. If you need a replacement copy at any time, contact Matthew Steiner directly.' },
+      { title: 'Proceed to the next step',
+        text: 'If you have also completed the Employee Benefits Data Capture form, your Workplace Performance Review is now fully prepared. If not, Matthew will be in touch with the next steps.' },
+    ],
+    pdfTitle: 'Data Processing Agreement — signed copy',
+    showWhatsNext: false,
+  },
+};
+
+const c = config[formType] || config.benefits;
+
+document.getElementById('hero-eyebrow').textContent = c.eyebrow + (orgName ? ' — ' + orgName : '');
+document.getElementById('hero-title').innerHTML = c.title + '<br><em>' + c.subtitle + '</em>';
+document.getElementById('hero-sub').textContent = c.sub;
+document.getElementById('steps-intro').textContent = c.stepsIntro;
+document.getElementById('pdf-title').textContent = c.pdfTitle;
+if (c.showWhatsNext) document.getElementById('whats-next-link').style.display = '';
+
+// ── RENDER STEPS ───────────────────────────────────────────────────────
+const stepsEl = document.getElementById('steps-container');
+c.steps.forEach((s, i) => {
+  const div = document.createElement('div');
+  div.className = 'step';
+  div.innerHTML = `
+    <div class="step-num">${String(i+1).padStart(2,'0')}</div>
+    <div class="step-body">
+      <div class="step-title">${s.title}</div>
+      <div class="step-text">${s.text}</div>
+    </div>`;
+  stepsEl.appendChild(div);
+});
+
+// ── PDF RE-DOWNLOAD ────────────────────────────────────────────────────
+// The PDF is stored in sessionStorage by the form page so it can be
+// re-downloaded from this thank you page if needed.
+function redownloadPDF() {
+  const pdfData = sessionStorage.getItem('aetas_pdf_data');
+  const pdfName = sessionStorage.getItem('aetas_pdf_name') || 'aetas-form.pdf';
+  if (pdfData) {
+    const link = document.createElement('a');
+    link.href = pdfData;
+    link.download = pdfName;
+    link.click();
+  } else {
+    alert('PDF is no longer available in this session. Please contact matthew.steiner@finchtheory.com for a copy.');
+  }
+}
+
+// Show PDF download button if PDF data exists in sessionStorage
+if (sessionStorage.getItem('aetas_pdf_data')) {
+  document.getElementById('pdf-band').style.display = 'flex';
+}
+
+// ── FADE IN ────────────────────────────────────────────────────────────
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Fire analytics event
+if (typeof gtag !== 'undefined') {
+  gtag('event', 'form_thankyou_view', {
+    event_category: 'Forms',
+    event_label: formType + (orgName ? ' — ' + orgName : ''),
+  });
+}
+</script>
+</body>
+</html>

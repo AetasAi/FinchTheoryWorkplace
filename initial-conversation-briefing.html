@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<script defer src="/assets/js/analytics.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Initial Conversation Briefing · Finch Theory</title>
+<meta name="description" content="A short briefing before our first conversation, helping us focus the time and arrive prepared.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="https://finchtheory.com/" class="topbar-brand">
+    <img src="/icons/favicon-32.png" alt="" class="topbar-brand-mark" width="32" height="32">
+    <span class="topbar-brand-text">
+      <span class="topbar-brand-name">Finch Theory</span>
+      <span class="topbar-brand-tagline">The Business Performance Solution</span>
+    </span>
+  </a>
+  <a href="https://finchtheory.com/" class="topbar-link">&larr; Back to site</a>
+</header>
+
+<nav class="progress-bar" aria-label="Form progress">
+  <div class="progress-inner">
+    <a class="progress-step active" data-target="section-1">You</a>
+    <a class="progress-step" data-target="section-2">Organisation</a>
+    <a class="progress-step" data-target="section-3">Prompt</a>
+    <a class="progress-step" data-target="section-4">Decision</a>
+    <a class="progress-step" data-target="section-5">Motivation</a>
+    <a class="progress-step" data-target="section-6">Current state</a>
+    <a class="progress-step" data-target="section-7">Investment</a>
+    <a class="progress-step" data-target="section-8">Notes</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <div class="page-header">
+    <span class="eyebrow">Stage 1 of the Workplace Performance Review</span>
+    <h1>Initial Conversation <span class="accent">Briefing</span></h1>
+    <hr class="rule">
+    <p class="lead">A short briefing before our first conversation. It helps us arrive prepared, focus the time on what matters to you, and avoid covering ground that is already obvious. Most people complete it in around ten minutes.</p>
+    <div class="notice-box">
+      <p><strong>What happens next.</strong> Once submitted, you receive a confirmation email with a copy of your responses. Matthew will review them before your Initial Conversation and bring relevant context to the call. Nothing here is shared beyond the Finch Theory team.</p>
+    </div>
+  </div>
+
+  <form id="briefing-form" novalidate>
+
+    <section class="form-section" id="section-1">
+      <div class="section-head"><span class="section-num">01</span><span class="section-title">About you</span></div>
+      <div class="section-body">
+        <div class="field-grid">
+          <div class="field"><label for="contact_name">Full name <span class="req">*</span></label><input type="text" id="contact_name" name="contact_name" required></div>
+          <div class="field"><label for="contact_role">Role or title <span class="req">*</span></label><input type="text" id="contact_role" name="contact_role" required></div>
+          <div class="field"><label for="contact_email">Email <span class="req">*</span></label><input type="email" id="contact_email" name="contact_email" required></div>
+          <div class="field"><label for="contact_phone">Phone</label><input type="tel" id="contact_phone" name="contact_phone"></div>
+          <div class="field field-full">
+            <p class="field-prompt">What is your role in this conversation? <span class="req">*</span></p>
+            <div class="option-group">
+              <label><input type="radio" name="enquirer_role" value="Decision-maker" required><span>I am the decision-maker</span></label>
+              <label><input type="radio" name="enquirer_role" value="Part of decision-making team"><span>I am part of the decision-making team</span></label>
+              <label><input type="radio" name="enquirer_role" value="Gathering information"><span>I am gathering information for a decision-maker</span></label>
+              <label><input type="radio" name="enquirer_role" value="Advisor or referrer"><span>I am an advisor or referrer (accountant, solicitor, consultant)</span></label>
+            </div>
+            <div class="conditional" id="cond-advisor"><div class="field"><label for="advisor_context">Who is this for, and what is your relationship to them?</label><textarea id="advisor_context" name="advisor_context" rows="3"></textarea></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section" id="section-2">
+      <div class="section-head"><span class="section-num">02</span><span class="section-title">About the organisation</span></div>
+      <div class="section-body">
+        <div class="field-grid">
+          <div class="field"><label for="org_name">Organisation name <span class="req">*</span></label><input type="text" id="org_name" name="org_name" required></div>
+          <div class="field"><label for="org_headcount">Approximate headcount <span class="req">*</span></label><input type="number" id="org_headcount" name="org_headcount" min="1" required></div>
+          <div class="field">
+            <label for="org_sector">Sector</label>
+            <select id="org_sector" name="org_sector">
+              <option value="">Select sector</option>
+              <option>Legal and professional services</option>
+              <option>Accountancy and financial services</option>
+              <option>Engineering and manufacturing</option>
+              <option>Construction and property</option>
+              <option>Technology and software</option>
+              <option>Healthcare and life sciences</option>
+              <option>Retail and consumer</option>
+              <option>Hospitality and leisure</option>
+              <option>Creative and marketing</option>
+              <option>Charity and not-for-profit</option>
+              <option>Education</option>
+              <option>Other</option>
+            </select>
+            <div class="conditional" id="cond-sector-other" style="margin-top:0.6rem;"><input type="text" id="org_sector_other" name="org_sector_other" placeholder="Please describe your sector"></div>
+          </div>
+          <div class="field">
+            <p class="field-prompt" style="margin-bottom: 0.5rem;">Where is the business based? <span class="req">*</span></p>
+            <div class="option-group">
+              <label><input type="radio" name="org_location" value="United Kingdom" required><span>United Kingdom</span></label>
+              <label><input type="radio" name="org_location" value="Outside the UK"><span>Outside the UK</span></label>
+            </div>
+            <div class="conditional" id="cond-outside-uk"><p class="warning-text">Finch Theory currently operates with UK-based organisations only. We will still receive your submission and respond, but engagement may not be possible.</p></div>
+          </div>
+          <div class="field field-full">
+            <label for="org_description">In a sentence or two, describe the business. <span class="req">*</span></label>
+            <span class="hint">What you do, who for, and anything that defines the shape of the team.</span>
+            <textarea id="org_description" name="org_description" rows="3" required></textarea>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section" id="section-3">
+      <div class="section-head"><span class="section-num">03</span><span class="section-title">What has prompted this</span></div>
+      <div class="section-body">
+        <div class="field-grid">
+          <div class="field field-full">
+            <label for="prompt_reason">What has prompted you to look at this now? <span class="req">*</span></label>
+            <span class="hint">A retention issue, a board agenda item, an article, a referral, a specific concern. The more candid you are, the more useful the conversation.</span>
+            <textarea id="prompt_reason" name="prompt_reason" rows="4" required></textarea>
+          </div>
+          <div class="field field-full">
+            <label for="desired_outcome">What outcome would make this exercise feel worthwhile to you? <span class="req">*</span></label>
+            <span class="hint">An honest answer, even if exploratory. There is no wrong response.</span>
+            <textarea id="desired_outcome" name="desired_outcome" rows="3" required></textarea>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section" id="section-4">
+      <div class="section-head"><span class="section-num">04</span><span class="section-title">Decision process and timing</span></div>
+      <div class="section-body">
+        <div class="field-grid">
+          <div class="field field-full">
+            <p class="field-prompt">How will a decision be made? <span class="req">*</span></p>
+            <div class="option-group">
+              <label><input type="radio" name="decision_process" value="Sole decision" required><span>Sole decision. I can decide and act.</span></label>
+              <label><input type="radio" name="decision_process" value="Joint with one or two others"><span>Joint with one or two others (co-founders, partners)</span></label>
+              <label><input type="radio" name="decision_process" value="Board or directors' meeting"><span>Board or directors' meeting</span></label>
+              <label><input type="radio" name="decision_process" value="Partnership meeting"><span>Partnership meeting (LLPs)</span></label>
+              <label><input type="radio" name="decision_process" value="Other"><span>Other</span></label>
+            </div>
+            <div class="conditional" id="cond-decision-other"><div class="field"><label for="decision_process_other">Please describe</label><input type="text" id="decision_process_other" name="decision_process_other"></div></div>
+          </div>
+          <div class="field field-full">
+            <p class="field-prompt">What is the timescale you are working to? <span class="req">*</span></p>
+            <div class="option-group">
+              <label><input type="radio" name="decision_timescale" value="Live decision (within 1 month)" required><span>Live decision. Looking to move within the next month.</span></label>
+              <label><input type="radio" name="decision_timescale" value="Active exploration (1-3 months)"><span>Active exploration. Likely decision within 1 to 3 months.</span></label>
+              <label><input type="radio" name="decision_timescale" value="Building the case (3-6 months)"><span>Building the case. Likely decision within 3 to 6 months.</span></label>
+              <label><input type="radio" name="decision_timescale" value="Long horizon (6+ months)"><span>Long horizon. Six months or more, or no fixed timeline.</span></label>
+              <label><input type="radio" name="decision_timescale" value="Tied to a specific date"><span>Tied to a specific date</span></label>
+            </div>
+            <div class="conditional" id="cond-timescale-other"><div class="field"><label for="decision_timescale_other">Please describe</label><input type="text" id="decision_timescale_other" name="decision_timescale_other"></div></div>
+          </div>
+          <div class="field field-full conditional" id="cond-meeting-detail">
+            <label for="meeting_detail">When is the meeting, and what does the agenda need from you?</label>
+            <span class="hint">Date and what you need to bring back. Helps us shape the conversation around what you need.</span>
+            <textarea id="meeting_detail" name="meeting_detail" rows="3"></textarea>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section" id="section-5">
+      <div class="section-head"><span class="section-num">05</span><span class="section-title">Your motivation</span></div>
+      <div class="section-body">
+        <div class="field field-full">
+          <p class="field-prompt">When you think about getting better return on your workforce, which lens resonates most for you? <span class="req">*</span></p>
+          <p class="hint">There is no right answer. This helps us frame the conversation in the language that fits.</p>
+          <div class="option-group">
+            <label><input type="radio" name="motivation_lens" value="Commercial" required><span><strong>Commercial.</strong> Cost reduction, productivity, return on investment.</span></label>
+            <label><input type="radio" name="motivation_lens" value="People"><span><strong>People.</strong> Engagement, retention, supporting staff better.</span></label>
+            <label><input type="radio" name="motivation_lens" value="Both equally"><span><strong>Both equally.</strong> The commercial case and the people case land together.</span></label>
+            <label><input type="radio" name="motivation_lens" value="Not sure yet"><span><strong>Not sure yet.</strong> That is part of what I am trying to work out.</span></label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section non-advisor" id="section-6">
+      <div class="section-head"><span class="section-num">06</span><span class="section-title">Current state</span></div>
+      <div class="section-body">
+        <div class="field-grid">
+          <div class="field">
+            <p class="field-prompt" style="margin-bottom: 0.5rem;">Is a workplace pension scheme in place?</p>
+            <div class="option-group">
+              <label><input type="radio" name="pension_in_place" value="Yes"><span>Yes</span></label>
+              <label><input type="radio" name="pension_in_place" value="No"><span>No</span></label>
+              <label><input type="radio" name="pension_in_place" value="Don't know"><span>I do not know</span></label>
+            </div>
+          </div>
+          <div class="field">
+            <p class="field-prompt" style="margin-bottom: 0.5rem;">Is other financial wellbeing support in place?</p>
+            <p class="hint" style="margin-top: -0.4rem; margin-bottom: 0.5rem;">For example: salary advance, debt support, coaching, EAP.</p>
+            <div class="option-group">
+              <label><input type="radio" name="wellbeing_in_place" value="Yes"><span>Yes</span></label>
+              <label><input type="radio" name="wellbeing_in_place" value="No"><span>No</span></label>
+              <label><input type="radio" name="wellbeing_in_place" value="Don't know"><span>I do not know</span></label>
+            </div>
+          </div>
+          <div class="field field-full">
+            <p class="field-prompt">When did you last review your benefits package?</p>
+            <div class="option-group">
+              <label><input type="radio" name="last_benefits_review" value="Within the last 12 months"><span>Within the last 12 months</span></label>
+              <label><input type="radio" name="last_benefits_review" value="1 to 3 years ago"><span>1 to 3 years ago</span></label>
+              <label><input type="radio" name="last_benefits_review" value="Over 3 years ago"><span>Over 3 years ago</span></label>
+              <label><input type="radio" name="last_benefits_review" value="Never reviewed"><span>We have never formally reviewed our benefits</span></label>
+              <label><input type="radio" name="last_benefits_review" value="Don't know"><span>I do not know</span></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section non-advisor" id="section-7">
+      <div class="section-head"><span class="section-num">07</span><span class="section-title">Investment appetite</span></div>
+      <div class="section-body">
+        <div class="field field-full">
+          <p class="field-prompt">If we identify a strong case, is your organisation in a position to invest in addressing it?</p>
+          <p class="hint">An honest answer helps us set the conversation at the right level.</p>
+          <div class="option-group">
+            <label><input type="radio" name="investment_appetite" value="Yes - budget allocated"><span>Yes. Budget has been allocated.</span></label>
+            <label><input type="radio" name="investment_appetite" value="Yes - if the case stacks up"><span>Yes, if the commercial case stacks up.</span></label>
+            <label><input type="radio" name="investment_appetite" value="Unclear - exploring first"><span>Unclear yet. Exploring first to understand what is possible.</span></label>
+            <label><input type="radio" name="investment_appetite" value="Research only"><span>No. This is research at this stage only.</span></label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section advisor-only" id="section-7b">
+      <div class="section-head"><span class="section-num">07</span><span class="section-title">Context for the introduction</span></div>
+      <div class="section-body">
+        <div class="field field-full">
+          <label for="advisor_intent">What context do you want to bring this in? What would be most useful from our conversation?</label>
+          <span class="hint">Whether you are exploring whether to introduce a client, building knowledge for your practice, or considering Finch Theory as a partner.</span>
+          <textarea id="advisor_intent" name="advisor_intent" rows="4"></textarea>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section" id="section-8">
+      <div class="section-head"><span class="section-num">08</span><span class="section-title">Anything else</span></div>
+      <div class="section-body">
+        <div class="field field-full">
+          <label for="anything_else">Anything else you would like us to know before our first conversation?</label>
+          <span class="hint">Optional. Constraints, sensitivities, recent events, prior experience with similar programmes.</span>
+          <textarea id="anything_else" name="anything_else" rows="4"></textarea>
+        </div>
+      </div>
+    </section>
+
+    <div class="legal-note">
+      <strong>Confidentiality.</strong> Information submitted via this form is used only by Finch Theory to prepare for your Initial Conversation. It is not shared with third parties. Submission does not constitute a commitment by either party to enter into a formal engagement. Finch Theory (a trading style of an FCA-authorised adviser provides regulated financial advice separately; this form is for scoping purposes only.
+    </div>
+
+    <div class="form-actions">
+      <button type="submit" class="btn btn-primary" id="submit-btn">
+        <span class="btn-text">Submit briefing</span>
+        <span class="btn-spinner"></span>
+      </button>
+      <button type="reset" class="btn btn-ghost" onclick="if(!confirm('Clear all responses?')) event.preventDefault();">Clear form</button>
+    </div>
+
+  </form>
+</div>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div class="footer-grid">
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li><a href="limited-companies.html">Limited companies</a></li>
+          <li><a href="llps.html">LLPs</a></li>
+          <li><a href="investment.html">Pricing</a></li>
+          <li><a href="faqs.html">FAQs</a></li>
+          <li><a href="insights.html">Insights</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="https://link.finchtheory.com/widget/form/9fkQAaigUnxLJQqOM17V" target="_blank" rel="noopener">Book a Review</a></li>
+          <li><a href="calculator.html">ROEI Calculator</a></li>
+          <li><a href="diagnostic.html">Diagnostic</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Useful</h4>
+        <ul>
+          <li><a href="https://finchtheory.com/working-with-us.html" target="_blank" rel="noopener">Working with Us</a></li>
+          <li><a href="https://finchtheory.com/professional-introducers.html" target="_blank" rel="noopener">Professional Introducers</a></li>
+          <li><a href="https://finchtheory.com/lifetime-to-legacy.html" target="_blank" rel="noopener">Lifetime to Legacy</a></li>
+        </ul>
+        <p class="footer-sublabel">External Links</p>
+        <ul>
+          <li><a href="https://finchtheory.com/" target="_blank" rel="noopener">Finch Theory</a></li>
+          <li><a href="#" target="_blank" rel="noopener">Charity Performance Audit</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Offices</h4>
+        <p class="footer-sublabel">London</p>
+        <ul class="footer-address">
+          <li>13 Hanover Square</li>
+          <li>Mayfair, London</li>
+          <li>W1S 1HN</li>
+        </ul>
+        <p class="footer-sublabel">Norwich</p>
+        <ul class="footer-address">
+          <li>Insight House</li>
+          <li>7a Alkmaar Way</li>
+          <li>Norwich International Business Park</li>
+          <li>NR6 6BF</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Finch Theory provides workplace financial wellbeing, education, and consultancy services to employers. These services support financial understanding, engagement, and resilience but do not constitute regulated financial advice. Where regulated advice is required, this is provided separately by <strong>Finch Theory</strong>, an FCA-authorised adviser.</p>
+      <p>&copy; <span data-year>2026</span> Finch Theory. All rights reserved. <a href="privacy.html">Privacy Policy</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+const EMAILJS_PUBLIC_KEY        = 'T-OvAY8-q_r_P4tAA';
+const EMAILJS_SERVICE_ID        = 'service_dztbuyl';
+const EMAILJS_TEMPLATE_INTERNAL = 'template_283g3pp';
+const EMAILJS_TEMPLATE_CONFIRM  = 'template_2hfklis';
+emailjs.init(EMAILJS_PUBLIC_KEY);
+
+const FORM_REF = (function(){
+  const d=new Date(), ym=d.getFullYear()+String(d.getMonth()+1).padStart(2,'0');
+  return 'AICB-'+ym+'-'+Math.random().toString(36).substring(2,6).toUpperCase();
+})();
+
+function val(name){
+  const el = document.querySelector('[name="'+name+'"]');
+  if(!el) return '(not provided)';
+  if(el.type === 'radio'){
+    const checked = document.querySelector('[name="'+name+'"]:checked');
+    return checked ? checked.value : '(not answered)';
+  }
+  return (el.value || '').trim() || '(not provided)';
+}
+
+document.addEventListener('DOMContentLoaded', function(){
+  document.querySelectorAll('[name="enquirer_role"]').forEach(function(r){
+    r.addEventListener('change', function(){
+      const isAdvisor = (this.value === 'Advisor or referrer');
+      document.getElementById('cond-advisor').classList.toggle('visible', isAdvisor);
+      document.body.classList.toggle('is-advisor', isAdvisor);
+    });
+  });
+  document.getElementById('org_sector').addEventListener('change', function(){
+    document.getElementById('cond-sector-other').classList.toggle('visible', this.value === 'Other');
+  });
+  document.querySelectorAll('[name="org_location"]').forEach(function(r){
+    r.addEventListener('change', function(){
+      document.getElementById('cond-outside-uk').classList.toggle('visible', this.value === 'Outside the UK');
+    });
+  });
+  document.querySelectorAll('[name="decision_process"]').forEach(function(r){
+    r.addEventListener('change', function(){
+      const isBoardOrPartnership = (this.value === "Board or directors' meeting" || this.value === 'Partnership meeting');
+      document.getElementById('cond-decision-other').classList.toggle('visible', this.value === 'Other');
+      document.getElementById('cond-meeting-detail').classList.toggle('visible', isBoardOrPartnership);
+    });
+  });
+  document.querySelectorAll('[name="decision_timescale"]').forEach(function(r){
+    r.addEventListener('change', function(){
+      document.getElementById('cond-timescale-other').classList.toggle('visible', this.value === 'Tied to a specific date');
+    });
+  });
+
+  document.querySelectorAll('.progress-step').forEach(function(step){
+    step.addEventListener('click', function(){
+      const target = document.getElementById(this.dataset.target);
+      if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+    });
+  });
+
+  const sections = Array.from(document.querySelectorAll('.form-section'));
+  const steps = Array.from(document.querySelectorAll('.progress-step'));
+  window.addEventListener('scroll', function(){
+    const scrollPos = window.scrollY + 200;
+    let activeIdx = 0;
+    sections.forEach(function(s, i){ if(s.offsetTop <= scrollPos) activeIdx = i; });
+    steps.forEach(function(s, i){
+      s.classList.toggle('active', i === activeIdx);
+      s.classList.toggle('complete', i < activeIdx);
+    });
+  });
+});
+
+function generatePDF(){
+  const { jsPDF } = window.jspdf;
+  const doc = new jsPDF({ unit: 'mm', format: 'a4' });
+  const pageW = doc.internal.pageSize.getWidth();
+  const margin = 18;
+  let y = 22;
+  const C_BLUE = '#0e0e0e', C_GOLD = '#9A7B3A', C_INK = '#1a1f2e', C_INK_SOFT = '#4a5269', C_MUTED = '#8089a0';
+
+  function pageBreak(needed){ if(y + needed > 280){ doc.addPage(); y = 22; } }
+  function sectionHead(num, title){
+    pageBreak(20); y += 4;
+    doc.setFillColor(C_BLUE);
+    doc.rect(margin, y - 4, pageW - margin*2, 8, 'F');
+    doc.setFont('helvetica', 'bold'); doc.setFontSize(8);
+    doc.setTextColor(C_GOLD); doc.text(num, margin + 3, y + 1);
+    doc.setTextColor('#ffffff'); doc.text(title, margin + 12, y + 1);
+    y += 10;
+  }
+  function field(label, value){
+    pageBreak(14);
+    doc.setFont('helvetica', 'bold'); doc.setFontSize(8);
+    doc.setTextColor(C_GOLD); doc.text(label.toUpperCase(), margin, y); y += 4.5;
+    doc.setFont('helvetica', 'normal'); doc.setFontSize(9.5);
+    doc.setTextColor(C_INK);
+    const wrapped = doc.splitTextToSize(value || '(not provided)', pageW - margin*2);
+    doc.text(wrapped, margin, y);
+    y += wrapped.length * 4.6 + 4;
+  }
+
+  doc.setFillColor(C_BLUE);
+  doc.rect(0, 0, pageW, 14, 'F');
+  doc.setTextColor('#ffffff'); doc.setFont('helvetica', 'bold'); doc.setFontSize(11);
+  doc.text('Finch Theory', margin, 9);
+  doc.setFont('helvetica', 'normal'); doc.setFontSize(8);
+  doc.setTextColor('#c8a55c');
+  doc.text('Initial Conversation Briefing', pageW - margin, 9, { align: 'right' });
+
+  y = 28;
+  doc.setFont('helvetica', 'normal'); doc.setFontSize(8.5);
+  doc.setTextColor(C_MUTED);
+  doc.text('Reference: ' + FORM_REF + '   |   Submitted: ' + new Date().toLocaleString('en-GB'), margin, y);
+  y += 4;
+  doc.setDrawColor(C_GOLD); doc.setLineWidth(0.5);
+  doc.line(margin, y, margin + 60, y); y += 8;
+  doc.setFont('helvetica', 'normal'); doc.setFontSize(16);
+  doc.setTextColor(C_BLUE); doc.text(val('org_name'), margin, y); y += 6;
+  doc.setFontSize(10); doc.setTextColor(C_INK_SOFT);
+  doc.text('Submitted by ' + val('contact_name'), margin, y); y += 10;
+
+  sectionHead('01', 'ABOUT YOU');
+  field('Full name', val('contact_name'));
+  field('Role or title', val('contact_role'));
+  field('Email', val('contact_email'));
+  field('Phone', val('contact_phone'));
+  field('Role in this conversation', val('enquirer_role'));
+  if(val('enquirer_role') === 'Advisor or referrer'){ field('Who is this for, and what is your relationship', val('advisor_context')); }
+
+  sectionHead('02', 'ABOUT THE ORGANISATION');
+  field('Organisation name', val('org_name'));
+  field('Approximate headcount', val('org_headcount'));
+  let sector = val('org_sector');
+  if(sector === 'Other') sector = sector + ': ' + val('org_sector_other');
+  field('Sector', sector);
+  field('Based', val('org_location'));
+  field('Description', val('org_description'));
+
+  sectionHead('03', 'WHAT HAS PROMPTED THIS');
+  field('What has prompted you to look at this now', val('prompt_reason'));
+  field('What outcome would make this exercise feel worthwhile', val('desired_outcome'));
+
+  sectionHead('04', 'DECISION PROCESS AND TIMING');
+  let decision = val('decision_process');
+  if(decision === 'Other') decision = decision + ': ' + val('decision_process_other');
+  field('How a decision will be made', decision);
+  let timescale = val('decision_timescale');
+  if(timescale === 'Tied to a specific date') timescale = timescale + ': ' + val('decision_timescale_other');
+  field('Timescale', timescale);
+  if(decision.indexOf('Board') !== -1 || decision.indexOf('Partnership') !== -1){
+    field('Meeting detail and agenda', val('meeting_detail'));
+  }
+
+  sectionHead('05', 'YOUR MOTIVATION');
+  field('Which lens resonates most', val('motivation_lens'));
+
+  if(val('enquirer_role') === 'Advisor or referrer'){
+    sectionHead('06', 'CONTEXT FOR THE INTRODUCTION');
+    field('Context for the introduction', val('advisor_intent'));
+  } else {
+    sectionHead('06', 'CURRENT STATE');
+    field('Workplace pension scheme in place', val('pension_in_place'));
+    field('Other financial wellbeing support in place', val('wellbeing_in_place'));
+    field('Last benefits review', val('last_benefits_review'));
+    sectionHead('07', 'INVESTMENT APPETITE');
+    field('Position to invest if a case is identified', val('investment_appetite'));
+  }
+
+  sectionHead('08', 'ANYTHING ELSE');
+  field('Additional context', val('anything_else'));
+
+  const pageCount = doc.internal.getNumberOfPages();
+  for(let p = 1; p <= pageCount; p++){
+    doc.setPage(p);
+    doc.setFont('helvetica', 'normal'); doc.setFontSize(7.5);
+    doc.setTextColor(C_MUTED);
+    doc.text('Finch Theory  |  Initial Conversation Briefing  |  Confidential', margin, 290);
+    doc.text('Page ' + p + ' of ' + pageCount, pageW - margin, 290, { align: 'right' });
+  }
+  return doc;
+}
+
+document.getElementById('briefing-form').addEventListener('submit', async function(e){
+  e.preventDefault();
+  const btn = document.getElementById('submit-btn');
+  const btnText = btn.querySelector('.btn-text');
+  if(!this.checkValidity()){ this.reportValidity(); return; }
+  btn.classList.add('loading'); btn.disabled = true; btnText.textContent = 'Submitting...';
+
+  try {
+    const pdf = generatePDF();
+    const orgClean = val('org_name').replace(/[^a-zA-Z0-9]+/g, '-');
+    pdf.save('AICB-' + orgClean + '-' + FORM_REF + '.pdf');
+
+    const isAdvisor = val('enquirer_role') === 'Advisor or referrer';
+    const summary = [
+      'INITIAL CONVERSATION BRIEFING','Ref: ' + FORM_REF,'',
+      'CONTACT',
+      'Name: ' + val('contact_name'),
+      'Role: ' + val('contact_role'),
+      'Email: ' + val('contact_email'),
+      'Phone: ' + val('contact_phone'),
+      'Role in this conversation: ' + val('enquirer_role'),
+      isAdvisor ? 'Who for: ' + val('advisor_context') : '',
+      '','ORGANISATION',
+      'Name: ' + val('org_name'),
+      'Headcount: ' + val('org_headcount'),
+      'Sector: ' + (val('org_sector') === 'Other' ? val('org_sector') + ' (' + val('org_sector_other') + ')' : val('org_sector')),
+      'Based: ' + val('org_location'),
+      'Description: ' + val('org_description'),
+      '','PROMPT',
+      'Reason: ' + val('prompt_reason'),
+      'Desired outcome: ' + val('desired_outcome'),
+      '','DECISION PROCESS AND TIMING',
+      'Process: ' + (val('decision_process') === 'Other' ? val('decision_process') + ' (' + val('decision_process_other') + ')' : val('decision_process')),
+      'Timescale: ' + (val('decision_timescale') === 'Tied to a specific date' ? val('decision_timescale') + ' (' + val('decision_timescale_other') + ')' : val('decision_timescale')),
+      (val('decision_process').indexOf('Board') !== -1 || val('decision_process').indexOf('Partnership') !== -1) ? 'Meeting detail: ' + val('meeting_detail') : '',
+      '','MOTIVATION LENS', val('motivation_lens'),'',
+      isAdvisor ? 'ADVISOR CONTEXT' : 'CURRENT STATE',
+      isAdvisor ? val('advisor_intent') : 'Pension in place: ' + val('pension_in_place'),
+      isAdvisor ? '' : 'Other wellbeing support: ' + val('wellbeing_in_place'),
+      isAdvisor ? '' : 'Last benefits review: ' + val('last_benefits_review'),
+      isAdvisor ? '' : '',
+      isAdvisor ? '' : 'INVESTMENT APPETITE',
+      isAdvisor ? '' : val('investment_appetite'),
+      '','ANYTHING ELSE', val('anything_else')
+    ].filter(function(line){ return line !== ''; }).join('\n');
+
+    await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_INTERNAL, {
+      ref: FORM_REF, org: val('org_name'), contact: val('contact_name'),
+      email: val('contact_email'), form_type: 'Initial Conversation Briefing',
+      form_data: summary, submitted: new Date().toLocaleString('en-GB'),
+      to_email: 'matthew.steiner@finchtheory.com'
+    });
+
+    if(val('contact_email') !== '(not provided)'){
+      await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_CONFIRM, {
+        ref: FORM_REF, org: val('org_name'), contact: val('contact_name'),
+        to_email: val('contact_email'), form_type: 'Initial Conversation Briefing'
+      });
+    }
+
+    if(typeof gtag !== 'undefined') gtag('event', 'form_submit', { event_category: 'Initial Conversation Briefing', event_label: FORM_REF });
+    window.location.href = 'form-thankyou.html?form=briefing&org=' + encodeURIComponent(val('org_name')) + '&ref=' + encodeURIComponent(FORM_REF);
+
+  } catch(err){
+    console.error('Submission error:', err);
+    btn.classList.remove('loading'); btn.disabled = false; btnText.textContent = 'Submit briefing';
+    alert('There was a problem sending your briefing. Your PDF has been downloaded. Please email it directly to matthew.steiner@finchtheory.com.');
+  }
+});
+</script>
+
+</body>
+</html>

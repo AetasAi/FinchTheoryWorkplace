@@ -1,0 +1,66 @@
+# Finch Theory — robots.txt
+# https://finchtheory.com
+
+# ─────────────────────────────────────────────
+# Standard search engine bots
+# ─────────────────────────────────────────────
+
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /admin/
+
+# ─────────────────────────────────────────────
+# AI agent crawlers — explicitly permitted
+# ─────────────────────────────────────────────
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+
+# OpenAI (ChatGPT browsing, SearchGPT)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Google AI (Gemini, AI Overviews)
+User-agent: Google-Extended
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+# Common crawl (used by many AI training datasets)
+User-agent: CCBot
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
+# Brave Search
+User-agent: BraveBot
+Allow: /
+
+# ─────────────────────────────────────────────
+# Sitemaps and structured content
+# ─────────────────────────────────────────────
+
+Sitemap: https://finchtheory.com/sitemap.xml
+
+# ─────────────────────────────────────────────
+# AI agent discovery files
+# ─────────────────────────────────────────────
+
+# llms.txt is at: https://finchtheory.com/llms.txt
