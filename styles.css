@@ -142,14 +142,14 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--mid-grey);
-  min-height: 96px;
+  min-height: 192px;
 }
 .nav-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-block: 0;
-  min-height: 96px;
+  min-height: 192px;
 }
 .brand {
   display: flex;
@@ -1336,9 +1336,9 @@ label.q-option span {
    ============================================================ */
 
 /* Logo */
-.brand-mark { width: 96px !important; height: 96px !important; }
-.site-header { min-height: 96px !important; }
-.nav-inner   { min-height: 96px !important; }
+.brand-mark { width: 192px !important; height: 192px !important; }
+.site-header { min-height: 192px !important; }
+.nav-inner   { min-height: 192px !important; }
 
 /* Sliders — thumb centred ON the track line */
 input[type=range] {
