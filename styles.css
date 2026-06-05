@@ -322,7 +322,7 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
 
 /* ---------- 7. Hero ---------- */
 .hero {
-  padding-top: 88px;
+  padding-top: 0;
   display: grid;
   grid-template-columns: 55% 45%;
   align-items: start;
@@ -335,7 +335,7 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
   justify-content: center;
   position: relative;
   overflow: hidden;
-  min-height: 580px;
+  min-height: 640px;
 }
 .hero-left::after {
   content: '';
