@@ -1355,7 +1355,7 @@ label.q-option span {
   border-top: none; background: var(--ft-black) !important; }
 /* White divider strip between hero and first stats band */
 .hero + .section-dark {
-  border-top: 56px solid var(--warm-white);
+  border-top: 120px solid var(--warm-white);
 }
 .section-dark h1,
 .section-dark h2,
