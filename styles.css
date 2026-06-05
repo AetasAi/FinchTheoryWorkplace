@@ -162,14 +162,14 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
   text-decoration: none;
 }
 .brand-mark {
-  height: 48px;
+  height: 68px;
   width: auto;
   display: flex;
   align-items: center;
   flex-shrink: 0;
 }
 .brand-mark img {
-  height: 48px;
+  height: 68px;
   width: auto;
   object-fit: contain;
   display: block;
@@ -1355,7 +1355,11 @@ label.q-option span {
    SECTION-DARK — ensure all child text colours correct
    ============================================================ */
 .section-dark {
-  border-top: none; background: var(--ft-black) !important; }
+  border-top: 1px solid rgba(165,141,92,0.4); background: var(--ft-black) !important; }
+/* Separation between hero and first stats band */
+.hero + .section-dark {
+  border-top: 2px solid var(--ft-gold);
+}
 .section-dark h1,
 .section-dark h2,
 .section-dark h3,
