@@ -162,14 +162,14 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
   text-decoration: none;
 }
 .brand-mark {
-  height: 68px;
+  height: 80px;
   width: auto;
   display: flex;
   align-items: center;
   flex-shrink: 0;
 }
 .brand-mark img {
-  height: 68px;
+  height: 80px;
   width: auto;
   object-fit: contain;
   display: block;
@@ -194,9 +194,6 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
   white-space: nowrap;
 }
 .brand-text .brand-sub {
-  display: none;
-}
-t: contain;
   display: block;
 }
 .brand-text {
@@ -1355,10 +1352,10 @@ label.q-option span {
    SECTION-DARK — ensure all child text colours correct
    ============================================================ */
 .section-dark {
-  border-top: 1px solid rgba(165,141,92,0.4); background: var(--ft-black) !important; }
-/* Separation between hero and first stats band */
+  border-top: none; background: var(--ft-black) !important; }
+/* White divider strip between hero and first stats band */
 .hero + .section-dark {
-  border-top: 2px solid var(--ft-gold);
+  border-top: 6px solid var(--warm-white);
 }
 .section-dark h1,
 .section-dark h2,
