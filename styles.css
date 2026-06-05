@@ -329,13 +329,13 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
 }
 .hero-left {
   background: var(--ft-black);
-  padding: 72px 72px 72px;
+  padding: 72px 72px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
   overflow: hidden;
-  min-height: 640px;
+  min-height: none;
 }
 .hero-left::after {
   content: '';
@@ -425,7 +425,7 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
   padding: 0;
   position: relative;
   overflow: hidden;
-  min-height: 580px;
+  min-height: none;
 }
 .hero-right::after {
   content: '';
@@ -949,7 +949,7 @@ input[type=range]::-webkit-slider-runnable-track {
 
 /* ---------- 25. Hero min-height fix ---------- */
 .hero-left, .hero-right {
-  min-height: auto;
+  min-height: none;
 }
 
 /* ---------- 26. Reveal fallback — show all content regardless of scroll ---------- */
