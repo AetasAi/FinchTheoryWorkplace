@@ -449,7 +449,7 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
 }
 .hero-service-row {
   border-top: 1px solid var(--mid-grey);
-  padding: 24px 56px;
+  padding: 24px;
   display: grid;
   grid-template-columns: 36px 1fr;
   gap: 20px;
