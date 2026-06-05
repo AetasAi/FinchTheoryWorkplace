@@ -325,11 +325,11 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
   padding-top: 0;
   display: grid;
   grid-template-columns: 55% 45%;
-  align-items: start;
+  align-items: stretch;
 }
 .hero-left {
   background: var(--ft-black);
-  padding: 48px 72px;
+  padding: 56px 72px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -425,7 +425,7 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
   padding: 0;
   position: relative;
   overflow: hidden;
-  min-height: none;
+  align-self: stretch;
 }
 .hero-right::after {
   content: '';
