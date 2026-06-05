@@ -442,8 +442,7 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
 .hero-services {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  min-height: 580px;
+  height: auto;
   position: relative;
   z-index: 1;
 }
@@ -454,7 +453,6 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
   grid-template-columns: 36px 1fr;
   gap: 20px;
   align-items: start;
-  flex: 1;
 }
 .hero-service-row:last-child {
   border-bottom: none;
