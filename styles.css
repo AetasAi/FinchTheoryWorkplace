@@ -142,7 +142,7 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--mid-grey);
-  padding: 0 48px;
+  padding: 0;
   height: 72px;
   display: flex;
   align-items: center;
@@ -151,6 +151,9 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
 }
 .nav-inner {
   width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -426,6 +429,10 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
   position: relative;
   overflow: hidden;
   min-height: 580px;
+  background-image: url('/assets/finch-theory-mark.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 90%;
 }
 .hero-services {
   display: flex;
