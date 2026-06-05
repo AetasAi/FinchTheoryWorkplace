@@ -429,10 +429,18 @@ hr.rule.center { margin-left: auto; margin-right: auto; }
   position: relative;
   overflow: hidden;
   min-height: 580px;
+}
+.hero-right::after {
+  content: '';
+  position: absolute;
+  inset: 0;
   background-image: url('/assets/finch-theory-mark.png');
   background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: 90%;
+  background-position: center bottom;
+  background-size: 85%;
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 0;
 }
 .hero-services {
   display: flex;
