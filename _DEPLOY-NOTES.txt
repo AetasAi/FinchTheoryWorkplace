@@ -1,0 +1,78 @@
+# Finch Theory Workplace — Deploy Notes
+# workplace.finchtheory.com | GitHub: AetasAi/FinchTheoryWorkplace
+
+============================================================
+STANDARD DEPLOY SEQUENCE
+============================================================
+
+1. Make changes locally
+2. Commit in GitHub Desktop with a clear message
+3. Push to main
+4. Wait 2-3 minutes for GitHub Pages to build
+5. ** PURGE CLOUDFLARE CACHE **
+   → Cloudflare dashboard → workplace.finchtheory.com zone
+   → Caching → Configuration → Purge Everything
+6. Verify at https://workplace.finchtheory.com
+
+============================================================
+REPO STRUCTURE
+============================================================
+
+FinchTheoryWorkplace/
+├── assets/                    Static assets
+├── case-studies/              Case study HTML pages
+├── icons/                     Favicon set, OG image, SVG mark
+├── insights/                  Article HTML files
+├── styles.css                 Site-wide stylesheet
+├── index.html                 Homepage
+├── limited-companies.html     Limited companies service page
+├── llps.html                  LLP/professional practices page
+├── investment.html            Pricing page
+├── calculator.html            ROEI calculator tool
+├── diagnostic.html            Self-assessment diagnostic
+├── insights.html              Insights hub
+├── faqs.html                  FAQs
+├── privacy.html               Privacy policy
+├── data-processing-agreement.html
+├── form-thankyou.html         (noindex — post-form page)
+├── whats-next.html            (noindex — client journey)
+├── generate-sitemap.py        Run to regenerate sitemap.xml
+├── llms.txt                   AI crawler index
+├── llms-full.txt              Full AI context document
+├── context.md                 Structured AI briefing
+├── robots.txt                 Crawler permissions
+└── sitemap.xml                Updated by generate-sitemap.py
+
+============================================================
+ADDING NEW INSIGHT ARTICLES
+============================================================
+
+1. Build article HTML matching existing article template
+2. Drop into insights/
+3. Update insights.html hub to include the new article
+4. Run: py generate-sitemap.py
+5. Commit and push
+6. Purge Cloudflare cache
+7. GSC → URL Inspection → Request Indexing for new URL
+
+============================================================
+CLOUDFLARE CACHE
+============================================================
+
+** ALWAYS purge after pushing changes **
+
+Cloudflare dashboard → workplace.finchtheory.com
+→ Caching → Configuration → Purge Everything
+
+============================================================
+KEY CONTACTS / ACCOUNTS
+============================================================
+
+- DNS / CDN: Cloudflare
+- Hosting: GitHub Pages (AetasAi/FinchTheoryWorkplace)
+- Email: matthew.steiner@finchtheory.com
+- Booking: https://link.aetas-wealth.com/widget/booking/30C6BtjFERcoVPRqei6t
+- GA4: G-NPMN6Y5G8K
+
+============================================================
+Last updated: June 2026
