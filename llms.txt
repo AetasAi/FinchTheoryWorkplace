@@ -52,13 +52,13 @@ The Workplace Performance Review is always free. Fees are agreed in writing befo
 
 ## Case studies
 
-**Bristol-based organisation** — Financial resilience workshop, workplace pension review, and partner services (Shop St, online wills) introduced. Ongoing engagement. URL: https://finchtheory.com/case-studies/bristol-organisation.html
+**Bristol-based organisation** — Financial resilience workshop, workplace pension review, and partner services (Shop St, online wills) introduced. Ongoing engagement. URL: https://workplace.finchtheory.com/case-studies/bristol-organisation.html
 
-**Large UK retail group** — Diagnostic and benefits review completed. Pension review concluded existing arrangement was suitable — no change recommended. Shop St introduced as immediate, low-cost employee benefit. URL: https://finchtheory.com/case-studies/uk-retail-group.html
+**Large UK retail group** — Diagnostic and benefits review completed. Pension review concluded existing arrangement was suitable — no change recommended. Shop St introduced as immediate, low-cost employee benefit. URL: https://workplace.finchtheory.com/case-studies/uk-retail-group.html
 
 ## Key pages
 
-- Homepage: https://finchtheory.com/
+- Homepage: https://workplace.finchtheory.com/
 - Limited companies: https://finchtheory.com/limited-companies.html
 - LLPs and professional practices: https://finchtheory.com/llps.html
 - Pricing: https://finchtheory.com/investment.html
@@ -70,17 +70,11 @@ The Workplace Performance Review is always free. Fees are agreed in writing befo
 
 ## Insights articles
 
-- Why Financial Wellbeing Has Become a Business Issue for SMEs: https://finchtheory.com/insights/why-financial-wellbeing-is-a-business-issue.html
-- When Everyday Life Stops Talking Back: https://finchtheory.com/insights/when-everyday-life-stops-talking-back.html
-- Financial Wellbeing in the Workplace: https://finchtheory.com/insights/financial-wellbeing-in-the-workplace.html
-- Strengthening Your Team Through Financial Wellbeing: https://finchtheory.com/insights/strengthening-your-team-through-financial-wellbeing.html
-
-## Contact
-
-- Email: matthew.steiner@finchtheory.com
-- Website: https://www.finchtheory.com
-- Book a Workplace Performance Review: https://link.aetas-wealth.com/widget/booking/30C6BtjFERcoVPRqei6t
-
-## Regulatory
-
-Finch Theory provides workplace financial wellbeing, education, and consultancy services to employers. These services do not constitute regulated financial advice. Where regulated advice is required, this is provided separately by Finch Theory, a trading style of Insight Financial Associates Limited, authorised and regulated by the Financial Conduct Authority (FCA registration: 458421).
+- Why Financial Wellbeing Has Become a Business Issue for SMEs: https://workplace.finchtheory.com/insights/why-financial-wellbeing-is-a-business-issue.html
+- When Everyday Life Stops Talking Back: https://workplace.finchtheory.com/insights/when-everyday-life-stops-talking-back.html
+- Financial Wellbeing in the Workplace: https://workplace.finchtheory.com/insights/financial-wellbeing-in-the-workplace.html
+- Strengthening Your Team Through Financial Wellbeing: https://workplace.finchtheory.com/insights/strengthening-your-team-through-financial-wellbeing.html
+- The True Cost of Replacing an Employee: https://workplace.finchtheory.com/insights/the-true-cost-of-replacing-an-employee.html
+- What a Pension Review Actually Finds: https://workplace.finchtheory.com/insights/what-a-pension-review-actually-finds.html
+- Financial Wellbeing for LLPs and Professional Practices: https://workplace.finchtheory.com/insights/financial-wellbeing-for-llps-and-professional-practices.html
+- Generational Financial Pressure — What SME Employers Need to Know: https://workplace.finchtheory.com/insights/generational-financial-pressure-what-sme-employers-need-to-know.html
