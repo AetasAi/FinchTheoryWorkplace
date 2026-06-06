@@ -1,10 +1,29 @@
 User-agent: *
 Allow: /
-
 Disallow: /form-thankyou.html
 Disallow: /whats-next.html
 Disallow: /discovery-briefing.html
 Disallow: /initial-conversation-briefing.html
 Disallow: /benefits-review.html
 
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: GoogleExtendedBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
 Sitemap: https://workplace.finchtheory.com/sitemap.xml
+Sitemap: https://workplace.finchtheory.com/llms.txt
+Sitemap: https://workplace.finchtheory.com/llms-full.txt
