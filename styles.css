@@ -7,10 +7,10 @@
 /* ---------- 1. Design tokens ---------- */
 :root {
   /* Brand palette */
-  --ft-black:       #0e0e0e;
-  --ft-black-soft:  #1a1a1a;
-  --ft-gold:        #a58d5c;
-  --ft-gold-light:  #c4aa7a;
+  --ft-black:       #00205B;
+  --ft-black-soft:  #162040;
+  --ft-gold:        #896C2E;
+  --ft-gold-light:  #c8a55c;
   --ft-gold-pale:   #f5ede0;
 
   /* Neutrals */
@@ -19,7 +19,7 @@
   --mid-grey:       #e2ddd6;
   --text-secondary: #6b6560;
   --text-tertiary:  #a09890;
-  --ink:            #0e0e0e;
+  --ink:            #00205B;
   --ink-soft:       #6b6560;
   --ink-muted:      #a09890;
   --paper:          #faf8f5;
